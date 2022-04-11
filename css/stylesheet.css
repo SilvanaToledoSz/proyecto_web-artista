@@ -1806,6 +1806,7 @@ h2 {
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 20px;    
+    transition: 0.5s;   
 } 
 
 .span__bio_epigrafe {    
@@ -1823,8 +1824,19 @@ h2 {
     height: 200px;
     object-fit: cover;  
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;    
+    border-radius: 20px;
+    transition: 0.5s;    
 } 
+
+.img__bio:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.img__bio_final:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 
 /* ------------------------- */
 /* Inicio media query celular SECCIÓN BIO*/
