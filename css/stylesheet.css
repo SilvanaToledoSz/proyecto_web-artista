@@ -684,10 +684,18 @@ button a:hover {
     align-self: center;    
 }
 
+.div__audio__home audio {
+    transition: 0.5s;
+}
+
+.div__audio__home audio:hover {
+    transform: translate(0, -5px);
+}
+
 .audio__home {
     width: 100%;
     padding-right: 0;
-    grid-area: audioAdel;
+    grid-area: audioAdel;    
 }
 
 /* ------------------------- */
