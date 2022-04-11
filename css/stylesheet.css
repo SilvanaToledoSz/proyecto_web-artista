@@ -1561,6 +1561,8 @@ h2 {
     font-size: 43px;    
     font-weight: bolder;
     text-transform: uppercase;
+    animation: pulse;
+    animation-duration: 2s;
 }
 
 .h2_pages {
