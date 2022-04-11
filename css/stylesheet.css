@@ -3943,6 +3943,8 @@ h2 {
 
 .div__cntc_form {    
     grid-area: cntcForm;
+    animation: slideInDown;
+    animation-duration: 2s;
 }
 
 .div__cntc_img {    
@@ -3950,6 +3952,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: slideInUp;
+    animation-duration: 2s;
 }
 
 .h1__page_contacto {
