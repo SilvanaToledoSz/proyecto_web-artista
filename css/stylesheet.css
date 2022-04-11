@@ -1,0 +1,4090 @@
+/* Fuentes
+
+font-family: 'Fredoka', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+/* Estilo de reseteo */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 130%; 
+    scroll-behavior: smooth;
+}
+
+/* General */
+
+a {
+    text-decoration: none;
+}
+
+p::selection {
+    background-color: #eb9f06;
+}
+
+span::selection {
+    background-color: #eb9f06;
+}   
+
+ul li {
+    list-style-type: none;
+}
+
+/* --------------------- */
+/* INICIO CONTENEDOR GENERAL */
+
+.body__contenedor__general {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+}
+
+/* FIN CONTENEDOR GENERAL */
+/* --------------------- */
+
+
+/* --------------------- */
+/* INICIO HEADER */
+
+header {    
+    grid-area: header;
+    padding: 10px 4%;
+    position: sticky;
+    top: 0;
+    background-color:#003249;
+    z-index: 999;
+    display: grid;
+    grid-column: 100%;
+    grid-template-areas: 
+    "logo"
+    "nav";
+}
+
+header div {
+    grid-area: logo;
+}
+
+header nav {
+    grid-area: nav;
+}
+
+.ul__botonera {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-areas: 
+    "btnMenu1 btnMenu2 btnMenu3 btnMenu4 btnMenu5";
+    justify-content: space-evenly;
+}
+
+.li__menu1 {
+    grid-area: btnMenu1;
+    justify-self: center;
+}
+.li__menu2 {
+    grid-area: btnMenu2;
+    justify-self: center;
+}
+.li__menu3 {
+    grid-area: btnMenu3;
+    justify-self: center;
+}
+.li__menu4 {
+    grid-area: btnMenu4;
+    justify-self: center;
+}
+.li__menu5 {
+    grid-area: btnMenu5;
+    justify-self: center;
+}
+
+.ul__botonera li a {
+    transition: all 0.15s;
+}
+
+.ul__botonera li a:hover {
+    color: #003249;
+    background-color:#eb9f06;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: bolder;            
+}
+
+/* --------------------- */
+/* INICIO SUB-MENU */
+
+header #li__sub_menu_extras {
+    position: relative;
+}
+
+header #li__sub_menu_extras:hover > ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: left;
+    
+}
+    
+header #li__sub_menu_extras ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    padding-bottom: 10px;
+    height: 170px;
+    width: 150px;
+    background-color: #003249;
+    border-radius: 20px;    
+    line-height: 150%;
+    opacity: 0.9;     
+}
+
+header #li__sub_menu_extras ul li a {
+    color:white;
+    font-size: 14px;    
+}
+
+header #li__sub_menu_extras ul li a:hover {
+    color: #003249;   
+    font-weight:bolder;     
+}
+
+/* FIN SUB MENU */
+/* --------------------- */
+
+.div__logo {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.img__logo {
+    width: 25%;
+}
+
+.input__burger_menu, .lavel__burguer_menu {
+    display: none;
+}
+
+/* ------------------------- */
+/* Inicio media query celular HEADER*/
+
+@media only screen and (max-width: 480px) {
+
+    header {    
+        padding: 5px 5px; 
+        height: 50px;       
+    }
+
+    .div__logo {
+        padding-left: 2%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img__logo {
+        width: 40%;
+    }
+
+    .div__header_mobile {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }  
+
+    .nav__menu_mobile {
+        display: initial;
+        position: fixed;
+    }
+
+    .lavel__burguer_menu {
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+        padding-right: 10px;
+    }
+  
+    .ul__botonera {
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        background-color:#007EA7;
+        opacity: 0.95;
+        display: none;
+        font-size: 100%;
+        padding-bottom: 20px;        
+    }
+
+    .ul__botonera li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3%;
+        text-transform: uppercase;
+    }
+    
+    .ul__botonera li a {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .ul__sub_menu li {
+        display: none;
+    }
+
+    .input__burger_menu:checked + .ul__botonera {
+        display: block;
+    }
+
+    /* Inicio sub-menu mobile */
+
+    header #li__sub_menu_extras ul {
+        display: block;
+        position: relative;
+        left: 0;
+        height: 130px;
+        width: 150px;
+        background-color:unset;
+        border-radius: 20px;    
+        line-height: 120%;
+    } 
+    
+    /* fin sub-menu mobile */
+
+}
+    
+/* Fin media query celular HEADER*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet HEADER*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+    
+    header {    
+        padding: 5px 5px; 
+        height: 50px;       
+    }
+
+    .div__logo {
+        padding-left: 2%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img__logo {
+        width: 30%;
+    }
+
+    .div__header_mobile {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }  
+
+
+    .nav__menu_mobile {
+        display: initial;
+        position: fixed;
+    }
+
+    .lavel__burguer_menu {
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+        padding-right: 10px;
+    }
+  
+    .ul__botonera {
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        background-color:#007EA7;
+        opacity: 0.95;
+        display: none;
+        font-size: 100%;
+        padding-bottom: 20px;        
+    }
+
+    .ul__botonera li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3%;
+        text-transform: uppercase;
+    }
+    
+    .ul__botonera li a {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .ul__sub_menu li {
+        display: none;
+    }
+
+    .input__burger_menu:checked + .ul__botonera {
+        display: block;
+    }
+
+    /* Inicio sub-menu mobile */
+
+    header #li__sub_menu_extras ul {
+        display: block;
+        position: relative;
+        left: 0;
+        height: 130px;
+        width: 150px;
+        background-color:unset;
+        border-radius: 20px;    
+        line-height: 120%;
+    } 
+    
+    /* fin sub-menu mobile */
+}
+/* Fin media query tablet HEADER*/
+/* ------------------------- */
+
+/* FIN HEADER */
+/* --------------------- */
+
+
+
+/* --------------------- */
+/* INICIO MAIN*/
+
+main {
+    grid-area: main;
+}
+
+.main__home {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "heroImage"
+    "adelanto"
+    "bio"
+    "discografia"
+    "resenas"
+    "extras";    
+}
+
+main .section__extras {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "Etitulo"
+    "Egaleria"
+    "Evideos"
+    "Epensamientos"
+    "Etuto"
+    "Ereferentes"
+    "Erecomendados";
+    justify-items: center;      
+}
+
+
+/* FIN MAIN */
+/* --------------------- */
+
+
+/* --------------------- */
+/* INICIO FOOTER */
+
+footer {
+    grid-area: footer;
+    background-color:#003249;
+    padding: 1% 6%;    
+}
+
+.div__contenedor_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "logof txtf rrssf";
+    justify-content: center;
+    align-items: center;
+}
+
+.img__logo_f {
+    width: 70%;
+    opacity: 0.6;     
+}
+
+.span__logo_footer {
+    grid-area: logof;
+    margin: 1%;
+    width: 100%;
+}
+
+.span__txt_footer {
+    font-size: 10px;
+    grid-area: txtf;
+}
+
+.ul__redes {
+    grid-area: rrssf;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ul__redes li {
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.ul__redes li:hover{
+    transform: translate(0, -7px);    
+}
+
+
+/* ------------------------- */
+/* Inicio media query celular FOOTER*/
+
+@media only screen and (max-width: 480px) {
+
+    footer {
+        background-color:#003249;
+        padding: 1% 6%;  
+        height: 200px;  
+    }
+    
+    .div__contenedor_footer {
+        padding-top: 12%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 35%);
+        grid-template-areas: 
+        "logof"
+        "txtf"
+        "rrssf";        
+        row-gap: 10px;
+        justify-items: center;        
+    }
+    
+    .img__logo_f {
+        width: 100%; 
+        opacity: 0.6;            
+    }
+    
+    .span__logo_footer {        
+        margin: 1%;
+        width: 50%;
+        align-self: center;        
+    }
+    
+    .span__txt_footer {
+        font-size: 40%;             
+    }
+    
+    .ul__redes li a i {
+        width: 5%;
+    }    
+    
+}
+
+
+/* Fin media query celular FOOTER*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet FOOTER*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    footer {
+        background-color:#003249;
+        padding: 1% 6%;  
+        height: 170px;  
+    }
+    
+    .div__contenedor_footer {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 35%);
+        grid-template-areas: 
+        "logof"
+        "txtf"
+        "rrssf";        
+        row-gap: 10px;
+        justify-items: center;        
+    }
+    
+    .img__logo_f {
+        width: 100%;
+        opacity: 0.6;        
+    }
+    
+    .span__logo_footer {        
+        margin: 1%;
+        width: 50%;
+        align-self: center;        
+    }
+    
+    .span__txt_footer {
+        font-size: 40%;             
+    }
+    
+    .ul__redes li a i {
+        width: 5%;
+    }    
+
+}
+
+/* Fin media query tablet FOOTER*/
+/* ------------------------- */
+
+
+/* FIN FOOTER */
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+/* INICIO HOME */
+
+
+/* --------------------- */
+/* INICIO HERO IMAGE HOME*/
+
+.section__hero-image {
+    grid-area: heroImage;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.franja_azul {
+    background: #003249;
+    opacity: 0.9;
+    width: 100%;
+    height: 58%;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.h1__home {
+    font-weight: bold;
+    font-size: 500%;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 4%;    
+}
+
+.section__hero-image {
+    background-image: url(../multimedia/images/hero-image_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.franja_azul .animate__animated .animate__fadeIn {
+    opacity: 0.8;
+}
+
+.section__hero-image p {
+    text-transform: uppercase;
+    font-size: 200%;
+    text-align: center;         
+}
+
+.div__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #fcbf49;
+    border-radius: 16px;
+    padding: 3px 10px;
+    border: 0;          
+}
+
+button:hover {
+    background-color: #eb9f06;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+button a {
+    transition: all 0.5s;
+    font-size: 100%;
+}
+
+button a:hover {
+    color: #003249; 
+    font-size: 100%;              
+}
+
+/* FIN HERO IMAGE HOME */
+/* --------------------- */
+
+/* --------------------- */
+/* INICIO ADELANTO EXCLUSIVO HOME */
+
+.section__adelanto {
+    grid-area: adelanto;
+    background-color:#80ced7;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.div__contenedor_adelanto {
+    grid-area: contenedor;
+    display: grid;
+    width: 70%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "tituloAdel"
+    "audioAdel";    
+    justify-content: center;    
+}
+
+.h2__adelanto_home {
+    font-weight: bold;
+    font-size: 180%;
+    margin-left: 4%;
+    grid-area: tituloAdel; 
+    justify-self: center;
+    align-self: center;    
+}
+
+.audio__home {
+    width: 100%;
+    padding-right: 0;
+    grid-area: audioAdel;
+}
+
+/* ------------------------- */
+/* Inicio media query celular ADELANTO EXCLUSIVO */
+
+@media only screen and (max-width: 480px) {
+
+    .section__adelanto {
+        padding-top: 15px;
+        height: 150px;
+        align-items: center;        
+    }
+    
+    .div__contenedor_adelanto {
+        width: 90%;
+        grid-template-rows: 40% 60%;          
+    }
+    
+    .h2__adelanto_home {
+        font-size: 160%;
+        margin-left: 4%;        
+    }    
+    
+}
+
+/* Fin media query celular ADELANTO*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet ADELANTO*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+    
+    .section__adelanto {
+        padding-top: 15px;
+        height: 150px;
+        align-items: center;        
+    }
+    
+    .div__contenedor_adelanto {
+        width: 90%;
+        grid-template-rows: 40% 60%;          
+    }
+    
+    .h2__adelanto_home {
+        font-size: 160%;
+        margin-left: 4%;        
+    }  
+
+}   
+
+/* Fin media query tablet ADELANTO*/
+/* ------------------------- */
+
+/* FIN ADELANTO EXCLUSIVO HOME */
+/* --------------------- */
+
+
+
+/* --------------------- */
+/* INICIO BIO HOME */
+
+.section__bio_home {
+    grid-area: bio;
+    background-color:#9ad1d4;
+    padding: 30px;
+    height: 550px;  
+} 
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 12px;   
+    margin-bottom: 12px; 
+}
+
+.div__contenedor_bio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-areas: 
+    "biotxt bioimg";
+    justify-content: center;
+}
+
+.span__bio1a {
+    grid-area: biotxt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;    
+}
+
+.span__bio2 {
+    grid-area: bioimg;
+}
+
+.img__modelo1 {
+    width: 100%;    
+    padding: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+} 
+
+/* ------------------------- */
+/* Inicio media query celular BIO HOME*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__bio_home {
+        height: 870px;  
+    }
+    
+    .div__contenedor_bio {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "bioimg"
+        "biotxt";
+        justify-content: center;
+    }
+    
+    .span__bio1a {
+        padding: 2%;        
+    }
+
+    .span__bio1a p {
+        font-size: 16px;  
+        line-height: 180%; 
+    } 
+    
+    .img__modelo1 {
+        width: 100%;    
+        padding: 2%;        
+    } 
+
+}
+
+/* Fin media query celular BIO HOME*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet BIO HOME*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__bio_home {
+        height: 950px;  
+    }
+    
+    .div__contenedor_bio {
+        display: grid;
+        grid-template-columns: 90%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "bioimg"
+        "biotxt";
+        justify-content: center;
+    }
+    
+    .span__bio1a {
+        padding: 4%;
+        display: flex;
+        justify-content: center;        
+    }
+
+    .span__bio1a p {
+        font-size: 16px;  
+        line-height: 170%; 
+    } 
+
+    .span__bio2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__modelo1 {
+        width: 100%;    
+        padding: 10px;        
+    } 
+
+
+}
+
+/* Fin media query tablet BIO HOME*/
+/* ------------------------- */
+
+
+/* FIN BIO HOME */
+/* --------------------- */
+
+/* --------------------- */
+/* INICIO DISCOGRAFÍA HOME*/
+
+
+.section__s2 {
+    grid-area: discografia;
+    background-color:#ccdbdc;
+    padding: 30px;
+    height: 550px;
+}
+
+.h3__home {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+/* INICIO CAROUSEL DISC-HOME */
+
+
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0%); 
+    }
+  
+    25% {
+        transform: translateX(-25%);    
+    }
+  
+    50% {
+        transform: translateX(-50%);
+    }    
+    
+  }
+  
+.article__carousel_disc {
+    margin: 2rem auto;
+    padding: 2rem 0;
+    max-width: 850px;
+    text-align: center;
+    background-color: var(--carousel-bg-color);
+    overflow-x: hidden;
+    border-radius: 20px;
+}
+
+.article__carousel_disc .slides {
+    padding-left: 0;
+    width: 400%;
+    display: flex;
+    list-style: none;
+    transition: transform 1s ease-in-out;
+    animation: carousel-slide 24s ease-in-out 3s;
+    animation-iteration-count: infinite;
+}
+
+.article__carousel_disc input {
+    display: none;
+}
+
+.article__carousel_disc label {
+    border: medium solid var(--gray-dark-color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 .25rem;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+}
+
+#slide-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3 {
+    background-color: var(--gray-dark-color);
+}
+
+.img__slider{
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 0 20px;
+}
+  
+
+/* FIN CAROUSEL DISC-HOME*/
+
+/* ------------------------- */
+/* Inicio media query celular DISCOGRAFÍA HOME*/
+
+@media only screen and (max-width: 480px) {  
+    
+    
+    /* INICIO CAROUSEL DISC-HOME */
+    
+             
+    .article__carousel_disc {
+        max-width: 100%;        
+    }
+    
+    .article__carousel_disc .slides {        
+        width: 425%;        
+    }
+    
+    .img__slider{
+        width: 400px;
+        height: 300px;        
+    }
+      
+    
+    /* FIN CAROUSEL DISC-HOME*/
+
+}
+
+
+/* Fin media query celular DISCOGRAFÍA HOME*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet DISCOGRAFÍA HOME*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__s2 {        
+        padding: 30px;
+    }
+
+    .h2_disc_h {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 20px;    
+    }      
+    
+    /* INICIO CAROUSEL DISC-HOME */
+    
+      
+    .article__carousel_disc {
+        padding-top: 10px;        
+        max-width: 480px;        
+    }
+    
+    .article__carousel_disc .slides {
+        width: 410%;        
+    }
+    
+    li.slide {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        
+    .img__slider{
+        width: 390px;       
+    }
+
+}
+
+/* Fin media query tablet DISCOGRAFÍA HOME*/
+/* ------------------------- */
+ 
+/* FIN DISCOGRAFÍA HOME */
+/* --------------------- */
+
+
+/* --------------------- */
+/* INICIO RESEÑAS HOME */
+
+.section__resenas_home {
+    grid-area: resenas;
+    background-color:#9ad1d4;
+    padding: 30px;
+    height: 460px;  
+} 
+
+.div__contenedor_resenas {
+    display: grid;
+    grid-template-columns: 30% 10% 30%;
+    grid-template-areas: 
+    "resena1 espacio resena2";    
+    justify-content: center;
+    padding-top: 2%;
+}
+
+
+.article__resena1 {
+    width: 100%;
+    background-color: #CCDBDC;
+    border-radius: 10px; 
+    grid-area: resena1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__espacio {
+    grid-area: espacio;
+}
+
+.article__resena2 {
+    width: 100%;
+    background-color: #CCDBDC;
+    border-radius: 10px; 
+    grid-area: resena2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__resena_home {
+    width: 30%;
+    padding-top: 20px;
+}
+
+.span__txt_resena p {
+    text-align: center;
+    font-size: 80%;  
+    font-style: italic;
+    color: grey;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.span__txt_resena  p:hover {
+    color: #003249;
+    font-size: 82%;
+}
+
+.btn__resena {
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+/* ------------------------- */
+/* Inicio media query celular RESEÑAS HOME*/
+
+@media only screen and (max-width: 480px) {
+       
+    .div__contenedor_resenas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        margin: 0;
+    } 
+
+    .article__espacio {
+        display: none; 
+    }    
+    
+    .article__resena2 {
+        display: none;
+    }  
+    
+}
+
+
+/* Fin media query celular RESEÑAS HOME */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet RESEÑAS HOME*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__resenas_home {
+        background-color:#9ad1d4;
+        padding: 30px;
+        height: 440px;  
+    } 
+
+    .div__contenedor_resenas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        margin: 0;
+    } 
+
+    .article__resena1 {
+        width: 70%;        
+    }
+
+    .article__espacio {
+        display: none; 
+    }
+    
+    .article__resena2 {
+        display: none;
+    }  
+
+    .img__resena_home {
+        width: 20%;
+        padding-top: 20px;
+    }
+
+}
+
+/* Fin media query tablet RESEÑAS HOME*/
+/* ------------------------- */
+
+/* FIN RESEÑA HOME */
+/* --------------------- */
+
+
+/* --------------------- */
+/* INICIO EXTRAS HOME */
+
+.section__extras_h {
+    grid-area: extras;
+    background-color:#ccdbdc;
+    padding: 30px;
+    height: 550px;
+    
+}
+
+.div__contenedorExtrasHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.article__contenedor_extras {
+    width: 50%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas: 
+    "imgExtras1 imgExtras2 imgExtras3"
+    "imgExtras4 imgExtras5 imgExtras6";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+.div__img_extras1 {
+    grid-area: imgExtras1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/galeria3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.div__img_extras2 {
+    grid-area: imgExtras2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/videos_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.div__img_extras3 {
+    grid-area: imgExtras3;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/pensamientos_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.div__img_extras4 {
+    grid-area: imgExtras4;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/tutoriales_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.div__img_extras5 {
+    grid-area: imgExtras5;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/referentes_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.div__img_extras6 {
+    grid-area: imgExtras6;
+    width: 100%;
+    height: 100%;
+    background-image: url(../multimedia/images/recomendados_b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.article__contenedor_extras div a {
+    transition: all 0.5s;
+}
+
+.article__contenedor_extras div:hover {
+    transform:scale(1.02)
+}
+
+.article__contenedor_extras div a:hover {
+    background-color:white;
+    opacity: 0.8;
+    width: 100%;
+    padding: 5px 0;
+    color: #424251;
+    text-align: center;
+}
+
+.div__button_extras_home {
+    display: none;
+    
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS HOME*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__contenedor_extras {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+        "imgExtras1 imgExtras2"
+        "imgExtras3 imgExtras4";        
+    } 
+
+    .div__img_extras5 {
+        display: none;
+    }
+
+    .div__img_extras6 {
+        display: none;
+    }
+
+    .div__button_extras_home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    
+
+}
+
+/* Fin media query celular EXTRAS HOME*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS HOME*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__extras_h {        
+        height: 570px;
+    }
+
+    .article__contenedor_extras {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+        "imgExtras1 imgExtras2"
+        "imgExtras3 imgExtras4";        
+    } 
+
+    .div__img_extras5 {
+        display: none;
+    }
+
+    .div__img_extras6 {
+        display: none;
+    }
+
+    .div__button_extras_home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+}
+
+/* Fin media query tablet EXTRAS HOME*/
+/* ------------------------- */
+
+/* FIN EXTRAS HOME */
+/* --------------------- */
+
+
+
+/* --------------------- */
+/* INICIO FLECHA INICIO */
+
+.img__flecha {
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 25%;
+}
+
+.div__flecha_inicio {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    color: gray;    
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);    
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    opacity: 0.8;
+}
+
+/* ------------------------- */
+/* Inicio media query celular FLECHA INICIO*/
+
+@media only screen and (max-width: 480px) {
+
+    .div__flecha_inicio {
+        bottom: 50px;
+        right: 30px;
+    }
+
+}
+
+/* Fin media query celular FLECHA INICIO*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet FLECHA INICIO*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .div__flecha_inicio {
+        bottom: 50px;
+        right: 30px;
+    }
+
+}
+
+/* Fin media query tablet FLECHA INICIO*/
+/* ------------------------- */
+
+/* FIN FLECHA INICIO */
+/* --------------------- */
+
+/* FIN HOME */
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+/* INICIO PRE-VENTAS */
+
+.section__pre_venta {
+    background-color: #80ced7;    
+    height: 680px;     
+}
+
+.article__contenedor_pre_venta {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 150px;
+    grid-template-areas: 
+    "titulo_prev titulo_prev"
+    "txt_prev img_prev"
+    "adelanto adelanto";
+    justify-content: center;
+    grid-gap: 10px;    
+}
+
+.div__prev_titulo {
+    grid-area: titulo_prev;    
+    text-align: center;
+    align-self: center;
+}
+.div__prev_txt {
+    grid-area: txt_prev;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.div__prev_img {
+    grid-area: img_prev;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    border-radius: 20px;
+    background-image: url(../multimedia/images/hero-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);  
+}
+
+.div__prev_adelanto {
+    grid-area: adelanto;
+    background-color:#C1E8EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.h1__pre-venta {
+    color: white;    
+    font-size: 43px;    
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.h2_pages {
+    color: white;    
+    font-size: 35px;    
+    text-transform: uppercase;
+    text-transform: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.div__prev_txt p {
+    margin-top: 10px;
+}
+
+.img__prev {
+    width: 550px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+} 
+
+
+ .span__nombre_disco {
+     text-transform: uppercase;
+     background-color: #003249;
+     opacity: 0.8;
+     width: 100%;
+     text-align: center;
+ }
+
+.span__nombre_disco p a {
+    transition: 2s;
+}
+
+.span__nombre_disco p a:hover {
+     color:#CCDBDC;
+     font-size: 50px;
+     opacity: 1;
+     text-transform: bold;     
+ }
+
+ .h3__prev {
+    color: #424251;    
+    font-size: 30px; 
+    text-transform: uppercase;
+    text-transform: bold;
+    padding-top: 20px;
+}
+
+.audio__prev {    
+    width: 1000px;
+    padding: 20px 0 40px 0;
+}
+
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN PRE-VENTA*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__pre_venta {
+        height: 1000px;     
+    }
+    
+    .article__contenedor_pre_venta {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 150px 180px 350px 220px;
+        grid-template-areas: 
+        "titulo_prev"
+        "img_prev"
+        "txt_prev"
+        "adelanto";
+        justify-content: center;
+        grid-gap: 10px;    
+    }
+
+    .h2_pages {
+        display: none;
+    }   
+    
+    .div__prev_img {        
+        width: 100%;       
+    }    
+    
+    .div__prev_txt p {
+        line-height: 160%;
+    }
+    
+    .img__prev {
+        width: 460px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;          
+    }        
+    
+    .audio__prev {    
+        width: 400px;        
+    }
+
+}
+
+
+/* Fin media query celular SECCIÓN PRE-VENTA*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN PRE-VENTA*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__pre_venta {
+        height: 980px;     
+    }
+    
+    .article__contenedor_pre_venta {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 150px 0.8fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "titulo_prev"
+        "img_prev"
+        "txt_prev"
+        "adelanto";
+        justify-content: center;
+        grid-gap: 10px;    
+    }
+
+    .h2_pages {
+        display: none;
+    }   
+    
+    .div__prev_img {        
+        width: 100%;       
+    }    
+    
+    .div__prev_txt p {
+        line-height: 160%;
+    }
+    
+    .img__prev {
+        width: 460px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;          
+    }        
+    
+    .audio__prev {    
+        width: 400px;        
+    }
+
+}
+
+/* Fin media query tablet SECCIÓN PRE-VENTA*/
+/* ------------------------- */
+
+
+/* FIN SECCIÓN PRE-VENTA */
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+ /* INICIO SECCIÓN BIO */
+
+.section__bio {
+    background-color: #9AD1D4;
+    height: 1700px;    
+}
+
+.article__contenedor_bio {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 150px 430px 430px 430px 300px;
+    grid-template-areas: 
+    "titulo titulo"
+    "txt1 img1"
+    "txt1 img2"
+    "img3 txt2"
+    "img4 img4";
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.div__titulo {
+    grid-area: titulo;
+    text-align: center;
+    align-self: center;
+    
+}
+.div__txt1 {
+    grid-area: txt1;
+    padding-top: 10px;
+}
+.div__img1 {
+    grid-area: img1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div__img2 {
+    grid-area: img2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div__img3 {
+    grid-area: img3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div__txt2 {
+    grid-area: txt2;
+    padding-top: 10px;
+}
+.div__img4 {
+    grid-area: img4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1__page_bio {
+    color: white;    
+    font-size: 43px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.article__contenedor_bio div p {
+    text-align: justify;
+    line-height: 150%; 
+}
+
+.img__bio {
+    width: 550px;    
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+} 
+
+.span__bio_epigrafe {    
+    font-weight: lighter;
+    font-style: italic;
+    font-size: small;    
+}
+
+.span__bio_epigrafe:hover {
+    color:#003249;
+}
+
+.img__bio_final {    
+    width: 1200px;
+    height: 200px;
+    object-fit: cover;  
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+} 
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN BIO*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__bio {
+        height: 2600px;    
+    }
+    
+    .article__contenedor_bio {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 150px 750px 350px 350px 350px 350px 150px;
+        grid-template-areas: 
+        "titulo"
+        "txt1"
+        "img1"
+        "img2"
+        "txt2"
+        "img3"        
+        "img4";
+        justify-content: center;
+        grid-gap: 10px;
+    } 
+    
+    .article__contenedor_bio div p {
+        font-size: 16px;       
+    }
+    
+    .img__bio {
+        width: 100%; 
+    } 
+    
+    .img__bio_final {    
+        width: 100%;
+        height: 150px;            
+    } 
+
+}
+
+
+/* Fin media query celular SECCIÓN BIO*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN BIO*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__bio {
+        height: 2430px;    
+    }
+    
+    .article__contenedor_bio {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 150px 550px 350px 350px 250px 350px 150px;
+        grid-template-areas: 
+        "titulo"
+        "txt1"
+        "img1"
+        "img2"
+        "txt2"
+        "img3"        
+        "img4";
+        justify-content: center;
+        row-gap: 40px;
+    } 
+
+    .div__txt1 {
+        overflow: auto;
+    }
+    
+    .div__txt2 {
+        overflow: auto;
+    }
+    .div__img4 {
+        grid-area: img4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .article__contenedor_bio div p {
+        font-size: 18px;
+        line-height: 180%;       
+    }
+
+    .article__contenedor_bio div::-webkit-scrollbar {
+        width: 5px;
+        background-color: #80ced7;
+    }
+    
+    .article__contenedor_bio div::-webkit-scrollbar-thumb {
+        background-color: #003249;
+        border-radius: 10px;
+    }
+    
+    .img__bio {
+        width: 450px;
+    } 
+    
+    .img__bio_final {    
+        width: 100%;
+        height: 150px;            
+    } 
+
+}
+
+/* Fin media query tablet SECCIÓN BIO*/
+/* ------------------------- */
+
+/* FIN SECCIÓN BIO */
+/* ------------------------- */
+
+
+
+/* ------------------------- */
+/* INICIO SECCIÓN DISCOGRAFÍA */
+
+.section__page3 {
+    background-color: #CCDBDC;    
+    height: 1600px;     
+}
+
+.article__contenedor_disc {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 150px;
+    grid-row-gap: 80px;
+    grid-template-areas: 
+    "titulo titulo"
+    "txt1disc spot1disc"
+    "spot2disc txt2disc"
+    "txt3disc spot3disc";
+    justify-content: center;   
+}
+
+.div__titulo_disc {
+    grid-area: titulo;    
+    text-align: center;
+    align-self: center;  
+}
+
+.div__txt1_disc {
+    grid-area: txt1disc;    
+}
+
+.div__spot1_disc {
+    grid-area: spot1disc;   
+}
+
+.div__spot2_disc {
+    grid-area: spot2disc;    
+}
+
+.div__txt2_disc {
+    grid-area: txt2disc;    
+}
+
+.div__txt3_disc {
+    grid-area: txt3disc;   
+}
+
+.div__spot3_disc {
+    grid-area: spot3disc;    
+}
+
+.h1__page_disc {
+    color:#424251;    
+    font-size: 43px;    
+    font-weight: bolder;  
+}
+
+.h2_pages_disc {
+    color: #424251;     
+    font-size: 35px;
+    text-transform: bold;
+    margin: 0;
+}
+
+.h2_pages_disc_a {
+    color: #424251;     
+    font-size: 35px;   
+    text-transform: bold;
+    margin: 0;
+    text-align: right;
+}
+
+.div__txt1_disc p {
+    color: #424251;
+    line-height: 150%;
+    padding: 15px 0;      
+}
+
+.div__txt2_disc p {
+    color: #424251;
+    line-height: 150%;
+    text-align: right;  
+    padding: 15px 0;    
+}
+
+
+.div__txt3_disc p {
+    color: #424251;
+    line-height: 150%;   
+    padding: 15px 0;   
+}
+
+.iframe__disco {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.h2_pages_disc_mobile {
+    display: none;
+}
+
+.h2_pages_disc_a_mobile {
+    display: none;
+}
+
+.h2_pages_disc_b_mobile {
+    display: none;
+}
+
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN DISCOGRAFÍA*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__page3 {
+        height: 2150px;     
+    }    
+    
+    .article__contenedor_disc {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 150px 50px 200px 330px 50px 200px 330px 50px 200px 330px;
+        row-gap: 20px;
+        grid-template-areas: 
+        "titulo"
+        "subtD1"
+        "spot1disc"
+        "txt1disc"
+        "subtD2"
+        "spot2disc"
+        "txt2disc"
+        "subtD3"
+        "spot3disc"
+        "txt3disc";
+        justify-content: center;   
+    }
+
+    .h2_pages_disc {
+        display: none;
+    }
+
+    .h2_pages_disc_a {
+        display: none;
+    }
+
+    .h2_pages_disc_mobile {
+        display: flex;
+        grid-area: subtD1;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;    
+    }
+    
+    .h2_pages_disc_a_mobile {
+        display: flex;
+        grid-area: subtD2;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;        
+    }
+    
+    .h2_pages_disc_b_mobile {
+        display: flex;
+        grid-area: subtD3;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;        
+    }   
+    
+    .div__txt1_disc p {
+        font-size: 16px;
+        line-height: 160%;  
+        padding-bottom: 50px;   
+    }
+    
+    .div__txt2_disc p {
+        font-size: 16px;
+        line-height: 160%;
+        text-align: left;  
+        padding-bottom: 50px;  
+    }    
+    
+    .div__txt3_disc p {
+        font-size: 16px;
+        line-height: 160%;   
+        padding-bottom: 50px; 
+    }   
+    
+
+}
+
+
+/* Fin media query celular SECCIÓN DISCOGRAFÍA*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN DISCOGRAFÍA*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__page3 {
+        height: 1800px;     
+    }    
+    
+    .article__contenedor_disc {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 150px 50px 200px 230px 50px 200px 230px 50px 200px 230px;
+        row-gap: 20px;
+        grid-template-areas: 
+        "titulo"
+        "subtD1"
+        "spot1disc"
+        "txt1disc"
+        "subtD2"
+        "spot2disc"
+        "txt2disc"
+        "subtD3"
+        "spot3disc"
+        "txt3disc";
+        justify-content: center;   
+    }
+
+    .h2_pages_disc {
+        display: none;
+    }
+
+    .h2_pages_disc_a {
+        display: none;
+    }
+
+    .h2_pages_disc_mobile {
+        display: flex;
+        grid-area: subtD1;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;    
+    }
+    
+    .h2_pages_disc_a_mobile {
+        display: flex;
+        grid-area: subtD2;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;        
+    }
+    
+    .h2_pages_disc_b_mobile {
+        display: flex;
+        grid-area: subtD3;
+        color: #424251;     
+        font-size: 35px;
+        text-transform: bold;
+        margin: 0;        
+    }  
+    
+    .div__txt1_disc {
+        overflow: auto;    
+    }
+
+    .div__txt2_disc {
+        overflow: auto;    
+    }
+
+    .div__txt3_disc {
+        overflow: auto;    
+    }
+    
+    .div__txt1_disc p {
+        font-size: 16px;
+        line-height: 160%;  
+        padding-bottom: 50px;   
+    }
+    
+    .div__txt2_disc p {
+        font-size: 16px;
+        line-height: 160%;
+        text-align: left;  
+        padding-bottom: 50px;  
+    }    
+    
+    .div__txt3_disc p {
+        font-size: 16px;
+        line-height: 160%;   
+        padding-bottom: 50px; 
+    }   
+
+    .article__contenedor_disc div::-webkit-scrollbar {
+        width: 5px;
+        background-color: #80ced7;
+    }
+    
+    .article__contenedor_disc div::-webkit-scrollbar-thumb {
+        background-color: #003249;
+        border-radius: 10px;
+    }
+
+}
+
+/* Fin media query tablet SECCIÓN DISCOGRAFÍA*/
+/* ------------------------- */
+
+/* FIN SECCIÓN DISCOGRAFÍA */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* INICIO SECCIÓN RESEÑAS */
+
+.section__resenas {
+    background-color: #9AD1D4;    
+    height: 1000px;     
+}
+
+.article__contenedor_resenas {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 150px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo"
+    "img1 txt1 txt1 txt1 txt1"
+    "btnR1 btnR1 btnR1 btnR1 btnR1"
+    "txt2 txt2 txt2 txt2 img2"
+    "btnR2 btnR2 btnR2 btnR2 btnR2"    
+    "img3 txt3 txt3 txt3 txt3"
+    "btnR3 btnR3 btnR3 btnR3 btnR3";
+}
+
+.div__resenas_titulo {
+    grid-area: titulo;     
+    align-self: center;
+}
+
+.div__resenas_img1 {
+    grid-area: img1;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div__resenas_txt1 {
+    grid-area: txt1;    
+}
+
+.article__contenedor_resenas div p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 150%; 
+}
+
+.article__contenedor_resenas div p:hover {
+    color: #003249;
+}
+
+.div__resenas_img2 {
+    grid-area: img2;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div__resenas_txt2 {
+    grid-area: txt2;   
+}
+
+.div__resenas_img3 {
+    grid-area: img3;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div__resenas_txt3 {
+    grid-area: txt3;
+}
+
+.div__btn_resenas1 {
+    grid-area: btnR1;
+}
+
+.div__btn_resenas2 {
+    grid-area: btnR2;
+}
+
+.div__btn_resenas3 {
+    grid-area: btnR3;
+}
+
+.h1__page_resena {
+    color: white;    
+    font-size: 43px;    
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img__resena {
+    width: 200px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;    
+} 
+
+.span__rsn_epigrafe {    
+    font-weight: lighter;
+    font-style: italic;
+    font-size: small;
+    margin-top: 20px;    
+}
+
+.span__rsn_epigrafe:hover {
+    color:#003249;
+}
+
+.div__btn_resenas1_tbt {
+    display: none;
+} 
+
+.div__btn_resenas2_tbt {
+    display: none;
+} 
+
+.div__btn_resenas3_tbt {
+    display: none;
+} 
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN RESEÑAS*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__resenas {           
+        height: 1570px;     
+    }
+    
+    .article__contenedor_resenas {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 27%);
+        grid-template-rows: 150px 150px 220px 150px 220px 150px 220px;
+        column-gap: 4%;
+        row-gap: 40px;       
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "img1 txt1 txt1"
+        "btnR1 txt1 txt1"
+        "txt2 txt2 img2"
+        "txt2 txt2 btnR2"    
+        "img3 txt3 txt3"
+        "btnR3 txt3 txt3";
+    }    
+    
+    .article__contenedor_resenas div p {
+        font-size: 14px;
+        line-height: 160%; 
+        text-align: justify;
+    }   
+    
+    .div__btn_resenas1 {
+        grid-area: btnR1;
+    }
+    
+    .div__btn_resenas2 {
+        grid-area: btnR2;
+    }
+    
+    .div__btn_resenas3 {
+        grid-area: btnR3;
+    }    
+        
+    .img__resena {
+        width: 100%;           
+    }     
+    
+
+}
+
+
+/* Fin media query celular SECCIÓN RESEÑAS*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN RESEÑAS*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__resenas {           
+        height: 1400px;     
+    }
+
+    .div__btn_resenas1 {
+        display: none;
+    }
+
+    .div__btn_resenas2 {
+        display: none;
+    }
+
+    .div__btn_resenas3 {
+        display: none;
+    }
+    
+    .article__contenedor_resenas {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 27%);
+        grid-template-rows: 150px 120px 200px 120px 200px 120px 200px;
+        column-gap: 4%;
+        row-gap: 40px;       
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "img1 txt1 txt1"
+        "btnR1 txt1 txt1"
+        "txt2 txt2 img2"
+        "txt2 txt2 btnR2"    
+        "img3 txt3 txt3"
+        "btnR3 txt3 txt3";
+    }    
+    
+    .article__contenedor_resenas div p {
+        font-size: 16px;
+        line-height: 180%; 
+        text-align: left;
+    }   
+    
+    .div__btn_resenas1_tbt {
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .div__btn_resenas2_tbt {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .div__btn_resenas3_tbt {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .div__resenas_txt1 {
+        height: 350px;
+        overflow: auto;
+    }
+
+    .div__resenas_txt2 {
+        height: 350px;
+        overflow: auto;
+    }
+
+    .div__resenas_txt3 {
+        height: 350px;
+        overflow: auto;
+    }
+        
+    .img__resena {
+        width: 100%;           
+    }  
+
+    .article__contenedor_resenas div::-webkit-scrollbar {
+        width: 5px;
+        background-color: #80ced7;
+    }
+    
+    .article__contenedor_resenas div::-webkit-scrollbar-thumb {
+        background-color: #003249;
+        border-radius: 10px;
+    }
+
+}
+
+/* Fin media query tablet SECCIÓN RESEÑAS*/
+/* ------------------------- */
+
+
+/* FIN SECCIÓN RESEÑAS */
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+/* INICIO SECCIÓN EXTRAS */
+
+
+/* --------------------- */
+/* INICIO EXTRAS GENERAL */
+
+.section__extras {
+    background-color: #CCDBDC;    
+    height: 4300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;     
+}
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN EXTRAS GENERAL*/
+
+@media only screen and (max-width: 480px) {
+    
+    .section__extras {
+        height: 6200px;
+         
+    }
+
+}
+
+
+/* Fin media query celular SECCIÓN EXTRAS GENERAL*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN EXTRAS GENERAL*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+    
+        .section__extras {
+            height: 6300px;
+                   
+    }
+}
+
+/* Fin media query tablet SECCIÓN EXTRAS GENERAL*/
+/* ------------------------- */
+
+/* FIN EXTRAS GENERAL */
+/* --------------------- */
+
+
+/* --------------------- */
+/* INICIO EXTRAS-GALERIA */
+
+
+.article__contenedor_galeria {
+    grid-area: Egaleria;
+    display: grid;
+    grid-template-columns: 500px 400px 200px;
+    grid-template-rows: 100px 300px 150px 100px;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "img1 img2 img3"
+    "img1 img4 img3"
+    "img1 img4 img5";
+    grid-gap: 10px;    
+}
+
+.div__galeria_titulo {
+    grid-area: titulo;
+    align-self: center;
+}
+
+.div__galeria_img1 {
+    grid-area: img1;
+    align-items: start;    
+}
+.div__galeria_img2 {
+    grid-area: img2;
+    height: 300px;    
+}
+.div__galeria_img3 {
+    grid-area: img3;    
+}
+.div__galeria_img4 {
+    grid-area: img4;    
+}
+.div__galeria_img5 {
+    grid-area: img5;    
+}
+
+.h1__page_extras {
+    grid-area: Etitulo;
+    color:#424251;    
+    font-size: 43px;
+    padding-top: 50px;
+    padding-bottom: 20px;    
+    font-weight: bolder;
+    text-transform: uppercase;   
+ }
+
+ .h2_pages_extras_a {
+    color: #424251;     
+    font-size: 35px;    
+    text-transform: uppercase;
+    text-transform: bold;
+    margin: 0;    
+}
+
+.img__galeria_1 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 2s;      
+} 
+
+.img__galeria_2 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    object-fit: cover;  
+    transition: 2s;   
+} 
+
+.img__galeria_3 {
+    width: 100%;
+    height: 100%; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px; 
+    object-fit: cover; 
+    transition: 2s;
+} 
+
+.img__galeria_4 {
+    width: 100%;
+    height: 100%; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+    object-fit: cover; 
+    transition: 2s; 
+} 
+
+.img__galeria_5 {
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;  
+    object-fit: cover;     
+    transition: 2s;
+} 
+
+.img__galeria_1:hover {
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    height: 600px;
+    margin-left: 260px;
+    margin-top: -180px;
+}
+
+.img__galeria_2:hover {
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    height: 600px;
+    margin-left: -250px;
+    margin-top: -180px;
+}
+.img__galeria_3:hover {
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    height: 600px;
+    margin-left: -670px;
+    margin-top: -180px;
+}
+
+.img__galeria_4:hover {
+    position: absolute;
+    z-index: 1000;
+    width: 700px;
+    height: 328px;
+    margin-left: -280px;
+    margin-top: -300px;
+}
+.img__galeria_5:hover {
+    position: absolute;
+    z-index: 1000;
+    width: 700px;
+    height: 328px;
+    margin-left: -710px;
+    margin-top: -450px;
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-GALERIA*/
+
+@media only screen and (max-width: 480px) {
+
+    
+    
+    .article__contenedor_galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "titulo titulo"
+        "img1 img1"
+        "img2 img3"
+        "img2 img5"
+        "img2 img5"
+        "img4 img5";
+        justify-content: center;
+    }
+    
+    .div__galeria_titulo {
+        grid-area: titulo;
+        align-self: center;
+    }
+    
+    .div__galeria_img1 {
+        grid-area: img1;
+        align-items: start;
+        height: 200px;    
+    }
+    .div__galeria_img2 {
+        grid-area: img2;   
+        height: 400px; 
+    }
+    .div__galeria_img3 {
+        grid-area: img3;  
+        height: 300px;   
+    }
+    .div__galeria_img4 {
+        grid-area: img4;    
+    }
+    .div__galeria_img5 {
+        grid-area: img5; 
+        height: 100%;    
+    }  
+    
+    .img__galeria_2 {
+        height: 100%;
+    } 
+    
+    .img__galeria_3 {
+        height: 100%;
+    } 
+
+    .img__galeria_5 {
+        height: 100%;
+    } 
+
+    .img__galeria_1:hover {
+        display: none;
+    }
+
+    .img__galeria_2:hover {
+        display: none;
+    }
+
+    .img__galeria_3:hover {
+        display: none;
+    }
+
+    .img__galeria_4:hover {
+        display: none;
+    }
+
+    .img__galeria_5:hover {
+        display: none;
+    }
+
+    
+}
+
+
+/* Fin media query celular EXTRAS-GALERIA*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-GALERIA*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+    
+    
+    .article__contenedor_galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 100px;
+        grid-template-areas: 
+        "titulo titulo"
+        "img1 img1"
+        "img2 img3"
+        "img2 img5"
+        "img2 img5"
+        "img4 img5";
+        justify-content: center;
+    }
+    
+    .div__galeria_titulo {
+        grid-area: titulo;
+        align-self: center;
+    }
+    
+    .div__galeria_img1 {
+        grid-area: img1;
+        align-items: start;
+        height: 200px;    
+    }
+    .div__galeria_img2 {
+        grid-area: img2;   
+        height: 400px; 
+    }
+    .div__galeria_img3 {
+        grid-area: img3;  
+        height: 300px;   
+    }
+    .div__galeria_img4 {
+        grid-area: img4;    
+    }
+    .div__galeria_img5 {
+        grid-area: img5; 
+        height: 100%;    
+    }  
+    
+    .img__galeria_2 {
+        height: 100%;
+    } 
+    
+    .img__galeria_3 {
+        height: 100%;
+    } 
+
+    .img__galeria_5 {
+        height: 100%;
+    } 
+
+    .img__galeria_1:hover {
+        display: none;
+    }
+
+    .img__galeria_2:hover {
+        display: none;
+    }
+
+    .img__galeria_3:hover {
+        display: none;
+    }
+
+    .img__galeria_4:hover {
+        display: none;
+    }
+
+    .img__galeria_5:hover {
+        display: none;
+    }
+
+}
+
+/* Fin media query tablet EXTRAS-GALERIA*/
+/* ------------------------- */
+
+/* FIN EXTRAS-GALERÍA */
+/* ------------------ */
+
+
+/* ------------------ */
+/* INICIO EXTRAS-VIDEOS */
+
+
+.article__videos {
+    grid-area: Evideos;
+    background-color: #9AD1D4;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.article__contenedor_videos {
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+    grid-template-rows: 100px 325px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "videoTitulo videoTitulo"
+    "vid1 vid2";
+}
+
+.div__videos_titulo {
+    grid-area: videoTitulo;
+    text-align: center;
+    align-self: center;
+}
+
+.div__videos_vid1 {
+    grid-area: vid1;
+}
+
+.div__videos_vid2 {
+    grid-area: vid2;    
+}
+
+.videoYT {
+    width:550px;
+    height:315px;
+    border: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.videoYT:hover {
+    transform: scale(0.95);
+
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-VIDEOS*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__videos {
+        height: 500px;
+    }
+
+    .article__contenedor_videos {
+        grid-template-columns: repeat(2,220px);
+        grid-template-rows: 100px 325px;
+    }
+
+    .videoYT {
+        width:220px;
+        height:315px;
+        
+    }
+
+}
+
+
+
+/* Fin media query celular EXTRAS-VIDEOS*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-VIDEOS*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .article__videos {
+        height: 500px;
+    }
+
+    .article__contenedor_videos {
+        width: 100%;
+        grid-template-columns: repeat(2,45%);
+        grid-template-rows: 100px 325px;
+        justify-content: center;
+    }
+
+    .videoYT {
+        width:100%;
+        height:315px;
+        
+    }
+
+}
+
+/* Fin media query tablet EXTRAS-VIDEOS*/
+/* ------------------------- */
+
+/* FIN EXTRAS VIDEOS*/
+/* ------------------ */
+
+
+/* ------------------ */
+/* INICIO SECCIÓN EXTRAS-PENSAMIENTOS */
+
+.article__pensamientos {
+    grid-area: Epensamientos;
+    background-color: #CCDBDC;
+    height: 900px;
+}
+
+.article__contenedor_pensamientos {
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    grid-template-rows: 100px 270px 200px 200px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "ideaTitulo ideaTitulo ideaTitulo ideaTitulo"
+    "idea1 idea2 idea2 idea2"
+    "idea1 idea3 idea4 idea4"
+    "idea5 idea3 idea6 idea7";
+}
+
+.div__ideasTitulo {
+    grid-area: ideaTitulo;
+    align-self: center;
+}
+
+.div__ideas1 {
+    grid-area: idea1;
+    overflow: auto;
+}
+.div__ideas2 {
+    grid-area: idea2;
+    overflow: auto;
+}
+.div__ideas3 {
+    grid-area: idea3;
+    overflow: auto;
+}
+.div__ideas4 {
+    grid-area: idea4;
+    overflow: auto;
+}
+.div__ideas5 {
+    grid-area: idea5;
+    overflow: auto;
+}
+.div__ideas6 {
+    grid-area: idea6;
+    overflow: auto;
+}
+.div__ideas7 {
+    grid-area: idea7;
+    overflow: auto;
+}
+
+.h2_pages_extras_c {
+    color: #424251;     
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: right;
+}
+
+.div__ideas1 p {
+    font-size: 14.5px;
+    color: #424251;
+    line-height: 150%;    
+}
+
+.div__ideas2 p {
+    font-size: 13px;
+    color:black;
+    line-height: 180%;    
+}
+
+
+.div__ideas3 p {
+    font-size: 18px;
+    color:#007EA7;    
+    line-height: 170%;
+}
+
+.div__ideas4 p {
+    font-size: 12px;
+    color: #424251;
+    font-style: italic;    
+}
+
+.div__ideas5 p {
+    font-size: 14px;
+    color: #424251;    
+}
+
+.div__ideas6 p {
+    font-size: 12px;
+    color: #007EA7;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.div__ideas7 p {
+    font-size: 16px;
+    color:#eb9f06;
+    font-weight: 600;    
+}
+
+.article__contenedor_pensamientos div:hover {
+    background-color: #80ced7;
+}
+
+.article__contenedor_pensamientos div::-webkit-scrollbar {
+    width: 5px;
+    background-color: #80ced7;
+}
+
+.article__contenedor_pensamientos div::-webkit-scrollbar-thumb {
+    background-color: #003249;
+    border-radius: 10px;
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-PENSAMIENTOS*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__pensamientos {
+        height: 1400px;
+    }
+    
+    .article__contenedor_pensamientos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: 100px 270px 200px 200px 110px 300px;
+        grid-gap: 20px;
+        grid-template-areas:
+        "ideaTitulo ideaTitulo ideaTitulo ideaTitulo"
+        "idea1 idea1 idea2 idea2"
+        "idea1 idea1 idea3 idea3"
+        "idea4 idea4 idea3 idea3"
+        "idea5 idea5 idea5 idea5"
+        "idea6 idea7 idea7 idea7";
+        justify-content: center;
+    }    
+    
+    .div__ideas5 {
+        text-align: justify;
+    } 
+    
+}
+
+
+/* Fin media query celular EXTRAS-PENSAMIENTOS*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-PENSAMIENTOS*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .article__pensamientos {
+        height: 1400px;
+    }
+    
+    .article__contenedor_pensamientos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: 100px 270px 200px 200px 110px 300px;
+        grid-gap: 20px;
+        grid-template-areas:
+        "ideaTitulo ideaTitulo ideaTitulo ideaTitulo"
+        "idea1 idea1 idea2 idea2"
+        "idea1 idea1 idea3 idea3"
+        "idea4 idea4 idea3 idea3"
+        "idea5 idea5 idea5 idea5"
+        "idea6 idea7 idea7 idea7";
+        justify-content: center;
+    }    
+    
+    .div__ideas5 {
+        text-align: justify;
+    } 
+
+    .div__ideas1 p {
+        font-size: 16px;
+        line-height: 170%;    
+    }
+        
+    .div__ideas3 p {
+        font-size: 22px;
+        color:#007EA7;    
+        line-height: 180%;
+    }    
+    
+    .div__ideas5 p {
+        font-size: 18px;
+        Line-height: 170%;           
+    } 
+    
+    .div__ideas7 p {
+        letter-spacing: 5px;
+        font-size: 20px;
+        line-height: 180%;
+        font-weight: 600;    
+    }
+
+}
+
+/* Fin media query tablet EXTRAS-PENSAMIENTOS*/
+/* ------------------------- */
+
+
+/* FIN SECCIÓN EXTRAS-PENSAMIENTOS */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* INICIO SECCIÓN EXTRAS-TUTORIALES */
+
+.article__tutoriales {
+    grid-area: Etuto;
+    background-color: #9AD1D4;
+    height: 540px;
+    width: 100%;
+}
+
+.article__contenedor_tuto {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    grid-template-rows: 100px;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-areas: 
+    "tutoTitulo tutoTitulo tutoTitulo"
+    "tuto1 tuto2 tuto3";
+}
+
+.div__tuto_titulo {
+    grid-area: tutoTitulo;
+    text-align: center;
+    align-self: center;
+}
+
+.div__tuto1 {
+    grid-area: tuto1;
+}
+
+.div__tuto2 {
+    grid-area: tuto2;    
+}
+
+.div__tuto3 {
+    grid-area: tuto3;    
+}
+
+.h2_pages_extras_b_tutoriales {
+    color: #424251;     
+    font-size: 35px;
+    text-transform: uppercase;
+    text-transform: bold;
+    margin: 0;
+}
+
+.videoYT_b {
+    width:100%;
+    height:300px;
+    border: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.videoYT_b:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-TUTORIALES*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__tutoriales {
+        height: 1200px; 
+    }
+    
+    .article__contenedor_tuto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 300px 300px 300px;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "tutoTitulo"
+        "tuto1"
+        "tuto2"
+        "tuto3";
+    }
+        
+    .div__tuto1 {
+        width: 90%;
+        justify-self: center;        
+    }
+    
+    .div__tuto2 {
+        width: 90%;
+        justify-self: center;   
+    }
+    
+    .div__tuto3 {
+        width: 90%;  
+        justify-self: center;   
+    }
+
+    .videoYT_b:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+
+/* Fin media query celular EXTRAS-TUTORIALES*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-TUTORIALES*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .article__tutoriales {
+        height: 1200px; 
+    }
+    
+    .article__contenedor_tuto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 300px 300px 300px;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "tutoTitulo"
+        "tuto1"
+        "tuto2"
+        "tuto3";
+    }
+        
+    .div__tuto1 {
+        width: 90%;
+        justify-self: center;        
+    }
+    
+    .div__tuto2 {
+        width: 90%;
+        justify-self: center;   
+    }
+    
+    .div__tuto3 {
+        width: 90%;  
+        justify-self: center;   
+    }
+
+    .videoYT_b:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+/* Fin media query tablet EXTRAS-TUTORIALES*/
+/* ------------------------- */
+
+/* FIN SECCIÓN EXTRAS-TUTORIALES */
+/* ------------------------- */
+
+
+
+/* ------------------------- */
+/* INICIO EXTRAS-REFERENTES */
+
+.article__referentes {       
+    grid-area: Ereferentes;
+    height: 730px;
+}
+
+.article__contenedor_ref {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    grid-gap: 10px;
+    grid-template-rows: 100px 200px 300px;
+    grid-template-areas: 
+    "titRef titRef titRef"
+    "img1ref img2ref img3ref"
+    "txt1ref txt2ref txt3ref";
+    justify-content: center;
+}
+
+.div__titulo_ref {
+    grid-area: titRef;
+    text-align: left;
+    align-self: center;
+}
+
+.div__img1ref {
+    grid-area: img1ref;
+    display: flex;
+    justify-content: center;
+}
+
+.div__img2ref {
+    grid-area: img2ref;
+    display: flex;
+    justify-content: center;
+}
+
+.div__img3ref {
+    grid-area: img3ref;
+    display: flex;
+    justify-content: center;
+}
+
+.div__txt1ref {
+    grid-area: txt1ref;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+}
+
+.div__txt2ref {
+    grid-area: txt2ref;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    overflow: auto;
+}
+
+.div__txt3ref {
+    grid-area: txt3ref;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    overflow: auto;
+}
+
+.h2_pages_extras_b {
+    color:#424251;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.h3__referente1 {
+    color: #424251;
+    font-size: 20px;
+    text-align: center;
+    text-transform:uppercase;
+    margin-bottom: 5px;
+}
+
+.article__contenedor_ref div p {
+    color: #003249;
+    font-size: 14px;
+    text-align: left;
+    line-height: 150%; 
+}
+
+.img__referente_a {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.article__contenedor_ref div::-webkit-scrollbar {
+    width: 5px;
+    background-color: #80ced7;
+}
+
+.article__contenedor_ref div::-webkit-scrollbar-thumb {
+    background-color: #003249;
+    border-radius: 10px;
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-REFERENTES*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__referentes {       
+        height: 900px;
+    }
+    
+    .article__contenedor_ref {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 100px 230px 230px 230px;
+        grid-template-areas: 
+        "titRef titRef"
+        "txt1ref img1ref"
+        "txt2ref img2ref"
+        "txt3ref img3ref";
+        justify-content: center;
+    }        
+    
+    .div__txt1ref {
+        grid-area: txt1ref;
+        height: 200px;
+    }
+
+    .div__txt2ref {
+        grid-area: txt2ref;
+        height: 200px;
+    }
+
+    .div__txt3ref {
+        grid-area: txt3ref;
+        height: 200px;
+    }    
+      
+    .h3__referente1 {        
+        text-align: left;        
+    }
+    
+    .article__contenedor_ref div p {        
+        font-size: 12px;        
+    }
+    
+    .img__referente_a {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;               
+    }
+    
+
+}
+
+
+/* Fin media query celular EXTRAS-REFERENTES*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-REFERENTES*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .article__referentes {       
+        height: 900px;
+    }
+    
+    .article__contenedor_ref {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 100px 230px 230px 230px;
+        grid-template-areas: 
+        "titRef titRef"
+        "txt1ref img1ref"
+        "txt2ref img2ref"
+        "txt3ref img3ref";
+        justify-content: center;
+    }        
+    
+    .div__txt1ref {
+        grid-area: txt1ref;
+        height: 200px;
+    }
+
+    .div__txt2ref {
+        grid-area: txt2ref;
+        height: 200px;
+    }
+
+    .div__txt3ref {
+        grid-area: txt3ref;
+        height: 200px;
+    }    
+      
+    .h3__referente1 {        
+        text-align: left;        
+    }
+    
+    .article__contenedor_ref div p {        
+        font-size: 14px;
+        line-height: 160%;        
+    }
+    
+    .img__referente_a {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;               
+    }
+
+}
+
+/* Fin media query tablet EXTRAS-REFERENTES*/
+/* ------------------------- */
+
+/* FIN SECCIÓN EXTRAS-REFERENTES */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* INICIO SECCIÓN EXTRAS-RECOMENDADOS */
+
+.article__recomendados {
+    grid-area: Erecomendados;
+    background-color: #9AD1D4;
+    height: 700px;
+    width: 100%;
+}
+
+.article__contenedor_rec {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-rows: 100px 240px 240px;    
+    grid-template-areas: 
+    "tiRec tiRec tiRec"
+    "img1rec txt1rec txt1rec"
+    "img2rec txt2rec txt2rec";
+    justify-content: center;
+}
+
+.div__titulo_rec {
+    grid-area: tiRec;    
+    text-align: center;
+    align-self: center;
+}
+
+.div__img1rec {
+    grid-area: img1rec;    
+}
+
+.div__txt1rec {
+    grid-area: txt1rec;    
+}
+
+.div__img2rec {
+    grid-area: img2rec;    
+}
+
+.div__txt2rec {
+    grid-area: txt2rec;    
+}
+
+.h2_pages_extras_b_recomendados {
+    color:#424251;    
+    font-size: 35px;    
+    text-transform: uppercase;
+    text-transform: bold;
+}
+
+.h3__recomendado1 {
+    color: #424251;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.article__contenedor_rec div p {
+    color: #003249;
+    font-size: 14px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.img__recomendado_a {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position:top;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.div__button_rec {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.div__button_rec_mobile1 {
+    display: none;
+}
+
+.div__button_rec_mobile2 {
+    display: none;
+}
+
+/* ------------------------- */
+/* Inicio media query celular EXTRAS-RECOMENDADOS*/
+
+@media only screen and (max-width: 480px) {
+
+    .article__recomendados {
+        height: 1190px;        
+    }
+    
+    .article__contenedor_rec {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-gap: 10px;
+        grid-template-rows: 100px 160px 290px 30px 160px 290px 30px;    
+        grid-template-areas: 
+        "tiRec"
+        "img1rec"
+        "txt1rec"
+        "btnRec1"
+        "img2rec"
+        "txt2rec"
+        "btnRec2";
+        justify-content: center;
+    } 
+    
+    .div__img1rec {
+        grid-area: img1rec;  
+        width: 100%;        
+    }
+    
+    .div__txt1rec {
+        grid-area: txt1rec; 
+    }
+    
+    .div__img2rec {
+        grid-area: img2rec;
+    }
+    
+    .div__txt2rec {
+        grid-area: txt2rec; 
+    }
+
+    .div__button_rec {
+        display: none;
+    }
+    
+    .div__button_rec_mobile1 {
+        grid-area: btnRec1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+
+    .div__button_rec_mobile2 {
+        grid-area: btnRec2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    
+    .img__recomendado_a {
+        height: 150px;
+    }
+    
+
+}
+
+
+/* Fin media query celular EXTRAS-RECOMENDADOS*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet EXTRAS-RECOMENDADOS*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .article__recomendados {
+        height: 1150px;        
+    }
+    
+    .article__contenedor_rec {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);grid-template-rows: 100px 160px 200px 50px 160px 200px 50px;    
+        grid-template-areas: 
+        "tiRec"
+        "img1rec"
+        "txt1rec"
+        "btnRec1"
+        "img2rec"
+        "txt2rec"
+        "btnRec2";
+        justify-content: center;
+    } 
+    
+    .div__img1rec {
+        grid-area: img1rec;  
+        width: 100%;        
+    }
+    
+    .div__txt1rec {
+        grid-area: txt1rec;  
+        overflow: auto;        
+    }
+    
+    .div__img2rec {
+        grid-area: img2rec;           
+    }
+    
+    .div__txt2rec {
+        grid-area: txt2rec; 
+        overflow: auto;        
+    }
+
+    .article__contenedor_rec div p {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    .div__button_rec {
+        display: none;
+    }
+    
+    .div__button_rec_mobile1 {
+        grid-area: btnRec1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .div__button_rec_mobile2 {
+        grid-area: btnRec2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 60px;
+        margin-top: 40px;        
+    }
+    
+    .img__recomendado_a {
+        height: 150px;
+    }
+
+    .article__contenedor_rec div::-webkit-scrollbar {
+        width: 5px;
+        background-color: #80ced7;
+    }
+    
+    .article__contenedor_rec div::-webkit-scrollbar-thumb {
+        background-color: #003249;
+        border-radius: 10px;
+    }  
+
+
+}
+
+/* Fin media query tablet EXTRAS-RECOMENDADOS*/
+/* ------------------------- */
+
+
+
+/* FIN SECCIÓN EXTRAS-RECOMENDADOS */
+/* ------------------------ */
+
+/* FIN  SECCIÓN EXTRAS */
+/* ------------*/
+
+
+
+/* ------------------------*/
+/* INICIO SECCIÓN CONTACTO */
+
+.section__contacto {
+    background-color: #9AD1D4;
+    height: 600px;
+}
+
+.article__contenedor_contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 180px;    
+    grid-template-areas: 
+    "cntctitulo cntctitulo"
+    "cntcForm cntcImg";
+    justify-content: center;
+    align-items: center;
+}
+
+.div__cntc_titulo {    
+    grid-area: cntctitulo;
+}
+
+.div__cntc_form {    
+    grid-area: cntcForm;
+}
+
+.div__cntc_img {    
+    grid-area: cntcImg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1__page_contacto {
+    color:#424251;    
+    font-size: 43px;    
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;   
+}
+
+.fieldset__contacto {
+    border: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__contacto {
+    width: 90%;    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;    
+} 
+
+.legend__txt {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color:#424251;
+    padding-bottom: 20px;
+}
+
+.label__contacto {
+    color: #424251;
+    font-size: 14px;   
+    width: 100%;
+}
+
+.input__contacto {
+    color: #003249;
+    font-size: 14px;
+    width: 220px;
+}
+
+.select__contacto {
+    color: #003249;
+    display: block;
+    font-size: 14px;
+    width: 220px;
+}
+
+select option {
+    color: #003249;
+    font-size: 14px;
+}
+
+.h2_cntc_tablet {
+    display: none;
+}
+
+
+/* ------------------------- */
+/* Inicio media query celular SECCIÓN CONTACTO*/
+
+@media only screen and (max-width: 480px) {
+
+    .section__contacto {        
+        height: 760px;
+    }
+    
+    .article__contenedor_contacto {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 100px 450px;  
+        row-gap: 20px;  
+        grid-template-areas: 
+        "cntctitulo"
+        "cntcImg"
+        "cntcForm";
+        justify-content: center;        
+    }  
+    
+    .div__cntc_titulo {    
+        margin-bottom: 30px;        
+        align-self: center;
+    }
+    
+    .div__cntc_form {    
+        width: 100%;        
+    }
+
+    .img__contacto {
+        width: 100%; 
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    } 
+    
+    .legend__txt {
+        text-align: center;               
+    }
+
+}
+
+
+/* Fin media query celular SECCIÓN CONTACTO*/
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Inicio media query tablet SECCIÓN CONTACTO*/
+
+@media only screen and (min-width: 480.1px) and (max-width: 978px) {
+
+    .section__contacto {        
+        height: 730px;
+    }
+    
+    .article__contenedor_contacto {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 150px 100px 450px;  
+        row-gap: 20px;  
+        grid-template-areas: 
+        "cntctitulo"
+        "cntcImg"
+        "cntcForm";
+        justify-content: center;       
+    }  
+    
+    .div__cntc_titulo {    
+        margin-bottom: 30px;
+    }
+    
+    .div__cntc_form {    
+        width: 100%;        
+    }
+
+    .img__contacto {
+        width: 100%; 
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    } 
+
+    .legend__txt {
+        display: none;
+    }
+
+    .h2_cntc_tablet {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        color:#424251;
+        padding-bottom: 20px;
+    }
+    
+    
+
+}
+
+/* Fin media query tablet SECCIÓN CONTACTO*/
+/* ------------------------- */
+
+/* -------------------- */
+/* FIN SECCIÓN CONTACTO */
+
+
+
+/* -------------------- */
+/* FIN ESTILOS */
