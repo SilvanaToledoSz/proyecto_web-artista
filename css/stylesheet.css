@@ -1989,10 +1989,14 @@ h2 {
 
 .div__spot1_disc {
     grid-area: spot1disc;   
+    animation: backInLeft;
+    animation-duration: 2s;
 }
 
 .div__spot2_disc {
-    grid-area: spot2disc;    
+    grid-area: spot2disc;
+    animation: slideInRight;
+    animation-duration: 6s;        
 }
 
 .div__txt2_disc {
@@ -2004,7 +2008,9 @@ h2 {
 }
 
 .div__spot3_disc {
-    grid-area: spot3disc;    
+    grid-area: spot3disc;  
+    animation: backInLeft;
+    animation-duration: 8s;  
 }
 
 .h1__page_disc {
