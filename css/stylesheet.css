@@ -156,10 +156,10 @@ li .a__submenu:hover {
         width: 100%;
     }
 
-    .div__bio_txt {
-        max-height: 400px;
+    .div__bio_txt_home {        
+        height: 350px;
         overflow: auto;
-        margin: 10px 0;
+        margin: 10px 0;        
     }
 }
 
