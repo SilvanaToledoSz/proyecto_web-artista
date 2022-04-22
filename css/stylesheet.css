@@ -51,12 +51,14 @@ ul li {
 /* INICIO HEADER */
 
 .img__logo {
-    width: 280px;
+    width: 200px;
 }
 
 li .a__submenu:hover {
     color: #003249;
 }
+
+
 
 /* FIN HEADER */
 /* ---------- */
