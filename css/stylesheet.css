@@ -958,7 +958,7 @@ li .a__submenu:hover {
 
 .iframe__disc2 {
     grid-area: iframeD2;
-    animation: backInRight;
+    animation: backInLeft;
     animation-duration: 4s;
 }
 
