@@ -237,7 +237,7 @@ li .a__submenu:hover {
 
 .article__carousel_disc .slides {
     padding-left: 0;
-    width: 420%;
+    width: 450%;
     display: flex;
     list-style: none;
     transition: transform 1s ease-in-out;
