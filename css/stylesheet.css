@@ -21,6 +21,8 @@ font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
+
+
 /* -------------- */
 /* Inicio General */
 
@@ -43,6 +45,8 @@ ul li {
 /* Fin General */
 /* ----------- */
 
+
+
 /* ------------- */
 /* INICIO HEADER */
 
@@ -54,8 +58,15 @@ li .a__submenu:hover {
     color: #003249;
 }
 
+/* FIN HEADER */
+/* ---------- */
+
+
+
 /* ---------------- */
 /* INICIO MAIN HOME */
+
+
 
 /* ----------------------- */
 /* SECCIÓN HERO IMAGE HOME */
@@ -84,17 +95,17 @@ li .a__submenu:hover {
     padding-top: 20px;
 }
 
-
 @media only screen and (min-width: 991.1px) {
     .div__fondoHero {
         height: 400px;
         padding-top: 10px;    
-    }
-    
+    }    
 } 
 
 /* FIN SECCIÓN HERO IMAGE HOME */
 /* --------------------------- */
+
+
 
 /* ---------------------------- */
 /* INICIO SECCIÓN ADELANTO HOME */
@@ -113,59 +124,72 @@ li .a__submenu:hover {
 /* FIN SECCIÓN ADELANTO HOME */
 /* ------------------------- */
 
+
+
 /* ----------------------- */
 /* INICIO SECCIÓN BIO HOME */
 
 .div__home_bio {
     background-color:#9ad1d4;
     padding-top: 20px;  
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
+}
+
+.div__home_bio-grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 80%;
+    row-gap: 2%;
+    justify-content: center;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "imgBioH"
+    "txtBioH";
+}
+
+.div__bioHomeImg {
+    grid-area: imgBioH;
 }
 
 .img__bio_home {
+    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);  
-    margin: 10px 0;    
+    margin: 10px 0;
+    max-height: 300px;
+    object-fit: cover;    
 }
 
 .div__bio_txt_home {
-    height: 400px;
+    height: 300px;
     overflow: auto;
     margin: 10px 0;
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px) {    
-
-    .img__bio_home {
-        width: 100%;
-    }
-
-    .div__bio_txt_home {
-        height: 300px;
-        overflow: auto;        
-    }
-
-    .img__bio_home {
-        margin: 0;    
-    }   
-
+    grid-area: txtBioH;
 }
 
 @media only screen and (min-width: 991.1px) {
-    
-    .img__bio_home {
-        width: 100%;
+     
+    .div__home_bio-grid {
+        grid-template-columns: 40% 40%;
+        column-gap: 1%;
+        justify-content: center;
+        grid-template-rows: 300px;
+        grid-template-areas: 
+        "txtBioH imgBioH";
     }
 
     .div__bio_txt_home {        
-        height: 350px;
+        height: 300px;
         overflow: auto;
-        margin: 10px 0;        
+        margin: 10px 0;          
     }
 }
 
 
 /* FIN SECCIÓN BIO HOME */
 /* -------------------- */
+
+
 
 /* ------------------------------- */
 /* INICIO SECCIÓN DISCOGRAFÍA HOME */
@@ -180,8 +204,8 @@ li .a__submenu:hover {
     margin-top: 20px;
 }
 
-/* ---------------- */
-/* INICIO CARROUSEL */
+
+/* INICIO CARROUSEL DISCOGRAFÍA */
 
 @keyframes carousel-slide {
     0% {
@@ -245,12 +269,12 @@ li .a__submenu:hover {
     margin: 0 20px;
 }
 
- /* FIN CARROUSEL */
- /* ------------- */
+ /* FIN CARROUSEL DISCOGRAFÍA */
+
 
  @media only screen and (min-width: 576px) and (max-width: 991px) {
 
-    /* INICIO CARROUSEL */    
+    /* INICIO CARROUSEL DISCOGRAFÍA */    
     
     .article__carousel_disc {
         padding-top: 10px;        
@@ -270,8 +294,7 @@ li .a__submenu:hover {
         width: 390px;       
     }
     
-     /* FIN CARROUSEL */
-
+     /* FIN CARROUSEL DISCOGRAFÍA */
 
  }
 
@@ -343,14 +366,15 @@ li .a__submenu:hover {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         margin: 0 20px;
-    }
-      
+    }      
       
  }
 
 
 /* FIN SECCIÓN DISCOGRAFÍA HOME */
 /* ---------------------------- */
+
+
 
 /* --------------------------- */
 /* INICIO SECCIÓN RESEÑAS HOME */
@@ -394,6 +418,7 @@ li .a__submenu:hover {
     transform: scale(1.05);
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .div__resena_home2 {
@@ -406,6 +431,7 @@ li .a__submenu:hover {
     }        
 
 }
+
 
 @media only screen and (min-width: 991px) {
 
@@ -427,6 +453,8 @@ li .a__submenu:hover {
 
 /* FIN SECCIÓN RESEÑAS HOME */
 /* ------------------------ */
+
+
 
 /* -------------------------- */
 /* INICIO SECCIÓN EXTRAS HOME */
@@ -584,8 +612,10 @@ li .a__submenu:hover {
 /* ----------------------- */
 
 
+
 /* FIN MAIN HOME */
 /* ------------- */
+
 
 
 /* ------------- */
@@ -614,9 +644,9 @@ li .a__submenu:hover {
 /* ---------- */
 
 
+
 /* ------------- */
 /* INICIO FOOTER */
-
 
 .div__footer {
     background-color: #003249;
@@ -651,6 +681,8 @@ li .a__submenu:hover {
 
 /* FIN FOOTER */
 /* ---------- */
+
+
 
 /* ------------------------ */
 /* INICIO SECCIÓN PRE-VENTA */
@@ -707,8 +739,10 @@ li .a__submenu:hover {
     
 }
 
-/* --------------------- */
 /* FIN SECCIÓN PRE-VENTA */
+/* --------------------- */
+
+
 
 /* ------------------ */
 /* INICIO SECCIÓN BIO */
@@ -717,11 +751,65 @@ li .a__submenu:hover {
     background-color: #9AD1D4;
 }
 
+.div__contenedorBio {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(3, 250px) 500px repeat(3, 250px);
+    grid-template-areas: 
+    "bioTxt1"
+    "bioImg1"
+    "bioImg2"
+    "bioTxt2"
+    "bioImg3"
+    "bioTxt3"
+    "bioImg4";
+    row-gap: 1%;
+}
+
+.div__bioTxt1 {
+    grid-area: bioTxt1;
+}
+
+.div__bioImg1 {
+    grid-area: bioImg1;
+}
+
+.div__bioImg2 {
+    grid-area: bioImg2;
+}
+
+.div__bioTxt2 {
+    grid-area: bioTxt2;
+}
+
+.div__bioImg3 {
+    grid-area: bioImg3;
+}
+
+.div__bioTxt3 {
+    grid-area: bioTxt3;
+}
+
+.div__bioImg4 {
+    grid-area: bioImg4;
+}
+
+.div__contenedorBio div p:not(.p__txtbio2){
+    height: 250px;
+    overflow: auto;
+}
+
+.p__txtbio2 {
+    height: 500px;
+    overflow: auto;
+}
+
 .img__bio {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     width: 100%;  
-    height: 300px;  
+    height: 200px;  
     object-fit: cover;
     object-position: center;  
     transition: 1s;
@@ -735,6 +823,8 @@ li .a__submenu:hover {
     object-fit: cover;
     object-position: center;  
     transition: 1s;
+    display: flex;
+    align-items: flex-start;
 }
 
 .p__epig {
@@ -752,69 +842,244 @@ li .a__submenu:hover {
     transform: scale(1.05);
 }
 
-@media only screen and (min-width: 991.1px)  {
-    .div__bio_txt {
-        height: 300px;
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .div__contenedorBio {
+        grid-template-rows: repeat(3, 250px) 350px repeat(3, 250px);
+    }
+
+    .p__txtbio2 {
+        height: 350px;
         overflow: auto;
     }
+
+}
+
+
+@media only screen and (min-width: 991.1px)  {
+       
+    .div__contenedorBio {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: repeat(4, 400px);
+        grid-template-areas: 
+        "bioTxt1 bioImg1"
+        "bioTxt2 bioImg2"
+        "bioImg3 bioTxt3"
+        "bioImg4 bioImg4";
+        column-gap: 1%;
+    }
+
+    .div__contenedorBio div p:not(.p__txtbio2){
+        height: 400px;
+        overflow: auto;
+        margin-bottom: 10px;
+    }
+    
+    .p__txtbio2 {
+        height: 400px;
+        overflow: auto;       
+    }
+
+    .div__bioTxt3 {
+        margin-left: 1%;
+    }
+
+    .img__bio {
+        width: 100%;  
+        height: 80%;
+        margin-bottom: 10px;  
+        
+    }
+
+    .img__bio_b {
+        height: 250px;  
+    }
+
+
 }
 
 /* FIN SECCIÓN BIO */
 /* --------------- */
 
+
+
 /* -------------------------- */
 /* INICIO SECCIÓN DISCOGRAFÍA */
 
 .section__discografia {
-    background-color: #CCDBDC;    
+    background-color: #CCDBDC;
+    height: 2400px;
 }
 
-.div__d1 {
+.div__contenedorDisc {
+    display: grid;
+    justify-content: center;
+    row-gap: 20px;
+    grid-template-columns: 80%;
+    grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 300px 300px;
+    grid-template-areas: 
+    "h2D1"
+    "iframeD1"
+    "pD1"
+    "h2D2"
+    "iframeD2"
+    "pD2"
+    "h2D3"
+    "iframeD3"
+    "pD3";
+}
+
+.h2__disc1 {
+    grid-area: h2D1;
+}
+
+.iframe__disc1 {
+    grid-area: iframeD1;
     animation: backInLeft;
     animation-duration: 2s;
 }
 
-.iframe__disco {
+.div__pDisc1 {
+    grid-area: pD1;
+}
+
+.h2__disc2 {
+    grid-area: h2D2;
+}
+
+.iframe__disc2 {
+    grid-area: iframeD2;
+    animation: backInRight;
+    animation-duration: 4s;
+}
+
+.div__pDisc2 {
+    grid-area: pD2;
+}
+
+.h2__disc3 {
+    grid-area: h2D3;
+}
+
+.iframe__disc3 {
+    grid-area: iframeD3;
+    animation: backInLeft;
+    animation-duration: 6s;
+}
+
+.div__pDisc3 {
+    grid-area: pD3;
+}
+
+.h2__disc1_lg {
+    display: none;
+}
+
+.h2__disc2_lg {
+    display: none;
+}
+
+.h2__disc3_lg {
+    display: none;
+}
+
+.div__contenedorDisc iframe {
     width: 100%;
     height: 100%;
     border-radius: 20px;    
 }
 
-.div__d2 {
-    animation: backInRight;
-    animation-duration: 6s;
+.div__contenedorDisc p {
+    height: 300px;
+    overflow: auto;
 }
 
-.div__d3 {
-    animation: backInLeft;
-    animation-duration: 8s;
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .section__discografia {
+        height: 2000px;
+    }
+
+    .div__contenedorDisc {
+        grid-template-rows: 60px 300px 200px 60px 300px 200px 60px 300px 200px;
+        grid-template-areas: 
+        "h2D1"
+        "iframeD1"
+        "pD1"
+        "h2D2"
+        "iframeD2"
+        "pD2"
+        "h2D3"
+        "iframeD3"
+        "pD3";
+    }
+
+    .div__contenedorDisc p {
+        height: 200px;
+        overflow: auto;
+    }
+
 }
 
-.h2__disc_lg {
-    display: none;
-}
+
 
 @media only screen and (min-width: 991.1px) {
-    .h2__disc_lg {
+  
+    .section__discografia {
+        height: 1400px;
+    }
+
+    .h2__disc1_lg {
         display: block;
     }
 
-    .h2__disc {
+    .h2__disc2_lg {
+        display: block;
+    }
+
+    .h2__disc3_lg {
+        display: block;
+    }
+
+    .div__contenedorDisc {
+        column-gap: 1%;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas:
+        "pD1 iframeD1"
+        "iframeD2 pD2"
+        "pD3 iframeD3"        
+    }
+
+    .h2__disc1 {
         display: none;
     }
 
-    .iframe__disco {
-        height: 250px;
+    .h2__disc2 {
+        display: none;
     }
 
-    .div__bio_txt {
-        height: 200px;
+    .h2__disc3 {
+        display: none;
+    }
+
+    .div__contenedorDisc p {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .div__contenedorDisc iframe {
+        height: 90%;            
     }
 
 }
 
 /* FIN SECCIÓN DISCOGRAFÍA */
 /* ----------------------- */
+
+
 
 /* ---------------------- */
 /* INICIO SECCIÓN RESEÑAS */
@@ -827,6 +1092,18 @@ li .a__submenu:hover {
     display: none;
 }
 
+.section__resenas img {
+    transition: 1s;    
+    border-radius: 100%;
+}
+
+.section__resenas img:hover {
+    translate: 0 -5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+
 @media only screen and (min-width: 991.1px) {
     .btn_t_mobile {
         display: none;
@@ -837,14 +1114,15 @@ li .a__submenu:hover {
     }
 
     .img__lg {
-        width: 70%;
-        
+        width: 70%;        
     }
 
 }
 
-/* FIN SECCIÓN RESENAS */
+/* FIN SECCIÓN RESEÑAS */
 /* ------------------- */
+
+
 
 /* --------------------- */
 /* INICIO SECCIÓN EXTRAS */
@@ -852,6 +1130,7 @@ li .a__submenu:hover {
 .div__seccion_extras {
     background-color: #CCDBDC;    
 }
+
 
 /* ----------------------------- */
 /* INICIO SECCIÓN EXTRAS-GALERIA */
@@ -906,6 +1185,7 @@ li .a__submenu:hover {
     transform: translate(0, -7px);
 }
 
+
 @media only screen and (min-width: 991.1px) {
 
     .div__galeria1 {
@@ -957,6 +1237,7 @@ li .a__submenu:hover {
 /* FIN SECCIÓN EXTRAS-GALERIA */
 /* -------------------------- */
 
+
 /* ---------------------------- */
 /* INICIO SECCIÓN EXTRAS-VIDEOS */
 
@@ -974,6 +1255,7 @@ li .a__submenu:hover {
     transform: scale(0.95);
 }
 
+
 @media only screen and (min-width: 991.1px) {
 
     .videoYT {       
@@ -985,6 +1267,7 @@ li .a__submenu:hover {
 /* FIN SECCIÓN EXTRAS-VIDEOS */
 /* ------------------------- */
 
+
 /* ---------------------------------- */
 /* INICIO SECCIÓN EXTRAS-PENSAMIENTOS */
 
@@ -992,49 +1275,103 @@ li .a__submenu:hover {
     background-color: #CCDBDC;
 }
 
+.div__contGridPens {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-template-rows: 400px 400px 200px 200px 200px;
+    grid-template-areas: 
+    "p1 p1 p2"
+    "p1 p1 p3"
+    "p4 p4 p3"
+    "p5 p5 p5"
+    "p6 p7 p7";
+}
+
 .div__pens1 {
-    height: 300px;
+    height: 100%;
     padding: 10px;
     transition: 0.5s;
+    grid-area: p1;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens2 {
-    height: 300px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p2;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens3 {
-    height: 400px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p3;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens4 {
-    height: 400px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p4;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens5 {
-    height: 200px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p5;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens6 {
-    height: 200px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p6;
+    overflow: auto;
+    padding-left: 10px;
 }
 
 .div__pens7 {
-    height: 200px;
+    height: 100%;
     transition: 0.5s;
+    grid-area: p7;
+    overflow: auto;
+    padding-left: 10px;
 }
 
-.div__contenedor_pens div:hover {
+.div__contGridPens p:nth-child(odd) {
+    color: #003249;
+}
+
+.div__contGridPens p:hover {
     background-color: #80ced7;
+}
+
+
+@media only screen and (min-width: 991.1px) {
+    .div__contGridPens {
+        row-gap: 15px;
+        column-gap: 1%;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 180px 400px 200px;
+        grid-template-areas: 
+        "p1 p2 p2 p2"
+        "p1 p3 p4 p4"
+        "p5 p3 p6 p7";
+
+    }
+
 }
 
 
 /* FIN SECCIÓN EXTRAS-PENSAMIENTOS */
 /* ------------------------------- */
+
 
 /* -------------------------------- */
 /* INICIO SECCIÓN EXTRAS-TUTORIALES */
@@ -1049,6 +1386,7 @@ li .a__submenu:hover {
     width: 90%;
 }
 
+
 @media only screen and (min-width: 991.1px) {
 
     .videoTuto {        
@@ -1059,7 +1397,8 @@ li .a__submenu:hover {
 /* FIN SECCIÓN EXTRAS-TUTORIALES */
 /* ----------------------------- */
 
-/* ------------------------- */
+
+/* -------------------------------- */
 /* INICIO SECCIÓN EXTRAS-REFERENTES */
 
 .div__ref {
@@ -1070,19 +1409,28 @@ li .a__submenu:hover {
     height: 300px;
     object-fit: cover;
     object-position: right;
+    transition: 1s;
 }
 
 .img__ref2 {
     height: 300px;
     object-fit: cover;
     object-position: center;
+    transition: 1s;
 }
 
 .img__ref3 {
     height: 300px;
     object-fit: cover;
     object-position: center;
+    transition: 1s;
 }
+
+.div__referentes img:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    transform:rotate(-3deg);
+}
+
 
 @media only screen and (min-width: 991.1px) {
 
@@ -1105,9 +1453,10 @@ li .a__submenu:hover {
 }
 
 /* FIN SECCIÓN EXTRAS-REFERENTES */
-/* ---------------------- */
+/* ----------------------------- */
 
-/* --------------------------- */
+
+/* ---------------------------------- */
 /* INICIO SECCIÓN EXTRAS-RECOMENDADOS */
 
 .div__seccion_recomendados {
@@ -1118,13 +1467,22 @@ li .a__submenu:hover {
     height: 200px;
     object-fit: cover;
     object-position: center;
+    transition: 1s;
+}
+
+.img__recom:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
 }
 
 /* FIN SECCIÓN EXTRAS-RECOMENDADOS */
-/* ------------------------ */
+/* ------------------------------- */
+
 
 /* FIN  SECCIÓN EXTRAS */
 /* ------------------- */
+
+
 
 /* ----------------------- */
 /* INICIO SECCIÓN CONTACTO */
@@ -1136,6 +1494,8 @@ li .a__submenu:hover {
 .div__formContacto {
     animation: slideInDown;
     animation-duration: 2s;
+    background-color: #C1E8EC;
+    border-radius: 20px;
 }
 
 .div__formImg {
@@ -1159,6 +1519,8 @@ li .a__submenu:hover {
 
 /* FIN SECCIÓN CONTACTO */
 /* -------------------- */
+
+
 
 /* FIN STYLESHEET */
 /* -------------- */
