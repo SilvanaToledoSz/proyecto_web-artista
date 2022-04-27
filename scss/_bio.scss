@@ -1,0 +1,215 @@
+/* ------------------ */
+/* INICIO SECCIÓN BIO */
+
+main {
+    .section__bio {
+        background-color: $color3;
+        div {
+            div {
+                .div__contenedorBio {
+                    display: grid;
+                    justify-content: center;
+                    grid-template-columns: 80%;
+                    grid-template-rows: repeat(3, 250px) 500px repeat(3, 250px);
+                    grid-template-areas: 
+                    "bioTxt1"
+                    "bioImg1"
+                    "bioImg2"
+                    "bioTxt2"
+                    "bioImg3"
+                    "bioTxt3"
+                    "bioImg4";
+                    row-gap: 1%;
+                    @media only screen and (min-width: 576px) and (max-width: 768px) {
+                        $vista:tablet;
+                        @if $vista == tablet {
+                            grid-template-rows: repeat(3, 250px) 350px repeat(3, 250px);
+                        }
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            grid-template-columns: 40% 40%;
+                            grid-template-rows: repeat(4, 400px);
+                            grid-template-areas: 
+                            "bioTxt1 bioImg1"
+                            "bioTxt2 bioImg2"
+                            "bioImg3 bioTxt3"
+                            "bioImg4 bioImg4";
+                            column-gap: 1%;
+                        }
+                    }
+                    .div__bioTxt1 {
+                        grid-area: bioTxt1;
+                        p {
+                            &:not(.p__txtbio2){
+                                height: 250px;
+                                overflow: auto;
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        height: 400px;
+                                        overflow: auto;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .div__bioImg1 {
+                        grid-area: bioImg1;
+                        .img__bio {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            width: 100%;  
+                            height: 200px;  
+                            object-fit: cover;
+                            object-position: center;  
+                            transition: 1s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    width: 100%;  
+                                    height: 80%;
+                                    margin-bottom: 10px;  
+                                }
+                            }
+                        }
+                        
+                    }
+                    .div__bioImg2 {
+                        grid-area: bioImg2;
+                        .img__bio {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            width: 100%;  
+                            height: 200px;  
+                            object-fit: cover;
+                            object-position: center;  
+                            transition: 1s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    width: 100%;  
+                                    height: 80%;
+                                    margin-bottom: 10px;  
+                                }
+                            }
+                        }                        
+                    }
+                    .div__bioTxt2 {
+                        grid-area: bioTxt2;
+                        p {
+                            &:not(.p__txtbio2){
+                                height: 250px;
+                                overflow: auto;
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        height: 400px;
+                                        overflow: auto;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .p__txtbio2 {
+                            height: 500px;
+                            overflow: auto;
+                            @media only screen and (min-width: 576px) and (max-width: 768px) {
+                                $vista:tablet;
+                                @if $vista == tablet {
+                                    height: 350px;                                    
+                                }
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 400px;
+                                }
+                            }
+                        }
+                    }
+                    .div__bioImg3 {
+                        grid-area: bioImg3;
+                        .img__bio {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            width: 100%;  
+                            height: 200px;  
+                            object-fit: cover;
+                            object-position: center;  
+                            transition: 1s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    width: 100%;  
+                                    height: 80%;
+                                    margin-bottom: 10px;  
+                                }
+                            }
+                        }                        
+                    }
+                    .div__bioTxt3 {
+                        grid-area: bioTxt3;
+                        p {
+                            &:not(.p__txtbio2){
+                                height: 250px;
+                                overflow: auto;
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        height: 400px;
+                                        overflow: auto;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        margin-left: 1%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .div__bioImg4 {
+                        grid-area: bioImg4;
+                        .img__bio_b {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            width: 100%;  
+                            height: 100px;  
+                            object-fit: cover;
+                            object-position: center;  
+                            transition: 1s;
+                            display: flex;
+                            align-items: flex-start;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 250px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FIN SECCIÓN BIO */
+/* --------------- */

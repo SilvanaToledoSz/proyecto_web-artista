@@ -1,0 +1,35 @@
+$vista:mobile;
+
+/* ----------------------- */
+/* INICIO SECCIÓN CONTACTO */
+
+main {
+    .section__contacto {
+        background-color: $color3;
+        div {
+            .div__formImg {
+                animation: slideInUp;
+                animation-duration: 2s;
+                .img__contacto {
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: center;
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+            .div__formContacto {
+                animation: slideInDown;
+                animation-duration: 2s;
+                background-color: #C1E8EC;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+/* FIN SECCIÓN CONTACTO */
+/* -------------------- */

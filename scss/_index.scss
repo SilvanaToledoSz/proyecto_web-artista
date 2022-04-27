@@ -1,0 +1,533 @@
+$vista: mobile;
+
+/* ---------------- */
+/* INICIO MAIN HOME */
+
+main {
+    div {
+        // Inicio sección home-hero image
+        .div__heroImage {
+            background-image: url(../multimedia/images/hero-image_b.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            .div__fondoHero {
+                background-color: $color1;
+                opacity: 0.9;
+                position: relative;
+                padding-top: 15px;
+                padding-bottom: 15px;   
+                @media only screen and (min-width: 991.1px) {
+                    $vista:desktop;
+                    @if $vista == desktop {
+                        padding-top: 10px;
+                    }
+                } 
+            }
+        }
+        // Fin sección home-hero image
+
+        // Inicio sección home-adelanto
+        .div__home_adelanto {
+            background-color:$color2;
+            height: 170px;
+            padding-top: 20px;
+            div {
+                div {
+                    .audio__home {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        // Fin sección home-adelanto
+
+        // Inicio sección home-bio        
+        .div__home_bio {
+            background-color:$color3;
+            padding-top: 20px;  
+            padding-bottom: 30px;
+            div {
+                .div__home_bio-grid {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    display: grid;
+                    grid-template-columns: 80%;
+                    row-gap: 2%;
+                    justify-content: center;
+                    grid-template-rows: 300px 300px;
+                    grid-template-areas: 
+                    "imgBioH"
+                    "txtBioH";
+                    @media only screen and (min-width: 991.1px) {
+                        $vista: desktop;
+                        @if $vista == desktop {
+                            grid-template-columns: 40% 40%;
+                            column-gap: 1%;
+                            justify-content: center;
+                            grid-template-rows: 300px;
+                            grid-template-areas: 
+                            "txtBioH imgBioH";
+                        }
+                    }
+                    .div__bioHomeImg {
+                        grid-area: imgBioH;
+                        .img__bio_home {
+                            width: 100%;
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);  
+                            margin: 10px 0;
+                            max-height: 300px;
+                            object-fit: cover;    
+                        }
+                    }
+                    .div__bio_txt_home {
+                        height: 300px;
+                        overflow: auto;
+                        margin: 10px 0;
+                        grid-area: txtBioH;
+                        @media only screen and (min-width: 991.1px) {
+                            $vista: desktop;
+                            @if $vista == desktop {
+                                height: 300px;
+                                overflow: auto;
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Fin sección home-bio
+
+        // Inicio sección home-discografia
+        .div__home_discografia {
+            background-color:$color4;
+            height: 600px;
+            padding-top: 20px; 
+            div {
+                // Inicio Carrousel
+                @keyframes carousel-slide {
+                    0% {
+                        transform: translateX(0%); 
+                    }
+                    50% {
+                        transform: translateX(-50%);
+                    }
+                }
+                @media only screen and (min-width: 991.1px) {
+                    $vista:desktop;
+                    @if $vista == desktop {
+                        @keyframes carousel-slide {
+                            0% {
+                                transform: translateX(0%); 
+                            }                            
+                            25% {
+                                transform: translateX(-25%);    
+                            }                            
+                            50% {
+                                transform: translateX(-50%);
+                            } 
+                        }
+                    }
+                }
+                .article__carousel_disc {
+                    margin: 2rem auto;
+                    padding: 2rem 0;
+                    text-align: center;
+                    background-color: var(--carousel-bg-color);
+                    overflow-x: hidden;
+                    border-radius: 20px;
+                    @media only screen and (min-width: 576px) and (max-width: 991px) {
+                        $vista:tablet;
+                        @if $vista == tablet {
+                            padding-top: 10px;        
+                            max-width: 480px;
+                        }
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            margin: 2rem auto;
+                            padding: 2rem 0;
+                            max-width: 850px;
+                            text-align: center;
+                            background-color: var(--carousel-bg-color);
+                            overflow-x: hidden;
+                            border-radius: 20px;
+                        }
+                    }
+                    input {
+                        display: none;
+                    }
+                    .slides {
+                        padding-left: 0;
+                        width: 500%;
+                        display: flex;
+                        list-style: none;
+                        transition: transform 1s ease-in-out;
+                        animation: carousel-slide 24s ease-in-out 3s;
+                        animation-iteration-count: infinite;
+                        @media only screen and (min-width: 576px) and (max-width: 991px) {
+                            $vista:tablet;
+                            @if $vista == tablet {
+                                width: 410%;
+                            }
+                        }
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 400%;
+                            }
+                        }
+                        .slide {
+                            @media only screen and (min-width: 576px) and (max-width: 991px) {
+                                $vista:tablet;
+                                @if $vista == tablet {
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                }
+                            }
+                            .img__slider{
+                                width: 400px;
+                                height: 300px;
+                                object-fit: cover;
+                                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                                border-radius: 20px;
+                                margin: 0 20px;
+                                @media only screen and (min-width: 576px) and (max-width: 991px) {
+                                    $vista:tablet;
+                                    @if $vista == tablet {
+                                        width: 390px;
+                                    }
+                                }
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        width: 800px;
+                                    }
+                                }
+                            }
+                            .h3__home {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    label {
+                        border: medium solid var(--gray-dark-color);
+                        border-radius: 50%;
+                        cursor: pointer;
+                        margin: 0 .25rem;
+                        display: inline-block;
+                        width: .75rem;
+                        height: .75rem;
+                    }  
+                }
+                // Fin Carrousel
+            }
+        }
+        // Fin sección home-discografia
+
+        // Inicio sección home-resenas
+        .div__home_resenas {
+            background-color:$color3;    
+            padding-top: 20px; 
+            padding-bottom: 30px;
+            div {
+                div {
+                    .article__resena_home {
+                        margin: 20px 0;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        width: 100%;
+                        background-color: $color4;
+                        border-radius: 20px;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                        transition: 1s;
+                        &:hover {
+                            transform: scale(1.05);
+                        }    
+                        .img__resena_home {
+                            width: 50%;
+                            margin-top: 20px;
+                            @media only screen and (min-width: 991px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    width: 30%;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                        .p__resena_home{
+                            transition: 0.2s;
+                            &:hover {
+                                font-weight: 400;
+                            }
+                            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                                $vista: tablet;
+                                @if $vista == tablet {
+                                    height: 200px;
+                                    overflow: auto;
+                                }
+                            }
+                            @media only screen and (min-width: 991px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 200px;
+                                    overflow: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                .div__resena_home2 {
+                    display: none;
+                    @media only screen and (min-width: 768px) and (max-width: 992px) {
+                        $vista: tablet;
+                        @if $vista == tablet {
+                            display: block;
+                        }
+                    }
+                    @media only screen and (min-width: 991px) {
+                        $vista: desktop;
+                        @if $vista == desktop {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        // Fin sección home-resenas
+
+        // Inicio sección home-extras
+        .div__home_extras {
+            background-color:$color4;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            div {
+                .div__contenedor_extras1 {
+                    height: 200px;    
+                    .div__col_extras {
+                        .div__img_extras1 {
+                            grid-area: imgExtras1;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/galeria3.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .div__img_extras2 {
+                            grid-area: imgExtras2;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/videos_b.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .div__col_extras_lg {
+                        display: none;
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                display: block;
+                            }
+                        }
+                        .div__img_extras5 {
+                            grid-area: imgExtras5;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/referentes_b.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                .div__contenedor_extras2 {
+                    height: 200px;  
+                    .div__col_extras {
+                        .div__img_extras3 {
+                            grid-area: imgExtras3;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/pensamientos_b.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .div__img_extras4 {
+                            grid-area: imgExtras4;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/tutoriales_b.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .div__col_extras_lg {
+                        display: none;
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                display: block;
+                            }
+                        }
+                        .div__img_extras6 {
+                            grid-area: imgExtras6;
+                            width: 100%;
+                            height: 90%;
+                            background-image: url(../multimedia/images/recomendados_b.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            &:hover {
+                                transform:scale(1.02);
+                            }
+                            a {
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color:white;
+                                    opacity: 0.8;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                    color: $color6;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }  
+                }
+                .div__btnExHome {
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            display: none;
+                        }
+                    }
+                }
+            }    
+        }
+        // Fin sección home-extras
+    }
+}
+/* FIN MAIN HOME */
+/* ------------- */

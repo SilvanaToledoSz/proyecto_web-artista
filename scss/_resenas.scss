@@ -1,0 +1,51 @@
+$vista:mobile;
+
+/* ---------------------- */
+/* INICIO SECCIÓN RESEÑAS */
+
+main {
+    .section__resenas {
+        background-color: $color3;
+        div {
+            div {
+                img {
+                    transition: 1s;    
+                    border-radius: 100%;
+                    &:hover {
+                        translate: 0 -5px;
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                    }
+                }
+                .img__lg {
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            width: 70%; 
+                        }
+                    }
+                }
+                .btn_t_mobile {
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            div {
+                .btn_r_lg {
+                    display: none;
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+/* FIN SECCIÓN RESEÑAS */
+/* ------------------- */

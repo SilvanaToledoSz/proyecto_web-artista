@@ -1,0 +1,84 @@
+/* Fuentes
+
+font-family: 'Fredoka', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+
+/* Estilo de reseteo */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 130%; 
+    scroll-behavior: smooth;
+}
+
+/* -------------- */
+/* Inicio General */
+
+// Inicio Variables
+
+$color1:#003249;
+$color2:#80ced7;
+$color3:#9AD1D4;
+$color4:#CCDBDC;
+$color5:#eb9f06;
+$color6:#424251;
+
+// Fin Variables
+
+a {
+    text-decoration: none;
+}
+
+p::selection {
+    background-color: $color5;
+}
+
+span::selection {
+    background-color: $color5;
+}   
+
+ul li {
+    list-style-type: none;
+}
+
+.div__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.p__epig {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Fin General */
+/* ----------- */
+
+@import 'header';
+@import 'footer';
+@import 'index';
+@import 'bio';
+@import 'resenas';
+@import 'pre-venta';
+@import 'contacto';
+@import 'discografia';
+@import 'extras';
+
+/* Fin estilos */
+/* ----------- */
+
+

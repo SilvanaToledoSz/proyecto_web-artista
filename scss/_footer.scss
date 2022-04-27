@@ -1,0 +1,52 @@
+/* ------------- */
+/* INICIO FLECHA */
+.div__flecha_inicio {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    color: $color6;    
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.8;
+    .img__flecha {
+        width: 50%;
+        margin-left: 23%;
+        margin-top: 25%;
+    }
+}
+/* FIN FLECHA */
+/* ---------- */
+
+/* ------------- */
+/* INICIO FOOTER */
+footer {
+    .div__footer {
+        background-color: $color1;
+        height: 120px;
+        .div__fila_footer {
+            height: 100%;
+            .img__logo_footer {
+                width: 300px;
+                opacity: 0.7;
+            }
+        }
+        .div__footer_disclaimer {
+            font-size: 10px;
+        }
+        .footer_redes {
+            display: flex;
+            justify-content: center;
+            a {
+                transition: 0.5s;
+                &:hover {
+                    transform: translate(0, -7px);
+                }
+            }
+        }
+    }
+}
+/* FIN FOOTER */
+/* ---------- */

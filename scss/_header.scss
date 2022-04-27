@@ -1,0 +1,31 @@
+/* ------------- */
+/* INICIO HEADER */
+header {
+    nav {
+        div {
+            .img__logo {
+                width: 200px;
+            }
+            div {
+                .a__submenu {
+                    &:hover {
+                        color: $color1;
+                    }
+                }                
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    header {
+        nav {
+            div {
+                .img__logo {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+/* FIN HEADER */
+/* ---------- */

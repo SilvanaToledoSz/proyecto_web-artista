@@ -1,0 +1,354 @@
+$vista:mobile;
+
+/* --------------------- */
+/* INICIO SECCIÓN EXTRAS */
+
+main {
+    div {
+        .div__seccion_extras {
+            background-color: $color4;
+            
+            // Inicio sección extras-galería
+            div {
+                .div__galeria1 {
+                    height: 150px;
+                    overflow: hidden;
+                    transition: 1s;
+                    &:hover {
+                        transform: translate(0, -7px);
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 200px; 
+                        }
+                    }
+                    .img__galeria1 {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 100%;
+                            }
+                        }                        
+                    } 
+                }
+            }
+            div {
+                .div__galeria2 {
+                    height: 150px;
+                    overflow: hidden;
+                    transition: 1s;
+                    &:hover {
+                        transform: translate(0, -7px);
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 200px; 
+                        }
+                    }
+                    .img__galeria2 {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 100%;
+                            }
+                        }                        
+                    }
+                }
+                .div__galeria3 {
+                    height: 150px;
+                    overflow: hidden;
+                    transition: 1s;
+                    &:hover {
+                        transform: translate(0, -7px);
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 200px; 
+                        }
+                    }
+                    .img__galeria3 {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 100%;
+                            }
+                        }                        
+                    }
+                }
+            }
+            div {
+                .div__galeria4 {
+                    height: 150px;
+                    overflow: hidden;
+                    transition: 1s;
+                    &:hover {
+                        transform: translate(0, -7px);
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 200px; 
+                        }
+                    }
+                    .img__galeria4 {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 100%;
+                            }
+                        }                        
+                    }
+                }
+                .div__galeria5 {
+                    height: 150px;
+                    overflow: hidden;
+                    transition: 1s;
+                    &:hover {
+                        transform: translate(0, -7px);
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 200px; 
+                        }
+                    }
+                    .img__galeria5 {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 100%;
+                            }
+                        }                        
+                    }
+                }
+            }
+            // Fin sección extras-galería
+
+            // Inicio sección extras-videos
+            .div__seccion_videos {
+                background-color: $color3;
+                div {
+                    div {
+                        .videoYT {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            transition: 0.5s;
+                            height: 200px;
+                            &:hover {
+                                transform: scale(0.95);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 300px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // Fin sección extras-videos
+
+            // Inicio sección extras-pensamientos
+            .div__seccion_pensamientos {
+                background-color: $color4;
+                div {
+                    .div__contGridPens {
+                        display: grid;
+                        grid-template-columns: 33.3% 33.3% 33.4%;
+                        grid-template-rows: 400px 400px 200px 200px 200px;
+                        grid-template-areas: 
+                        "p1 p1 p2"
+                        "p1 p1 p3"
+                        "p4 p4 p3"
+                        "p5 p5 p5"
+                        "p6 p7 p7";
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                row-gap: 15px;
+                                column-gap: 1%;
+                                grid-template-columns: repeat(4, 25%);
+                                grid-template-rows: 180px 400px 200px;
+                                grid-template-areas: 
+                                "p1 p2 p2 p2"
+                                "p1 p3 p4 p4"
+                                "p5 p3 p6 p7";
+                            }
+                        }
+                        p {
+                            &:nth-child(odd) {
+                                color: $color1;
+                            }
+                            &:hover {
+                                background-color: $color2;
+                            }
+                        }
+                        .div__pens1 {
+                            height: 100%;
+                            padding: 10px;
+                            transition: 0.5s;
+                            grid-area: p1;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }
+                        .div__pens2 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p2;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }
+                        .div__pens3 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p3;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }                        
+                        .div__pens4 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p4;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }                        
+                        .div__pens5 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p5;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }                        
+                        .div__pens6 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p6;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }                        
+                        .div__pens7 {
+                            height: 100%;
+                            transition: 0.5s;
+                            grid-area: p7;
+                            overflow: auto;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+            // Fin sección extras-pensamientos
+
+            // Inicio sección extras-tutoriales
+            .div__seccion_tutoriales {
+                background-color: $color3;
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    .videoTuto {
+                                        height: 300px;
+                                        border-radius: 10px;
+                                        width: 90%;
+                                        @media only screen and (min-width: 991.1px) {
+                                            $vista:desktop;
+                                            @if $vista == desktop {
+                                                width: 80%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // Fin sección extras-tutoriales
+
+            // Inicio sección extras-referentes
+            div {
+                .div__referentes {
+                    .div__ref {
+                        height: 300px;    
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                height: 200px;    
+                            }
+                        }
+                    }
+                    div {
+                        img {
+                            &:hover {
+                                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+                                transform:rotate(-3deg);
+                            }
+                        }
+                        .img__ref1 {
+                            height: 300px;
+                            object-fit: cover;
+                            object-position: right;
+                            transition: 1s;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 200px; 
+                                }
+                            }
+                        }
+                        .img__ref2 {
+                            height: 300px;
+                            object-fit: cover;
+                            object-position: center;
+                            transition: 1s;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 200px; 
+                                }
+                            }
+                        }                        
+                        .img__ref3 {
+                            height: 300px;
+                            object-fit: cover;
+                            object-position: center;
+                            transition: 1s;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    height: 200px; 
+                                }
+                            }
+                        }
+                    }                    
+                }
+            }
+            // Fin sección extras-referentes
+
+            // Inicio sección extras-recomendados
+            .div__seccion_recomendados {
+                background-color: $color3;
+                div {
+                    div {
+                        .img__recom {
+                            height: 200px;
+                            object-fit: cover;
+                            object-position: center;
+                            transition: 1s;
+                            &:hover {
+                                transform: scale(1.05);
+                                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+                            }
+                        }
+                    }
+                }
+            }              
+            // Fin sección extras-recomendados
+        }
+    }
+}
+/* FIN  SECCIÓN EXTRAS */
+/* ------------------- */

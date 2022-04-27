@@ -1,0 +1,63 @@
+$vista:mobile;
+
+/* ------------------------ */
+/* INICIO SECCIÓN PRE-VENTA */
+
+main {
+    .section__pre_venta {
+        background-color: $color2;  
+        div {
+            div {
+                .div__img_prev {
+                    background-image: url(../multimedia/images/hero-image.jpg);
+                    height: 200px;
+                    width: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                    a {
+                        transition: 1s;
+                        &:hover {
+                            background-color: $color1;
+                            width: 100%;
+                            font-weight: 500;
+                            padding: 5px 0;
+                            opacity: 0.8;
+                            text-align: center;
+                        }
+                    }
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+            .div__prev_adelanto {
+                background-color:#C1E8EC;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 20px;
+                width: 100%;
+                .audio__prev {
+                    @media only screen and (min-width: 991.1px) {
+                        $vista:desktop;
+                        @if $vista == desktop {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }       
+    }
+}
+/* FIN SECCIÓN PRE-VENTA */
+/* --------------------- */
