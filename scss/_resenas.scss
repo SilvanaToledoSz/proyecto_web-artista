@@ -11,9 +11,9 @@ main {
             div {
                 // Inicio aplicación map
                 $font_resena: (
-                20:#424251,
-                22:#64647B,
-                24:#787892
+                30:#424251,
+                32:#64647B,
+                34:pink
                 );
                 @each $size, $color in $font_resena {
                     .fontResena_#{$size} {
