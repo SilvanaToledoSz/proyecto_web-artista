@@ -611,15 +611,15 @@ main .section__bio {
 /* INICIO SECCIÓN RESEÑAS */
 main .section__resenas {
   background-color: #9AD1D4; }
-  main .section__resenas div div .fontResena_30 {
-    font-size: 30px;
+  main .section__resenas div div .fontResena_20 {
+    font-size: 20px;
     color: #424251; }
-  main .section__resenas div div .fontResena_32 {
-    font-size: 32px;
+  main .section__resenas div div .fontResena_22 {
+    font-size: 22px;
     color: #64647B; }
-  main .section__resenas div div .fontResena_34 {
-    font-size: 34px;
-    color: pink; }
+  main .section__resenas div div .fontResena_24 {
+    font-size: 24px;
+    color: #787892; }
   main .section__resenas div div img {
     transition: 1s;
     border-radius: 100%; }
