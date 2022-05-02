@@ -7,8 +7,7 @@ main {
         div {
             div {
                 .div__contenedorBio {
-                    display: grid;
-                    justify-content: center;
+                    @include gridCentro;
                     grid-template-columns: 80%;
                     grid-template-rows: repeat(3, 250px) 500px repeat(3, 250px);
                     grid-template-areas: 

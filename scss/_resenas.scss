@@ -1,5 +1,6 @@
 $vista:mobile;
 
+
 /* ---------------------- */
 /* INICIO SECCIÓN RESEÑAS */
 
@@ -8,6 +9,19 @@ main {
         background-color: $color3;
         div {
             div {
+                // Inicio aplicación map
+                $font_resena: (
+                20:#424251,
+                22:#64647B,
+                24:#787892
+                );
+                @each $size, $color in $font_resena {
+                    .fontResena_#{$size} {
+                        font-size: #{$size}px;
+                        color: #{$color};
+                    }
+                }
+                // Fin aplicación map
                 img {
                     transition: 1s;    
                     border-radius: 100%;

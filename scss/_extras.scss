@@ -186,56 +186,45 @@ main {
                                 background-color: $color2;
                             }
                         }
-                        .div__pens1 {
+                        // Inicio aplicación extend
+
+                        .div__pens {
                             height: 100%;
-                            padding: 10px;
                             transition: 0.5s;
-                            grid-area: p1;
                             overflow: auto;
                             padding-left: 10px;
+                        }
+                        
+                        .div__pens1 {
+                            @extend .div__pens;
+                            padding: 10px;
+                            grid-area: p1;                            
                         }
                         .div__pens2 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p2;
-                            overflow: auto;
-                            padding-left: 10px;
                         }
                         .div__pens3 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p3;
-                            overflow: auto;
-                            padding-left: 10px;
                         }                        
                         .div__pens4 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p4;
-                            overflow: auto;
-                            padding-left: 10px;
                         }                        
                         .div__pens5 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p5;
-                            overflow: auto;
-                            padding-left: 10px;
                         }                        
                         .div__pens6 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p6;
-                            overflow: auto;
-                            padding-left: 10px;
                         }                        
                         .div__pens7 {
-                            height: 100%;
-                            transition: 0.5s;
+                            @extend .div__pens;
                             grid-area: p7;
-                            overflow: auto;
-                            padding-left: 10px;
                         }
+                        // Fin aplicación extend
                     }
                 }
             }

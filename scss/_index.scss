@@ -54,10 +54,9 @@ main {
                 .div__home_bio-grid {
                     margin-top: 20px;
                     margin-bottom: 20px;
-                    display: grid;
+                    @include gridCentro;                    
                     grid-template-columns: 80%;
-                    row-gap: 2%;
-                    justify-content: center;
+                    row-gap: 2%;                    
                     grid-template-rows: 300px 300px;
                     grid-template-areas: 
                     "imgBioH"
@@ -319,9 +318,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
+                            @include flexCentro;
+                            flex-direction: row;                            
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;
@@ -349,9 +347,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
+                            @include flexCentro;
+                            flex-direction: row;                            
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;
@@ -388,9 +385,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
+                            @include flexCentro;
+                            flex-direction: row;                            
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;
@@ -423,9 +419,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
+                            @include flexCentro;
+                            flex-direction: row;                            
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;
@@ -453,9 +448,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
+                            @include flexCentro;
                             flex-direction: row;
-                            justify-content: center;
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;
@@ -492,9 +486,8 @@ main {
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: cover;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
+                            @include flexCentro;
+                            flex-direction: row;                            
                             align-items: center;
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;

@@ -37,8 +37,7 @@ footer {
             font-size: 10px;
         }
         .footer_redes {
-            display: flex;
-            justify-content: center;
+            @include flexCentro;
             a {
                 transition: 0.5s;
                 &:hover {

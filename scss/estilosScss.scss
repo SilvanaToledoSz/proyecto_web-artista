@@ -36,6 +36,20 @@ $color6:#424251;
 
 // Fin Variables
 
+//Inicio Mixin General
+
+@mixin gridCentro (){
+    display: grid;
+    justify-content: center;
+}
+
+@mixin flexCentro (){
+    display: flex;
+    justify-content: center;
+}
+
+//Fin Mixin General
+
 a {
     text-decoration: none;
 }

@@ -19,8 +19,21 @@ $vista: mobile;
         }
     }
     .div__contenedorDisc {
-        display: grid;
-        justify-content: center;
+        
+        // Inicio aplicación map-get
+        $txtDisc: (
+            color: #4A4A5B,
+            size: 24px,
+            letter-spacing: 5px
+        );
+
+        .txtDisc {
+            color: map-get($txtDisc, color);
+            font-size: map-get($txtDisc, size);
+        }
+        // Fin aplicación map-get
+        
+        @include gridCentro;
         row-gap: 20px;
         grid-template-columns: 80%;
         grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 300px 300px;
