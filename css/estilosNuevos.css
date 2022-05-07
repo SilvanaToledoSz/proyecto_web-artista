@@ -144,7 +144,7 @@ main div .div__home_bio {
     @media only screen and (min-width: 991.1px) {
       main div .div__home_bio div .div__home_bio-grid {
         grid-template-columns: 40% 40%;
-        column-gap: 1%;
+        column-gap: 3%;
         justify-content: center;
         grid-template-rows: 300px;
         grid-template-areas: "txtBioH imgBioH"; } }
@@ -265,13 +265,19 @@ main div .div__home_resenas {
     transition: 1s; }
     main div .div__home_resenas div div .article__resena_home:hover {
       transform: scale(1.05); }
-    main div .div__home_resenas div div .article__resena_home .img__resena_home {
-      width: 50%;
-      margin-top: 20px; }
-      @media only screen and (min-width: 991px) {
-        main div .div__home_resenas div div .article__resena_home .img__resena_home {
-          width: 30%;
-          margin-top: 20px; } }
+    main div .div__home_resenas div div .article__resena_home .div__img_resena1, main div .div__home_resenas div div .article__resena_home .div__img_resena2 {
+      width: 130px;
+      height: 130px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 100%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      background-image: url(../multimedia/images/resena_img_1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    main div .div__home_resenas div div .article__resena_home .div__img_resena2 {
+      background-image: url(../multimedia/images/resena_img_2.jpg); }
     main div .div__home_resenas div div .article__resena_home .p__resena_home {
       transition: 0.2s; }
       main div .div__home_resenas div div .article__resena_home .p__resena_home:hover {
@@ -476,7 +482,8 @@ main div .div__home_extras {
 /* ------------------ */
 /* INICIO SECCIÓN BIO */
 main .section__bio {
-  background-color: #9AD1D4; }
+  background-color: #9AD1D4;
+  height: 2100px; }
   main .section__bio div div .div__contenedorBio {
     display: grid;
     justify-content: center;
@@ -491,18 +498,21 @@ main .section__bio {
       main .section__bio div div .div__contenedorBio {
         grid-template-columns: 40% 40%;
         grid-template-rows: repeat(4, 400px);
-        grid-template-areas: "bioTxt1 bioImg1" "bioTxt2 bioImg2" "bioImg3 bioTxt3" "bioImg4 bioImg4";
+        grid-template-areas: "bioTxt1 bioImg1" "bioTxt2 bioImg2" "bioImg3 bioTxt3" "bioImg4 bioTxt4" "bioImg5 bioImg5";
         column-gap: 1%; } }
     main .section__bio div div .div__contenedorBio .div__bioTxt1 {
       grid-area: bioTxt1; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
-        height: 250px;
-        overflow: auto; }
-        @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
-            height: 400px;
-            overflow: auto;
-            margin-bottom: 10px; } }
+      main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
+        font-size: 24px;
+        line-height: 30px; }
+        main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
+          height: 250px;
+          overflow: auto; }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
+              height: 400px;
+              overflow: auto;
+              margin-bottom: 10px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg1 {
       grid-area: bioImg1; }
       main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio {
@@ -539,14 +549,17 @@ main .section__bio {
             margin-bottom: 10px; } }
     main .section__bio div div .div__contenedorBio .div__bioTxt2 {
       grid-area: bioTxt2; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
-        height: 250px;
-        overflow: auto; }
-        @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
-            height: 400px;
-            overflow: auto;
-            margin-bottom: 10px; } }
+      main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
+        font-size: 24px;
+        line-height: 30px; }
+        main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
+          height: 250px;
+          overflow: auto; }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
+              height: 400px;
+              overflow: auto;
+              margin-bottom: 10px; } }
       main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
         height: 500px;
         overflow: auto; }
@@ -575,20 +588,56 @@ main .section__bio {
             margin-bottom: 10px; } }
     main .section__bio div div .div__contenedorBio .div__bioTxt3 {
       grid-area: bioTxt3; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
-        height: 250px;
-        overflow: auto; }
-        @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
-            height: 400px;
-            overflow: auto;
-            margin-bottom: 10px; } }
-        @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
-            margin-left: 1%; } }
+      main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
+        font-size: 24px;
+        line-height: 30px; }
+        main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+          height: 250px;
+          overflow: auto; }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+              height: 400px;
+              overflow: auto;
+              margin-bottom: 10px; } }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+              margin-left: 1%; } }
     main .section__bio div div .div__contenedorBio .div__bioImg4 {
       grid-area: bioImg4; }
-      main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio_b {
+      main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        transition: 1s; }
+        main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio:hover {
+          transform: scale(1.05); }
+        @media only screen and (min-width: 991.1px) {
+          main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
+            width: 100%;
+            height: 80%;
+            margin-bottom: 10px; } }
+    main .section__bio div div .div__contenedorBio .div__bioTxt4 {
+      grid-area: bioTxt4; }
+      main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
+        font-size: 24px;
+        line-height: 30px; }
+        main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+          height: 250px;
+          overflow: auto; }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+              height: 400px;
+              overflow: auto;
+              margin-bottom: 10px; } }
+          @media only screen and (min-width: 991.1px) {
+            main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+              margin-left: 1%; } }
+    main .section__bio div div .div__contenedorBio .div__bioImg5 {
+      grid-area: bioImg5; }
+      main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -598,10 +647,10 @@ main .section__bio {
         transition: 1s;
         display: flex;
         align-items: flex-start; }
-        main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio_b:hover {
+        main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio_b {
+          main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {
             height: 250px; } }
 
 /* FIN SECCIÓN BIO */
@@ -619,18 +668,36 @@ main .section__resenas {
   main .section__resenas div div .fontResena_24 {
     font-size: 24px;
     color: #787892; }
-  main .section__resenas div div img {
-    transition: 1s;
-    border-radius: 100%; }
-    main .section__resenas div div img:hover {
-      translate: 0 -5px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+  main .section__resenas div div div .div__img_resena1, main .section__resenas div .div__home_resenas div div .article__resena_home .div__img_resena2, main .section__resenas div div div .div__img_resena2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-image: url(../multimedia/images/resena_img_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s; }
+    main .section__resenas div div div .div__img_resena1:hover, main .section__resenas div div div .div__img_resena2:hover {
+      width: 120px; }
+    @media only screen and (min-width: 991.1px) {
+      main .section__resenas div div div .div__img_resena1, main .section__resenas div .div__home_resenas div div .article__resena_home .div__img_resena2, main .section__resenas div div div .div__img_resena2 {
+        width: 200px;
+        height: 200px; }
+        main .section__resenas div div div .div__img_resena1:hover, main .section__resenas div div div .div__img_resena2:hover {
+          width: 220px; } }
+  main .section__resenas div div div .div__img_resena2 {
+    background-image: url(../multimedia/images/resena_img_2.jpg); }
   @media only screen and (min-width: 991.1px) {
-    main .section__resenas div div .img__lg {
-      width: 70%; } }
-  @media only screen and (min-width: 991.1px) {
-    main .section__resenas div div .btn_t_mobile {
+    main .section__resenas div div div .btn_t_mobile {
       display: none; } }
+  main .section__resenas div .div__separador {
+    background-color: #80ced7;
+    width: 85%;
+    height: 5px;
+    margin-bottom: 50px; }
   main .section__resenas div div .btn_r_lg {
     display: none; }
     @media only screen and (min-width: 991.1px) {

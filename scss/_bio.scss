@@ -4,6 +4,7 @@
 main {
     .section__bio {
         background-color: $color3;
+        height: 2100px;
         div {
             div {
                 .div__contenedorBio {
@@ -34,7 +35,8 @@ main {
                             "bioTxt1 bioImg1"
                             "bioTxt2 bioImg2"
                             "bioImg3 bioTxt3"
-                            "bioImg4 bioImg4";
+                            "bioImg4 bioTxt4"
+                            "bioImg5 bioImg5";
                             column-gap: 1%;
                         }
                     }
@@ -53,6 +55,8 @@ main {
                                     }
                                 }
                             }
+                            font-size: 24px;
+                            line-height: 30px;
                         }
                     }
                     .div__bioImg1 {
@@ -117,6 +121,8 @@ main {
                                     }
                                 }
                             }
+                            font-size: 24px;
+                            line-height: 30px;
                         }
                         .p__txtbio2 {
                             height: 500px;
@@ -179,10 +185,60 @@ main {
                                     }
                                 }
                             }
+                            font-size: 24px;
+                            line-height: 30px;
                         }
                     }
                     .div__bioImg4 {
                         grid-area: bioImg4;
+                        .img__bio {
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                            border-radius: 20px;
+                            width: 100%;  
+                            height: 200px;  
+                            object-fit: cover;
+                            object-position: center;  
+                            transition: 1s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    width: 100%;  
+                                    height: 80%;
+                                    margin-bottom: 10px;  
+                                }
+                            }
+                        }                        
+                    }
+                    .div__bioTxt4 {
+                        grid-area: bioTxt4;
+                        p {
+                            &:not(.p__txtbio2){
+                                height: 250px;
+                                overflow: auto;
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        height: 400px;
+                                        overflow: auto;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                @media only screen and (min-width: 991.1px) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        margin-left: 1%;
+                                    }
+                                }
+                            }
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                    }
+                    .div__bioImg5 {
+                        grid-area: bioImg5;
                         .img__bio_b {
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             border-radius: 20px;

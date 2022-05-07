@@ -21,32 +21,55 @@ main {
                         color: #{$color};
                     }
                 }
-                // Fin aplicación map
-                img {
-                    transition: 1s;    
-                    border-radius: 100%;
-                    &:hover {
-                        translate: 0 -5px;
-                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-                    }
-                }
-                .img__lg {
-                    @media only screen and (min-width: 991.1px) {
-                        $vista:desktop;
-                        @if $vista == desktop {
-                            width: 70%; 
+                // Fin aplicación map 
+                div {
+                    .div__img_resena1 {
+                        width: 100px;
+                        height: 100px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        border-radius: 100%;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                        background-image: url(../multimedia/images/resena_img_1.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        transition: 1s;    
+                        &:hover {
+                            width: 120px;
+                        }
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                width: 200px;
+                                height: 200px;
+                                &:hover {
+                                    width: 220px;
+                                }                                
+                            }
+                        }
+                    }   
+                    .div__img_resena2 {
+                        @extend .div__img_resena1;
+                        background-image: url(../multimedia/images/resena_img_2.jpg);                            
+                    } 
+                                              
+                    .btn_t_mobile {
+                        @media only screen and (min-width: 991.1px) {
+                            $vista:desktop;
+                            @if $vista == desktop {
+                                display: none;
+                            }
                         }
                     }
-                }
-                .btn_t_mobile {
-                    @media only screen and (min-width: 991.1px) {
-                        $vista:desktop;
-                        @if $vista == desktop {
-                            display: none;
-                        }
-                    }
-                }
+                }                
             }
+            .div__separador {
+                background-color: $color2;
+                width: 85%;
+                height: 5px;
+                margin-bottom: 50px;
+            } 
             div {
                 .btn_r_lg {
                     display: none;

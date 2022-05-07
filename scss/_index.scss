@@ -65,7 +65,7 @@ main {
                         $vista: desktop;
                         @if $vista == desktop {
                             grid-template-columns: 40% 40%;
-                            column-gap: 1%;
+                            column-gap: 3%;
                             justify-content: center;
                             grid-template-rows: 300px;
                             grid-template-areas: 
@@ -249,17 +249,22 @@ main {
                         &:hover {
                             transform: scale(1.05);
                         }    
-                        .img__resena_home {
-                            width: 50%;
+                        .div__img_resena1 {
+                            width: 130px;
+                            height: 130px;
                             margin-top: 20px;
-                            @media only screen and (min-width: 991px) {
-                                $vista:desktop;
-                                @if $vista == desktop {
-                                    width: 30%;
-                                    margin-top: 20px;
-                                }
-                            }
-                        }
+                            margin-bottom: 20px;
+                            border-radius: 100%;
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                            background-image: url(../multimedia/images/resena_img_1.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }   
+                        .div__img_resena2 {
+                            @extend .div__img_resena1;
+                            background-image: url(../multimedia/images/resena_img_2.jpg);                            
+                        }                        
                         .p__resena_home{
                             transition: 0.2s;
                             &:hover {
