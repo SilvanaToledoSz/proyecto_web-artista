@@ -141,6 +141,9 @@ main div .div__home_bio {
     row-gap: 2%;
     grid-template-rows: 270px 300px;
     grid-template-areas: "imgBioH" "txtBioH"; }
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+      main div .div__home_bio div .div__home_bio-grid {
+        grid-template-rows: 300px 300px; } }
     @media only screen and (min-width: 991.1px) {
       main div .div__home_bio div .div__home_bio-grid {
         grid-template-columns: 40% 40%;
