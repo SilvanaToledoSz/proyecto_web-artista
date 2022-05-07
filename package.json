@@ -1,7 +1,7 @@
 {
   "name": "proyecto_web-artista_silvana-toledo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Página web del artista Julián Roel.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
