@@ -509,7 +509,7 @@ main .section__bio {
     main .section__bio div div .div__contenedorBio .div__bioTxt1 {
       grid-area: bioTxt1; }
       main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px; }
         main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
           height: 250px;
@@ -519,6 +519,9 @@ main .section__bio {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
+        @media only screen and (min-width: 991.1px) {
+          main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
+            font-size: 20px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg1 {
       grid-area: bioImg1; }
       main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio {
@@ -556,7 +559,7 @@ main .section__bio {
     main .section__bio div div .div__contenedorBio .div__bioTxt2 {
       grid-area: bioTxt2; }
       main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px; }
         main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
           height: 250px;
@@ -566,6 +569,9 @@ main .section__bio {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
+        @media only screen and (min-width: 991.1px) {
+          main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
+            font-size: 20px; } }
       main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
         height: 500px;
         overflow: auto; }
@@ -595,7 +601,7 @@ main .section__bio {
     main .section__bio div div .div__contenedorBio .div__bioTxt3 {
       grid-area: bioTxt3; }
       main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px; }
         main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
           height: 250px;
@@ -608,6 +614,9 @@ main .section__bio {
           @media only screen and (min-width: 991.1px) {
             main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
               margin-left: 1%; } }
+        @media only screen and (min-width: 991.1px) {
+          main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
+            font-size: 20px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg4 {
       grid-area: bioImg4; }
       main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
@@ -628,7 +637,7 @@ main .section__bio {
     main .section__bio div div .div__contenedorBio .div__bioTxt4 {
       grid-area: bioTxt4; }
       main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px; }
         main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
           height: 250px;
@@ -641,6 +650,9 @@ main .section__bio {
           @media only screen and (min-width: 991.1px) {
             main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
               margin-left: 1%; } }
+        @media only screen and (min-width: 991.1px) {
+          main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
+            font-size: 20px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg5 {
       grid-area: bioImg5; }
       main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {

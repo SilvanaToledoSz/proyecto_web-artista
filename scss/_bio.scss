@@ -69,8 +69,14 @@ main {
                                     }
                                 }
                             }
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 30px;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                     }
                     .div__bioImg1 {
@@ -135,8 +141,14 @@ main {
                                     }
                                 }
                             }
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 30px;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                         .p__txtbio2 {
                             height: 500px;
@@ -199,8 +211,14 @@ main {
                                     }
                                 }
                             }
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 30px;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                     }
                     .div__bioImg4 {
@@ -247,8 +265,14 @@ main {
                                     }
                                 }
                             }
-                            font-size: 20px;
+                            font-size: 18px;
                             line-height: 30px;
+                            @media only screen and (min-width: 991.1px) {
+                                $vista:desktop;
+                                @if $vista == desktop {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                     }
                     .div__bioImg5 {
