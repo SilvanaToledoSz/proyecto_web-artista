@@ -85,7 +85,7 @@ main {
                     .div__bio_txt_home {
                         height: 300px;
                         overflow: auto;
-                        margin: 10px 0;
+                        margin-bottom: 10px;
                         grid-area: txtBioH;
                         @media only screen and (min-width: 991.1px) {
                             $vista: desktop;

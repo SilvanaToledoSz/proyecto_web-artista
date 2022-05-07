@@ -159,7 +159,7 @@ main div .div__home_bio {
     main div .div__home_bio div .div__home_bio-grid .div__bio_txt_home {
       height: 300px;
       overflow: auto;
-      margin: 10px 0;
+      margin-bottom: 10px;
       grid-area: txtBioH; }
       @media only screen and (min-width: 991.1px) {
         main div .div__home_bio div .div__home_bio-grid .div__bio_txt_home {
