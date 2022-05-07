@@ -954,6 +954,7 @@ main div .div__seccion_extras {
     main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens {
       display: grid;
       grid-template-columns: 33.3% 33.3% 33.4%;
+      row-gap: 20px;
       grid-template-rows: 400px 400px 200px 200px 200px;
       grid-template-areas: "p1 p1 p2" "p1 p1 p3" "p4 p4 p3" "p5 p5 p5" "p6 p7 p7"; }
       @media only screen and (min-width: 991.1px) {
@@ -979,7 +980,8 @@ main div .div__seccion_extras {
         grid-area: p2;
         line-height: 50px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens3 {
-        grid-area: p3; }
+        grid-area: p3;
+        line-height: 50px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens4 {
         grid-area: p4;
         line-height: 60px; }
