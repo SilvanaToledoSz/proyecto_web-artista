@@ -64,7 +64,7 @@ main {
                     @media only screen and (min-width: 576px) and (max-width: 991px) {
                         $vista:tablet;
                         @if $vista == tablet {
-                            grid-template-rows: 300px 300px;
+                            grid-template-rows: 320px 220px;
                         }
                     }
                     @media only screen and (min-width: 991.1px) {
