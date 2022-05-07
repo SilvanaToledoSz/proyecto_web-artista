@@ -8,7 +8,7 @@ main {
         @media only screen and (min-width: 576px) and (max-width: 768px) {
             $vista:tablet;
             @if $vista == tablet {
-                height: 2600px;
+                height: 2450px;
             }
         }
         @media only screen and (min-width: 991.1px) {
@@ -22,7 +22,7 @@ main {
                 .div__contenedorBio {
                     @include gridCentro;
                     grid-template-columns: 80%;
-                    grid-template-rows: repeat(3, 250px) 500px repeat(5, 250px);
+                    grid-template-rows: repeat(3, 250px) 400px repeat(5, 250px);
                     grid-template-areas: 
                     "bioTxt1"
                     "bioImg1"
@@ -37,7 +37,7 @@ main {
                     @media only screen and (min-width: 576px) and (max-width: 768px) {
                         $vista:tablet;
                         @if $vista == tablet {
-                            grid-template-rows: repeat(3, 250px) 350px repeat(3, 250px);
+                            grid-template-rows: repeat(3, 250px) 300px repeat(3, 230px);
                         }
                     }
                     @media only screen and (min-width: 991.1px) {
@@ -69,7 +69,7 @@ main {
                                     }
                                 }
                             }
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 30px;
                         }
                     }
@@ -135,7 +135,7 @@ main {
                                     }
                                 }
                             }
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 30px;
                         }
                         .p__txtbio2 {
@@ -199,7 +199,7 @@ main {
                                     }
                                 }
                             }
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 30px;
                         }
                     }
@@ -247,7 +247,7 @@ main {
                                     }
                                 }
                             }
-                            font-size: 24px;
+                            font-size: 20px;
                             line-height: 30px;
                         }
                     }
