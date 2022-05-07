@@ -398,6 +398,7 @@ main div .div__home_extras {
   main div .div__home_extras div .div__contenedor_extras2 {
     height: 200px; }
     main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 {
+      word-wrap: break-word;
       grid-area: imgExtras3;
       width: 100%;
       height: 90%;
