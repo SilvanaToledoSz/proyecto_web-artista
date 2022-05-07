@@ -139,7 +139,7 @@ main div .div__home_bio {
     justify-content: center;
     grid-template-columns: 80%;
     row-gap: 2%;
-    grid-template-rows: 260px 300px;
+    grid-template-rows: 270px 300px;
     grid-template-areas: "imgBioH" "txtBioH"; }
     @media only screen and (min-width: 991.1px) {
       main div .div__home_bio div .div__home_bio-grid {
