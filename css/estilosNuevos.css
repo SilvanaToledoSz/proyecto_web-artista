@@ -279,6 +279,7 @@ main div .div__home_resenas {
     main div .div__home_resenas div div .article__resena_home .div__img_resena2 {
       background-image: url(../multimedia/images/resena_img_2.jpg); }
     main div .div__home_resenas div div .article__resena_home .p__resena_home {
+      font-size: 18px;
       transition: 0.2s; }
       main div .div__home_resenas div div .article__resena_home .p__resena_home:hover {
         font-weight: 400; }
