@@ -22,7 +22,7 @@ main {
                 .div__contenedorBio {
                     @include gridCentro;
                     grid-template-columns: 80%;
-                    grid-template-rows: repeat(3, 250px) 400px repeat(5, 250px);
+                    grid-template-rows: repeat(3, 250px) 500px repeat(5, 250px);
                     grid-template-areas: 
                     "bioTxt1"
                     "bioImg1"

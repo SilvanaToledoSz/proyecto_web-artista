@@ -502,7 +502,7 @@ main .section__bio {
     display: grid;
     justify-content: center;
     grid-template-columns: 80%;
-    grid-template-rows: repeat(3, 250px) 400px repeat(5, 250px);
+    grid-template-rows: repeat(3, 250px) 500px repeat(5, 250px);
     grid-template-areas: "bioTxt1" "bioImg1" "bioImg2" "bioTxt2" "bioImg3" "bioTxt3" "bioImg4" "bioTxt4" "bioImg5";
     row-gap: 1%; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
