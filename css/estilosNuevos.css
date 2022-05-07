@@ -970,11 +970,13 @@ main div .div__seccion_extras {
         padding: 10px;
         grid-area: p1; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens2 {
-        grid-area: p2; }
+        grid-area: p2;
+        line-height: 50px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens3 {
         grid-area: p3; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens4 {
-        grid-area: p4; }
+        grid-area: p4;
+        line-height: 60px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens5 {
         grid-area: p5; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens6 {

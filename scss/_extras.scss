@@ -203,6 +203,7 @@ main {
                         .div__pens2 {
                             @extend .div__pens;
                             grid-area: p2;
+                            line-height: 50px;
                         }
                         .div__pens3 {
                             @extend .div__pens;
@@ -211,6 +212,7 @@ main {
                         .div__pens4 {
                             @extend .div__pens;
                             grid-area: p4;
+                            line-height: 60px;
                         }                        
                         .div__pens5 {
                             @extend .div__pens;
