@@ -483,13 +483,19 @@ main div .div__home_extras {
 /* INICIO SECCIÓN BIO */
 main .section__bio {
   background-color: #9AD1D4;
-  height: 2100px; }
+  height: 2700px; }
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    main .section__bio {
+      height: 2600px; } }
+  @media only screen and (min-width: 991.1px) {
+    main .section__bio {
+      height: 2100px; } }
   main .section__bio div div .div__contenedorBio {
     display: grid;
     justify-content: center;
     grid-template-columns: 80%;
-    grid-template-rows: repeat(3, 250px) 500px repeat(3, 250px);
-    grid-template-areas: "bioTxt1" "bioImg1" "bioImg2" "bioTxt2" "bioImg3" "bioTxt3" "bioImg4";
+    grid-template-rows: repeat(3, 250px) 500px repeat(5, 250px);
+    grid-template-areas: "bioTxt1" "bioImg1" "bioImg2" "bioTxt2" "bioImg3" "bioTxt3" "bioImg4" "bioTxt4" "bioImg5";
     row-gap: 1%; }
     @media only screen and (min-width: 576px) and (max-width: 768px) {
       main .section__bio div div .div__contenedorBio {

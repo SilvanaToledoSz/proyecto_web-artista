@@ -4,13 +4,25 @@
 main {
     .section__bio {
         background-color: $color3;
-        height: 2100px;
+        height: 2700px;
+        @media only screen and (min-width: 576px) and (max-width: 768px) {
+            $vista:tablet;
+            @if $vista == tablet {
+                height: 2600px;
+            }
+        }
+        @media only screen and (min-width: 991.1px) {
+            $vista:desktop;
+            @if $vista == desktop {
+                height: 2100px;
+            }
+        }
         div {
             div {
                 .div__contenedorBio {
                     @include gridCentro;
                     grid-template-columns: 80%;
-                    grid-template-rows: repeat(3, 250px) 500px repeat(3, 250px);
+                    grid-template-rows: repeat(3, 250px) 500px repeat(5, 250px);
                     grid-template-areas: 
                     "bioTxt1"
                     "bioImg1"
@@ -18,7 +30,9 @@ main {
                     "bioTxt2"
                     "bioImg3"
                     "bioTxt3"
-                    "bioImg4";
+                    "bioImg4"
+                    "bioTxt4"
+                    "bioImg5";
                     row-gap: 1%;
                     @media only screen and (min-width: 576px) and (max-width: 768px) {
                         $vista:tablet;
