@@ -491,7 +491,7 @@ main div .div__home_extras {
 /* INICIO SECCIÓN BIO */
 main .section__bio {
   background-color: #9AD1D4;
-  height: 2600px; }
+  height: 2700px; }
   @media only screen and (min-width: 576px) and (max-width: 991px) {
     main .section__bio {
       height: 2200px; } }

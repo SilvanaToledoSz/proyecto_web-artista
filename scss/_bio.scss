@@ -4,7 +4,7 @@
 main {
     .section__bio {
         background-color: $color3;
-        height: 2600px;
+        height: 2700px;
         @media only screen and (min-width: 576px) and (max-width: 991px) {
             $vista:tablet;
             @if $vista == tablet {
