@@ -141,7 +141,10 @@ main div .div__home_bio {
     row-gap: 2%;
     grid-template-rows: 270px 300px;
     grid-template-areas: "imgBioH" "txtBioH"; }
-    @media only screen and (min-width: 576px) and (max-width: 991px) {
+    @media only screen and (min-width: 576px) and (max-width: 756px) {
+      main div .div__home_bio div .div__home_bio-grid {
+        grid-template-rows: 320px 220px; } }
+    @media only screen and (min-width: 756.1px) and (max-width: 991px) {
       main div .div__home_bio div .div__home_bio-grid {
         grid-template-rows: 320px 220px; } }
     @media only screen and (min-width: 991.1px) {
@@ -286,20 +289,20 @@ main div .div__home_resenas {
       transition: 0.2s; }
       main div .div__home_resenas div div .article__resena_home .p__resena_home:hover {
         font-weight: 400; }
-      @media only screen and (min-width: 768px) and (max-width: 992px) {
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
         main div .div__home_resenas div div .article__resena_home .p__resena_home {
           height: 200px;
           overflow: auto; } }
-      @media only screen and (min-width: 991px) {
+      @media only screen and (min-width: 991.1px) {
         main div .div__home_resenas div div .article__resena_home .p__resena_home {
           height: 200px;
           overflow: auto; } }
   main div .div__home_resenas div .div__resena_home2 {
     display: none; }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       main div .div__home_resenas div .div__resena_home2 {
         display: block; } }
-    @media only screen and (min-width: 991px) {
+    @media only screen and (min-width: 991.1px) {
       main div .div__home_resenas div .div__resena_home2 {
         display: block; } }
 
@@ -363,7 +366,7 @@ main div .div__home_extras {
           text-align: center; }
     main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg {
       display: none; }
-      @media only screen and (min-width: 991.1px) {
+      @media only screen and (min-width: 992px) {
         main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg {
           display: block; } }
       main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg .div__img_extras5 {
@@ -412,14 +415,14 @@ main div .div__home_extras {
       main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3:hover {
         transform: scale(1.02); }
       main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 a {
-        transition: all 0.5s; }
+        transition: all 0.5s;
+        word-wrap: break-word; }
         main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 a:hover {
           background-color: white;
           opacity: 0.8;
           width: 100%;
           padding: 5px 0;
-          color: #424251;
-          text-align: center; }
+          color: #424251; }
     main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras4 {
       grid-area: imgExtras4;
       width: 100%;
@@ -448,7 +451,7 @@ main div .div__home_extras {
           text-align: center; }
     main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg {
       display: none; }
-      @media only screen and (min-width: 991.1px) {
+      @media only screen and (min-width: 992px) {
         main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg {
           display: block; } }
       main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg .div__img_extras6 {
@@ -477,7 +480,7 @@ main div .div__home_extras {
             padding: 5px 0;
             color: #424251;
             text-align: center; }
-  @media only screen and (min-width: 991.1px) {
+  @media only screen and (min-width: 992px) {
     main div .div__home_extras div .div__btnExHome {
       display: none; } }
 
@@ -488,9 +491,9 @@ main div .div__home_extras {
 main .section__bio {
   background-color: #9AD1D4;
   height: 2600px; }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
     main .section__bio {
-      height: 2450px; } }
+      height: 2200px; } }
   @media only screen and (min-width: 991.1px) {
     main .section__bio {
       height: 2100px; } }
@@ -501,13 +504,13 @@ main .section__bio {
     grid-template-rows: repeat(3, 250px) 400px repeat(5, 250px);
     grid-template-areas: "bioTxt1" "bioImg1" "bioImg2" "bioTxt2" "bioImg3" "bioTxt3" "bioImg4" "bioTxt4" "bioImg5";
     row-gap: 1%; }
-    @media only screen and (min-width: 576px) and (max-width: 768px) {
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
       main .section__bio div div .div__contenedorBio {
-        grid-template-rows: repeat(3, 250px) 200px repeat(3, 230px); } }
+        grid-template-rows: 200px 250px 250px 200px 230px 190px 230px 200px 200px; } }
     @media only screen and (min-width: 991.1px) {
       main .section__bio div div .div__contenedorBio {
         grid-template-columns: 40% 40%;
-        grid-template-rows: repeat(4, 400px);
+        grid-template-rows: repeat(4, 400px) 300px;
         grid-template-areas: "bioTxt1 bioImg1" "bioTxt2 bioImg2" "bioImg3 bioTxt3" "bioImg4 bioTxt4" "bioImg5 bioImg5";
         column-gap: 1%; } }
     main .section__bio div div .div__contenedorBio .div__bioTxt1 {
@@ -579,7 +582,7 @@ main .section__bio {
       main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
         height: 500px;
         overflow: auto; }
-        @media only screen and (min-width: 576px) and (max-width: 768px) {
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
           main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
             height: 350px; } }
         @media only screen and (min-width: 991.1px) {
@@ -797,7 +800,7 @@ main .section__contacto {
 .section__discografia {
   background-color: #CCDBDC;
   height: 2400px; }
-  @media only screen and (min-width: 576px) and (max-width: 768px) {
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
     .section__discografia {
       height: 2000px; } }
   @media only screen and (min-width: 991.1px) {
@@ -812,10 +815,10 @@ main .section__contacto {
     grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; }
     .section__discografia .div__contenedorDisc .txtDisc {
       color: #4A4A5B;
-      font-size: 24px; }
-    @media only screen and (min-width: 576px) and (max-width: 768px) {
+      font-size: 22px; }
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
       .section__discografia .div__contenedorDisc {
-        grid-template-rows: 60px 300px 200px 60px 300px 200px 60px 300px 200px;
+        grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 300px 190px;
         grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; } }
     @media only screen and (min-width: 991.1px) {
       .section__discografia .div__contenedorDisc {
@@ -833,7 +836,7 @@ main .section__contacto {
     .section__discografia .div__contenedorDisc p {
       height: 300px;
       overflow: auto; }
-      @media only screen and (min-width: 576px) and (max-width: 768px) {
+      @media only screen and (min-width: 576px) and (max-width: 991px) {
         .section__discografia .div__contenedorDisc p {
           height: 200px; } }
       @media only screen and (min-width: 991.1px) {
@@ -903,7 +906,7 @@ main div .div__seccion_extras {
     @media only screen and (min-width: 991.1px) {
       main div .div__seccion_extras div .div__galeria1 {
         height: 200px; } }
-    @media only screen and (min-width: 991.1px) {
+    @media only screen and (min-width: 756px) {
       main div .div__seccion_extras div .div__galeria1 .img__galeria1 {
         width: 100%; } }
   main div .div__seccion_extras div .div__galeria2 {
@@ -991,7 +994,8 @@ main div .div__seccion_extras {
         padding-left: 10px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens1 {
         padding: 10px;
-        grid-area: p1; }
+        grid-area: p1;
+        line-height: 70px; }
       main div .div__seccion_extras .div__seccion_pensamientos div .div__contGridPens .div__pens2 {
         grid-area: p2;
         line-height: 50px; }

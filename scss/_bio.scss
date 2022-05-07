@@ -5,10 +5,10 @@ main {
     .section__bio {
         background-color: $color3;
         height: 2600px;
-        @media only screen and (min-width: 576px) and (max-width: 768px) {
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
             $vista:tablet;
             @if $vista == tablet {
-                height: 2450px;
+                height: 2200px;
             }
         }
         @media only screen and (min-width: 991.1px) {
@@ -34,17 +34,17 @@ main {
                     "bioTxt4"
                     "bioImg5";
                     row-gap: 1%;
-                    @media only screen and (min-width: 576px) and (max-width: 768px) {
+                    @media only screen and (min-width: 576px) and (max-width: 991px) {
                         $vista:tablet;
                         @if $vista == tablet {
-                            grid-template-rows: repeat(3, 250px) 200px repeat(3, 230px);
+                            grid-template-rows: 200px 250px 250px 200px 230px 190px 230px 200px 200px;
                         }
                     }
                     @media only screen and (min-width: 991.1px) {
                         $vista:desktop;
                         @if $vista == desktop {
                             grid-template-columns: 40% 40%;
-                            grid-template-rows: repeat(4, 400px);
+                            grid-template-rows: repeat(4, 400px) 300px;
                             grid-template-areas: 
                             "bioTxt1 bioImg1"
                             "bioTxt2 bioImg2"
@@ -100,8 +100,7 @@ main {
                                     margin-bottom: 10px;  
                                 }
                             }
-                        }
-                        
+                        }                        
                     }
                     .div__bioImg2 {
                         grid-area: bioImg2;
@@ -153,7 +152,7 @@ main {
                         .p__txtbio2 {
                             height: 500px;
                             overflow: auto;
-                            @media only screen and (min-width: 576px) and (max-width: 768px) {
+                            @media only screen and (min-width: 576px) and (max-width: 991px) {
                                 $vista:tablet;
                                 @if $vista == tablet {
                                     height: 350px;                                    

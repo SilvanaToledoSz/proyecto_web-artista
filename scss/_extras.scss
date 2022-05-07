@@ -24,7 +24,7 @@ main {
                         }
                     }
                     .img__galeria1 {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: 756px) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 100%;
@@ -199,7 +199,8 @@ main {
                         .div__pens1 {
                             @extend .div__pens;
                             padding: 10px;
-                            grid-area: p1;                            
+                            grid-area: p1;  
+                            line-height: 70px;                          
                         }
                         .div__pens2 {
                             @extend .div__pens;

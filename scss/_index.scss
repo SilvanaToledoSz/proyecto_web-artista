@@ -61,9 +61,15 @@ main {
                     grid-template-areas: 
                     "imgBioH"
                     "txtBioH";
-                    @media only screen and (min-width: 576px) and (max-width: 991px) {
+                    @media only screen and (min-width: 576px) and (max-width: 756px) {
                         $vista:tablet;
                         @if $vista == tablet {
+                            grid-template-rows: 320px 220px;
+                        }
+                    }
+                    @media only screen and (min-width: 756.1px) and (max-width: 991px) {
+                        $vista:tablet2;
+                        @if $vista == tablet2 {
                             grid-template-rows: 320px 220px;
                         }
                     }
@@ -277,14 +283,14 @@ main {
                             &:hover {
                                 font-weight: 400;
                             }
-                            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                            @media only screen and (min-width: 768px) and (max-width: 991px) {
                                 $vista: tablet;
                                 @if $vista == tablet {
                                     height: 200px;
                                     overflow: auto;
                                 }
                             }
-                            @media only screen and (min-width: 991px) {
+                            @media only screen and (min-width: 991.1px) {
                                 $vista:desktop;
                                 @if $vista == desktop {
                                     height: 200px;
@@ -296,13 +302,13 @@ main {
                 }
                 .div__resena_home2 {
                     display: none;
-                    @media only screen and (min-width: 768px) and (max-width: 992px) {
+                    @media only screen and (min-width: 768px) and (max-width: 991px) {
                         $vista: tablet;
                         @if $vista == tablet {
                             display: block;
                         }
                     }
-                    @media only screen and (min-width: 991px) {
+                    @media only screen and (min-width: 991.1px) {
                         $vista: desktop;
                         @if $vista == desktop {
                             display: block;
@@ -383,7 +389,7 @@ main {
                     }
                     .div__col_extras_lg {
                         display: none;
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: 992px) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 display: block;
@@ -442,14 +448,14 @@ main {
                             }
                             a {
                                 transition: all 0.5s;
+                                word-wrap: break-word;
                                 &:hover {
                                     background-color:white;
                                     opacity: 0.8;
                                     width: 100%;
                                     padding: 5px 0;
                                     color: $color6;
-                                    text-align: center;
-                                }
+                                }                                
                             }
                         }
                         .div__img_extras4 {
@@ -484,7 +490,7 @@ main {
                     }
                     .div__col_extras_lg {
                         display: none;
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: 992px) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 display: block;
@@ -522,7 +528,7 @@ main {
                     }  
                 }
                 .div__btnExHome {
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: 992px) {
                         $vista:desktop;
                         @if $vista == desktop {
                             display: none;

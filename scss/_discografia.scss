@@ -6,7 +6,7 @@ $vista: mobile;
 .section__discografia {
     background-color: $color4;
     height: 2400px;
-    @media only screen and (min-width: 576px) and (max-width: 768px) {
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
         $vista:tablet;
         @if $vista == tablet {
             height: 2000px;
@@ -23,7 +23,7 @@ $vista: mobile;
         // Inicio aplicación map-get
         $txtDisc: (
             color: #4A4A5B,
-            size: 24px,
+            size: 22px,
             letter-spacing: 5px
         );
 
@@ -47,10 +47,10 @@ $vista: mobile;
         "h2D3"
         "iframeD3"
         "pD3";
-        @media only screen and (min-width: 576px) and (max-width: 768px) {
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
             $vista:tablet;
             @if $vista == tablet {
-                grid-template-rows: 60px 300px 200px 60px 300px 200px 60px 300px 200px;
+                grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 300px 190px;
                 grid-template-areas: 
                 "h2D1"
                 "iframeD1"
@@ -89,7 +89,7 @@ $vista: mobile;
         p {
             height: 300px;
             overflow: auto;
-            @media only screen and (min-width: 576px) and (max-width: 768px) {
+            @media only screen and (min-width: 576px) and (max-width: 991px) {
                 $vista:tablet;
                 @if $vista == tablet {
                     height: 200px;                    
