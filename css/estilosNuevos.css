@@ -483,7 +483,7 @@ main div .div__home_extras {
 /* INICIO SECCIÓN BIO */
 main .section__bio {
   background-color: #9AD1D4;
-  height: 2700px; }
+  height: 2600px; }
   @media only screen and (min-width: 576px) and (max-width: 768px) {
     main .section__bio {
       height: 2450px; } }
@@ -499,7 +499,7 @@ main .section__bio {
     row-gap: 1%; }
     @media only screen and (min-width: 576px) and (max-width: 768px) {
       main .section__bio div div .div__contenedorBio {
-        grid-template-rows: repeat(3, 250px) 300px repeat(3, 230px); } }
+        grid-template-rows: repeat(3, 250px) 200px repeat(3, 230px); } }
     @media only screen and (min-width: 991.1px) {
       main .section__bio div div .div__contenedorBio {
         grid-template-columns: 40% 40%;
@@ -521,7 +521,7 @@ main .section__bio {
               margin-bottom: 10px; } }
         @media only screen and (min-width: 991.1px) {
           main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
-            font-size: 20px; } }
+            font-size: 22px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg1 {
       grid-area: bioImg1; }
       main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio {
@@ -571,7 +571,7 @@ main .section__bio {
               margin-bottom: 10px; } }
         @media only screen and (min-width: 991.1px) {
           main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
-            font-size: 20px; } }
+            font-size: 22px; } }
       main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
         height: 500px;
         overflow: auto; }
@@ -616,7 +616,7 @@ main .section__bio {
               margin-left: 1%; } }
         @media only screen and (min-width: 991.1px) {
           main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
-            font-size: 20px; } }
+            font-size: 22px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg4 {
       grid-area: bioImg4; }
       main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
@@ -652,7 +652,7 @@ main .section__bio {
               margin-left: 1%; } }
         @media only screen and (min-width: 991.1px) {
           main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
-            font-size: 20px; } }
+            font-size: 22px; } }
     main .section__bio div div .div__contenedorBio .div__bioImg5 {
       grid-area: bioImg5; }
       main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {
