@@ -38,7 +38,7 @@ main {
                         &:hover {
                             width: 120px;
                         }
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 200px;
@@ -55,7 +55,7 @@ main {
                     } 
                                               
                     .btn_t_mobile {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 display: none;
@@ -73,7 +73,7 @@ main {
             div {
                 .btn_r_lg {
                     display: none;
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             display: block;

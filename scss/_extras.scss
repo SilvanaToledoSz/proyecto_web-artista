@@ -17,16 +17,16 @@ main {
                     &:hover {
                         transform: translate(0, -7px);
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 200px; 
                         }
                     }
                     .img__galeria1 {
-                        @media only screen and (min-width: 756px) {
-                            $vista:desktop;
-                            @if $vista == desktop {
+                        @media only screen and (min-width: $medioTablet) {
+                            $vista:tablet;
+                            @if $vista == tablet {
                                 width: 100%;
                             }
                         }                        
@@ -41,14 +41,14 @@ main {
                     &:hover {
                         transform: translate(0, -7px);
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 200px; 
                         }
                     }
                     .img__galeria2 {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 100%;
@@ -63,14 +63,14 @@ main {
                     &:hover {
                         transform: translate(0, -7px);
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 200px; 
                         }
                     }
                     .img__galeria3 {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 100%;
@@ -87,14 +87,14 @@ main {
                     &:hover {
                         transform: translate(0, -7px);
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 200px; 
                         }
                     }
                     .img__galeria4 {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 100%;
@@ -109,14 +109,14 @@ main {
                     &:hover {
                         transform: translate(0, -7px);
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 200px; 
                         }
                     }
                     .img__galeria5 {
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 width: 100%;
@@ -139,7 +139,7 @@ main {
                             &:hover {
                                 transform: scale(0.95);
                             }
-                            @media only screen and (min-width: 991.1px) {
+                            @media only screen and (min-width: $minDesktop) {
                                 $vista:desktop;
                                 @if $vista == desktop {
                                     height: 300px;
@@ -166,7 +166,7 @@ main {
                         "p4 p4 p3"
                         "p5 p5 p5"
                         "p6 p7 p7";
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 row-gap: 15px;
@@ -247,7 +247,7 @@ main {
                                         height: 300px;
                                         border-radius: 10px;
                                         width: 90%;
-                                        @media only screen and (min-width: 991.1px) {
+                                        @media only screen and (min-width: $minDesktop) {
                                             $vista:desktop;
                                             @if $vista == desktop {
                                                 width: 80%;
@@ -267,7 +267,7 @@ main {
                 .div__referentes {
                     .div__ref {
                         height: 300px;    
-                        @media only screen and (min-width: 991.1px) {
+                        @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
                                 height: 200px;    
@@ -286,7 +286,7 @@ main {
                             object-fit: cover;
                             object-position: right;
                             transition: 1s;
-                            @media only screen and (min-width: 991.1px) {
+                            @media only screen and (min-width: $minDesktop) {
                                 $vista:desktop;
                                 @if $vista == desktop {
                                     height: 200px; 
@@ -298,7 +298,7 @@ main {
                             object-fit: cover;
                             object-position: center;
                             transition: 1s;
-                            @media only screen and (min-width: 991.1px) {
+                            @media only screen and (min-width: $minDesktop) {
                                 $vista:desktop;
                                 @if $vista == desktop {
                                     height: 200px; 
@@ -310,7 +310,7 @@ main {
                             object-fit: cover;
                             object-position: center;
                             transition: 1s;
-                            @media only screen and (min-width: 991.1px) {
+                            @media only screen and (min-width: $minDesktop) {
                                 $vista:desktop;
                                 @if $vista == desktop {
                                     height: 200px; 

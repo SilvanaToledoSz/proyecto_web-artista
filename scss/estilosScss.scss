@@ -33,6 +33,12 @@ $color3:#9AD1D4;
 $color4:#CCDBDC;
 $color5:#eb9f06;
 $color6:#424251;
+$minTablet: 576px;
+$medioTablet: 756px;
+$medioTabletB: ($medioTablet+0.1);
+$maxTablet: 991px;
+$minDesktop: ($maxTablet+0.1);
+$minDesktopB: ($maxTablet+1);
 
 // Fin Variables
 

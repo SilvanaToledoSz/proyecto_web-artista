@@ -31,7 +31,7 @@ main {
                             text-align: center;
                         }
                     }
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             height: 300px;
@@ -47,7 +47,7 @@ main {
                 border-radius: 20px;
                 width: 100%;
                 .audio__prev {
-                    @media only screen and (min-width: 991.1px) {
+                    @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
                             width: 100%;

@@ -54,7 +54,7 @@ header nav div .img__logo {
 header nav div div .a__submenu:hover {
   color: #003249; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 756px) {
   header nav div .img__logo {
     width: 300px; } }
 
@@ -289,7 +289,7 @@ main div .div__home_resenas {
       transition: 0.2s; }
       main div .div__home_resenas div div .article__resena_home .p__resena_home:hover {
         font-weight: 400; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @media only screen and (min-width: 756px) and (max-width: 991px) {
         main div .div__home_resenas div div .article__resena_home .p__resena_home {
           height: 200px;
           overflow: auto; } }
@@ -299,7 +299,7 @@ main div .div__home_resenas {
           overflow: auto; } }
   main div .div__home_resenas div .div__resena_home2 {
     display: none; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 756px) and (max-width: 991px) {
       main div .div__home_resenas div .div__resena_home2 {
         display: block; } }
     @media only screen and (min-width: 991.1px) {
