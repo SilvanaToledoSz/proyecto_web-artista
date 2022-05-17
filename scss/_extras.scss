@@ -5,12 +5,12 @@ $vista:mobile;
 
 main {
     div {
-        .div__seccion_extras {
+        .main__div--extras {
             background-color: $color4;
             
             // Inicio sección extras-galería
             div {
-                .div__galeria1 {
+                .div__contenedor--gal1 {
                     height: 150px;
                     overflow: hidden;
                     transition: 1s;
@@ -23,7 +23,7 @@ main {
                             height: 200px; 
                         }
                     }
-                    .img__galeria1 {
+                    .div__img--gal1 {
                         @media only screen and (min-width: $medioTablet) {
                             $vista:tablet;
                             @if $vista == tablet {
@@ -34,7 +34,7 @@ main {
                 }
             }
             div {
-                .div__galeria2 {
+                .div__contenedor--gal2 {
                     height: 150px;
                     overflow: hidden;
                     transition: 1s;
@@ -47,7 +47,7 @@ main {
                             height: 200px; 
                         }
                     }
-                    .img__galeria2 {
+                    .div__img--gal2 {
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
@@ -56,7 +56,7 @@ main {
                         }                        
                     }
                 }
-                .div__galeria3 {
+                .div__contenedor--gal3 {
                     height: 150px;
                     overflow: hidden;
                     transition: 1s;
@@ -69,7 +69,7 @@ main {
                             height: 200px; 
                         }
                     }
-                    .img__galeria3 {
+                    .div__img--gal3 {
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
@@ -80,7 +80,7 @@ main {
                 }
             }
             div {
-                .div__galeria4 {
+                .div__contenedor--gal4 {
                     height: 150px;
                     overflow: hidden;
                     transition: 1s;
@@ -93,7 +93,7 @@ main {
                             height: 200px; 
                         }
                     }
-                    .img__galeria4 {
+                    .div__img--gal4 {
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
@@ -102,7 +102,7 @@ main {
                         }                        
                     }
                 }
-                .div__galeria5 {
+                .div__contenedor--gal5 {
                     height: 150px;
                     overflow: hidden;
                     transition: 1s;
@@ -115,7 +115,7 @@ main {
                             height: 200px; 
                         }
                     }
-                    .img__galeria5 {
+                    .div__img--gal5 {
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
@@ -128,11 +128,11 @@ main {
             // Fin sección extras-galería
 
             // Inicio sección extras-videos
-            .div__seccion_videos {
+            .div__contenedor--videos {
                 background-color: $color3;
                 div {
                     div {
-                        .videoYT {
+                        .div__iframe--videoYT {
                             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
                             transition: 0.5s;
                             height: 200px;
@@ -152,10 +152,10 @@ main {
             // Fin sección extras-videos
 
             // Inicio sección extras-pensamientos
-            .div__seccion_pensamientos {
+            .div__contenedor--pens {
                 background-color: $color4;
                 div {
-                    .div__contGridPens {
+                    .div__contenedor--GridPens {
                         display: grid;
                         grid-template-columns: 33.3% 33.3% 33.4%;
                         row-gap: 20px;
@@ -189,44 +189,44 @@ main {
                         }
                         // Inicio aplicación extend
 
-                        .div__pens {
+                        .div__p--pens {
                             height: 100%;
                             transition: 0.5s;
                             overflow: auto;
                             padding-left: 10px;
                         }
                         
-                        .div__pens1 {
-                            @extend .div__pens;
+                        .div__p--pens1 {
+                            @extend .div__p--pens;
                             padding: 10px;
                             grid-area: p1;  
                             line-height: 70px;                          
                         }
-                        .div__pens2 {
-                            @extend .div__pens;
+                        .div__p--pens2 {
+                            @extend .div__p--pens;
                             grid-area: p2;
                             line-height: 50px;
                         }
-                        .div__pens3 {
-                            @extend .div__pens;
+                        .div__p--pens3 {
+                            @extend .div__p--pens;
                             grid-area: p3;
                             line-height: 50px;
                         }                        
-                        .div__pens4 {
-                            @extend .div__pens;
+                        .div__p--pens4 {
+                            @extend .div__p--pens;
                             grid-area: p4;
                             line-height: 60px;
                         }                        
-                        .div__pens5 {
-                            @extend .div__pens;
+                        .div__p--pens5 {
+                            @extend .div__p--pens;
                             grid-area: p5;
                         }                        
-                        .div__pens6 {
-                            @extend .div__pens;
+                        .div__p--pens6 {
+                            @extend .div__p--pens;
                             grid-area: p6;
                         }                        
-                        .div__pens7 {
-                            @extend .div__pens;
+                        .div__p--pens7 {
+                            @extend .div__p--pens;
                             grid-area: p7;
                         }
                         // Fin aplicación extend
@@ -236,14 +236,14 @@ main {
             // Fin sección extras-pensamientos
 
             // Inicio sección extras-tutoriales
-            .div__seccion_tutoriales {
+            .div__contenedor--tuto {
                 background-color: $color3;
                 div {
                     div {
                         div {
                             div {
                                 div {
-                                    .videoTuto {
+                                    .div__iframe--videoTuto {
                                         height: 300px;
                                         border-radius: 10px;
                                         width: 90%;
@@ -264,8 +264,8 @@ main {
 
             // Inicio sección extras-referentes
             div {
-                .div__referentes {
-                    .div__ref {
+                .div__contenedor--ref {
+                    .div--ref {
                         height: 300px;    
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
@@ -281,7 +281,7 @@ main {
                                 transform:rotate(-3deg);
                             }
                         }
-                        .img__ref1 {
+                        .div__img--ref1 {
                             height: 300px;
                             object-fit: cover;
                             object-position: right;
@@ -293,7 +293,7 @@ main {
                                 }
                             }
                         }
-                        .img__ref2 {
+                        .div__img--ref2 {
                             height: 300px;
                             object-fit: cover;
                             object-position: center;
@@ -305,7 +305,7 @@ main {
                                 }
                             }
                         }                        
-                        .img__ref3 {
+                        .div__img--ref3 {
                             height: 300px;
                             object-fit: cover;
                             object-position: center;
@@ -323,11 +323,11 @@ main {
             // Fin sección extras-referentes
 
             // Inicio sección extras-recomendados
-            .div__seccion_recomendados {
+            .div__contenedor--recom {
                 background-color: $color3;
                 div {
                     div {
-                        .img__recom {
+                        .div__img--recom {
                             height: 200px;
                             object-fit: cover;
                             object-position: center;

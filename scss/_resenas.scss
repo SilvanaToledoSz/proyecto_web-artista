@@ -5,7 +5,7 @@ $vista:mobile;
 /* INICIO SECCIÓN RESEÑAS */
 
 main {
-    .section__resenas {
+    .main__div--resenas {
         background-color: $color3;
         div {
             div {
@@ -16,14 +16,14 @@ main {
                 24:#787892
                 );
                 @each $size, $color in $font_resena {
-                    .fontResena_#{$size} {
+                    .div__p--fontResena_#{$size} {
                         font-size: #{$size}px;
                         color: #{$color};
                     }
                 }
                 // Fin aplicación map 
                 div {
-                    .div__img_resena1 {
+                    .div__contenedor--imgRes1 {
                         width: 100px;
                         height: 100px;
                         margin-top: 20px;
@@ -49,12 +49,12 @@ main {
                             }
                         }
                     }   
-                    .div__img_resena2 {
-                        @extend .div__img_resena1;
+                    .div__contenedor--imgRes2 {
+                        @extend .div__contenedor--imgRes1;
                         background-image: url(../multimedia/images/resena_img_2.jpg);                            
                     } 
                                               
-                    .btn_t_mobile {
+                    .div__btn--mb {
                         @media only screen and (min-width: $minDesktop) {
                             $vista:desktop;
                             @if $vista == desktop {
@@ -71,7 +71,7 @@ main {
                 margin-bottom: 50px;
             } 
             div {
-                .btn_r_lg {
+                .div__btn--lg {
                     display: none;
                     @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;

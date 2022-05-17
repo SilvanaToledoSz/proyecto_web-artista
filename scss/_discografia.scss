@@ -3,7 +3,7 @@ $vista: mobile;
 /* -------------------------- */
 /* INICIO SECCIÓN DISCOGRAFÍA */
 
-.section__discografia {
+.main--discografia {
     background-color: $color4;
     height: 2400px;
     @media only screen and (min-width: $minTablet) and (max-width: $maxTablet) {
@@ -18,18 +18,18 @@ $vista: mobile;
             height: 1400px;
         }
     }
-    .div__contenedorDisc {
+    .main__div--contDisc {
         
         // Inicio aplicación map-get
-        $txtDisc: (
+        $div__p--Disc: (
             color: #4A4A5B,
             size: 22px,
             letter-spacing: 5px
         );
 
-        .txtDisc {
-            color: map-get($txtDisc, color);
-            font-size: map-get($txtDisc, size);
+        .div__p--Disc {
+            color: map-get($div__p--Disc, color);
+            font-size: map-get($div__p--Disc, size);
         }
         // Fin aplicación map-get
         
@@ -111,14 +111,14 @@ $vista: mobile;
                 }
             }
         }
-        .iframe__disc1 {
+        .div__iframe--disc1 {
             grid-area: iframeD1;
             animation: backInLeft;
             animation-duration: 2s;
         }
-        .div__pDisc1 {
+        .div__contPDisc1 {
             grid-area: pD1;
-            .h2__disc1_lg {
+            .div__h2--disc1LG {
                 display: none;
                 @media only screen and (min-width: $minDesktop) {
                     $vista:desktop;
@@ -128,7 +128,7 @@ $vista: mobile;
                 }
             }            
         }
-        .h2__disc2 {
+        .div__h2--disc2 {
             grid-area: h2D2;
             @media only screen and (min-width: $minDesktop) {
                 $vista: desktop;
@@ -137,14 +137,14 @@ $vista: mobile;
                 }
             }
         }
-        .iframe__disc2 {
+        .div__iframe--disc2 {
             grid-area: iframeD2;
             animation: backInLeft;
             animation-duration: 4s;
         }
-        .div__pDisc2 {
+        .div__contPDisc2 {
             grid-area: pD2;
-            .h2__disc2_lg {
+            .div__h2--disc2LG {
                 display: none;
                 @media only screen and (min-width: $minDesktop) {
                     $vista:desktop;
@@ -154,7 +154,7 @@ $vista: mobile;
                 }
             }
         }
-        .h2__disc3 {
+        .div__h2--disc3 {
             grid-area: h2D3;
             @media only screen and (min-width: $minDesktop) {
                 $vista: desktop;
@@ -163,14 +163,14 @@ $vista: mobile;
                 }
             }
         }
-        .iframe__disc3 {
+        .div__iframe--disc3 {
             grid-area: iframeD3;
             animation: backInLeft;
             animation-duration: 6s;
         }
-        .div__pDisc3 {
+        .div__contPDisc3 {
             grid-area: pD3;
-            .h2__disc3_lg {
+            .div__h2--disc3LG {
                 display: none;
                 @media only screen and (min-width: $minDesktop) {
                     $vista:desktop;

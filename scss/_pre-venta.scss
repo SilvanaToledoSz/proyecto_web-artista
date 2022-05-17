@@ -4,11 +4,11 @@ $vista:mobile;
 /* INICIO SECCIÓN PRE-VENTA */
 
 main {
-    .section__pre_venta {
+    .main__div--preVenta {
         background-color: $color2;  
         div {
             div {
-                .div__img_prev {
+                .div__contImg--prev {
                     background-image: url(../multimedia/images/hero-image.jpg);
                     height: 200px;
                     width: 100%;
@@ -46,7 +46,7 @@ main {
                 align-items: center;
                 border-radius: 20px;
                 width: 100%;
-                .audio__prev {
+                .div__audio--prev {
                     @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
