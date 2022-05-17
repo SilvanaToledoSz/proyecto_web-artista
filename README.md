@@ -13,7 +13,10 @@ No requiere. La página puede ser vista online desde el siguiente dominio: https
 Puedes crear un pull request al proyecto para poder evaluarlo.
 
 ##**Licencia y Derechos de autor**
-Julián Roel. Todos los derechos reservados.
+Todo el material audiovisual del sitio pertenece a Julián Roel. Todos los derechos reservados.
+
+##**Acerca de la desarrolladora**
+Este sitio fue desarrollado por Silvana Toledo Szumowski dentro del contexto del Curso Virtual de Desarrollo Web impartido por CODERHOUSE. ¡Gracias por visitarlo!
 
 
 

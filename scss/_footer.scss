@@ -1,6 +1,6 @@
 /* ------------- */
 /* INICIO FLECHA */
-.div__flecha_inicio {
+.div__flechaInicio {
     background-color: white;
     height: 50px;
     width: 50px;
@@ -11,7 +11,7 @@
     bottom: 30px;
     right: 30px;
     opacity: 0.8;
-    .img__flecha {
+    .div__img--flechaInicio {
         margin-left: 32%;
         margin-top: 28%;
     }
@@ -22,20 +22,20 @@
 /* ------------- */
 /* INICIO FOOTER */
 footer {
-    .div__footer {
+    .footer__div {
         background-color: $color1;
         height: 120px;
-        .div__fila_footer {
+        .div__fila--footer {
             height: 100%;
-            .img__logo_footer {
+            .div__img--logoFooter {
                 width: 300px;
                 opacity: 0.7;
             }
         }
-        .div__footer_disclaimer {
+        .div__disclaimer--footer {
             font-size: 10px;
         }
-        .footer_redes {
+        .div__redes--footer {
             @include flexCentro;
             a {
                 transition: 0.5s;

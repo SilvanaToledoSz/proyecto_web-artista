@@ -3,11 +3,11 @@
 header {
     nav {
         div {
-            .img__logo {
+            .div__img--logo {
                 width: 200px;
             }
             div {
-                .a__submenu {
+                .ul__a--submenu {
                     &:hover {
                         color: $color1;
                     }
@@ -20,7 +20,7 @@ header {
     header {
         nav {
             div {
-                .img__logo {
+                .div__img--logo {
                     width: 300px;
                 }
             }

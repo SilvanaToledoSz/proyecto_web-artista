@@ -48,21 +48,21 @@ ul li {
 /* ----------- */
 /* ------------- */
 /* INICIO HEADER */
-header nav div .img__logo {
+header nav div .div__img--logo {
   width: 200px; }
 
-header nav div div .a__submenu:hover {
+header nav div div .ul__a--submenu:hover {
   color: #003249; }
 
 @media only screen and (min-width: 756px) {
-  header nav div .img__logo {
+  header nav div .div__img--logo {
     width: 300px; } }
 
 /* FIN HEADER */
 /* ---------- */
 /* ------------- */
 /* INICIO FLECHA */
-.div__flecha_inicio {
+.div__flechaInicio {
   background-color: white;
   height: 50px;
   width: 50px;
@@ -73,7 +73,7 @@ header nav div div .a__submenu:hover {
   bottom: 30px;
   right: 30px;
   opacity: 0.8; }
-  .div__flecha_inicio .img__flecha {
+  .div__flechaInicio .div__img--flechaInicio {
     margin-left: 32%;
     margin-top: 28%; }
 
@@ -81,22 +81,22 @@ header nav div div .a__submenu:hover {
 /* ---------- */
 /* ------------- */
 /* INICIO FOOTER */
-footer .div__footer {
+footer .footer__div {
   background-color: #003249;
   height: 120px; }
-  footer .div__footer .div__fila_footer {
+  footer .footer__div .div__fila--footer {
     height: 100%; }
-    footer .div__footer .div__fila_footer .img__logo_footer {
+    footer .footer__div .div__fila--footer .div__img--logoFooter {
       width: 300px;
       opacity: 0.7; }
-  footer .div__footer .div__footer_disclaimer {
+  footer .footer__div .div__disclaimer--footer {
     font-size: 10px; }
-  footer .div__footer .footer_redes {
+  footer .footer__div .div__redes--footer {
     display: flex;
     justify-content: center; }
-    footer .div__footer .footer_redes a {
+    footer .footer__div .div__redes--footer a {
       transition: 0.5s; }
-      footer .div__footer .footer_redes a:hover {
+      footer .footer__div .div__redes--footer a:hover {
         transform: translate(0, -7px); }
 
 /* FIN FOOTER */
@@ -111,28 +111,28 @@ main div .div__heroImage {
   height: 600px;
   display: flex;
   align-items: center; }
-  main div .div__heroImage .div__fondoHero {
+  main div .div__heroImage .div__heroImage--fondo {
     background-color: #003249;
     opacity: 0.9;
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px; }
     @media only screen and (min-width: 991.1px) {
-      main div .div__heroImage .div__fondoHero {
+      main div .div__heroImage .div__heroImage--fondo {
         padding-top: 10px; } }
 
-main div .div__home_adelanto {
+main div .div__adelantoHome {
   background-color: #80ced7;
   height: 170px;
   padding-top: 20px; }
-  main div .div__home_adelanto div div .audio__home {
+  main div .div__adelantoHome div div .div__audio--home {
     width: 100%; }
 
-main div .div__home_bio {
+main div .div__bioHome {
   background-color: #9AD1D4;
   padding-top: 20px;
   padding-bottom: 30px; }
-  main div .div__home_bio div .div__home_bio-grid {
+  main div .div__bioHome div .div__grid--bioHome {
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
@@ -142,38 +142,38 @@ main div .div__home_bio {
     grid-template-rows: 270px 300px;
     grid-template-areas: "imgBioH" "txtBioH"; }
     @media only screen and (min-width: 576px) and (max-width: 756px) {
-      main div .div__home_bio div .div__home_bio-grid {
+      main div .div__bioHome div .div__grid--bioHome {
         grid-template-rows: 320px 220px; } }
     @media only screen and (min-width: 756.1px) and (max-width: 991px) {
-      main div .div__home_bio div .div__home_bio-grid {
+      main div .div__bioHome div .div__grid--bioHome {
         grid-template-rows: 320px 220px; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__home_bio div .div__home_bio-grid {
+      main div .div__bioHome div .div__grid--bioHome {
         grid-template-columns: 40% 40%;
         column-gap: 3%;
         justify-content: center;
         grid-template-rows: 300px;
         grid-template-areas: "txtBioH imgBioH"; } }
-    main div .div__home_bio div .div__home_bio-grid .div__bioHomeImg {
+    main div .div__bioHome div .div__grid--bioHome .div__contenedorImg--bioHome {
       grid-area: imgBioH; }
-      main div .div__home_bio div .div__home_bio-grid .div__bioHomeImg .img__bio_home {
+      main div .div__bioHome div .div__grid--bioHome .div__contenedorImg--bioHome .div__img--bioHome {
         width: 100%;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         margin: 10px 0;
         max-height: 300px;
         object-fit: cover; }
-    main div .div__home_bio div .div__home_bio-grid .div__bio_txt_home {
+    main div .div__bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
       height: 300px;
       overflow: auto;
       margin-bottom: 10px;
       grid-area: txtBioH; }
       @media only screen and (min-width: 991.1px) {
-        main div .div__home_bio div .div__home_bio-grid .div__bio_txt_home {
+        main div .div__bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
           height: 300px;
           overflow: auto;
           margin: 10px 0; } }
 
-main div .div__home_discografia {
+main div .div__discHome {
   background-color: #CCDBDC;
   height: 600px;
   padding-top: 20px; }
@@ -191,7 +191,7 @@ main div .div__home_discografia {
         transform: translateX(-25%); }
       50% {
         transform: translateX(-50%); } } }
-  main div .div__home_discografia div .article__carousel_disc {
+  main div .div__discHome div .div__article--carousel {
     margin: 2rem auto;
     padding: 2rem 0;
     text-align: center;
@@ -199,11 +199,11 @@ main div .div__home_discografia {
     overflow-x: hidden;
     border-radius: 20px; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
-      main div .div__home_discografia div .article__carousel_disc {
+      main div .div__discHome div .div__article--carousel {
         padding-top: 10px;
         max-width: 480px; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__home_discografia div .article__carousel_disc {
+      main div .div__discHome div .div__article--carousel {
         margin: 2rem auto;
         padding: 2rem 0;
         max-width: 850px;
@@ -211,9 +211,9 @@ main div .div__home_discografia {
         background-color: var(--carousel-bg-color);
         overflow-x: hidden;
         border-radius: 20px; } }
-    main div .div__home_discografia div .article__carousel_disc input {
+    main div .div__discHome div .div__article--carousel input {
       display: none; }
-    main div .div__home_discografia div .article__carousel_disc .slides {
+    main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
       padding-left: 0;
       width: 500%;
       display: flex;
@@ -222,16 +222,16 @@ main div .div__home_discografia {
       animation: carousel-slide 24s ease-in-out 3s;
       animation-iteration-count: infinite; }
       @media only screen and (min-width: 576px) and (max-width: 991px) {
-        main div .div__home_discografia div .article__carousel_disc .slides {
+        main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
           width: 410%; } }
       @media only screen and (min-width: 991.1px) {
-        main div .div__home_discografia div .article__carousel_disc .slides {
+        main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
           width: 400%; } }
       @media only screen and (min-width: 576px) and (max-width: 991px) {
-        main div .div__home_discografia div .article__carousel_disc .slides .slide {
+        main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide {
           padding-left: 20px;
           padding-right: 20px; } }
-      main div .div__home_discografia div .article__carousel_disc .slides .slide .img__slider {
+      main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
         width: 400px;
         height: 300px;
         object-fit: cover;
@@ -239,14 +239,14 @@ main div .div__home_discografia {
         border-radius: 20px;
         margin: 0 20px; }
         @media only screen and (min-width: 576px) and (max-width: 991px) {
-          main div .div__home_discografia div .article__carousel_disc .slides .slide .img__slider {
+          main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
             width: 390px; } }
         @media only screen and (min-width: 991.1px) {
-          main div .div__home_discografia div .article__carousel_disc .slides .slide .img__slider {
+          main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
             width: 800px; } }
-      main div .div__home_discografia div .article__carousel_disc .slides .slide .h3__home {
+      main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__h3--carrouselSlider {
         margin-top: 20px; }
-    main div .div__home_discografia div .article__carousel_disc label {
+    main div .div__discHome div .div__article--carousel label {
       border: medium solid var(--gray-dark-color);
       border-radius: 50%;
       cursor: pointer;
@@ -255,11 +255,11 @@ main div .div__home_discografia {
       width: .75rem;
       height: .75rem; }
 
-main div .div__home_resenas {
+main div .div__resenasHome {
   background-color: #9AD1D4;
   padding-top: 20px;
   padding-bottom: 30px; }
-  main div .div__home_resenas div div .article__resena_home {
+  main div .div__resenasHome div div .div__article--resenasHome {
     margin: 20px 0;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -269,9 +269,9 @@ main div .div__home_resenas {
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 1s; }
-    main div .div__home_resenas div div .article__resena_home:hover {
+    main div .div__resenasHome div div .div__article--resenasHome:hover {
       transform: scale(1.05); }
-    main div .div__home_resenas div div .article__resena_home .div__img_resena1, main div .div__home_resenas div div .article__resena_home .div__img_resena2 {
+    main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena1, main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
       width: 130px;
       height: 130px;
       margin-top: 20px;
@@ -282,37 +282,37 @@ main div .div__home_resenas {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-    main div .div__home_resenas div div .article__resena_home .div__img_resena2 {
+    main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
       background-image: url(../multimedia/images/resena_img_2.jpg); }
-    main div .div__home_resenas div div .article__resena_home .p__resena_home {
+    main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
       font-size: 18px;
       transition: 0.2s; }
-      main div .div__home_resenas div div .article__resena_home .p__resena_home:hover {
+      main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome:hover {
         font-weight: 400; }
       @media only screen and (min-width: 756px) and (max-width: 991px) {
-        main div .div__home_resenas div div .article__resena_home .p__resena_home {
+        main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
       @media only screen and (min-width: 991.1px) {
-        main div .div__home_resenas div div .article__resena_home .p__resena_home {
+        main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
-  main div .div__home_resenas div .div__resena_home2 {
+  main div .div__resenasHome div .div__contenedor--resenasHome {
     display: none; }
     @media only screen and (min-width: 756px) and (max-width: 991px) {
-      main div .div__home_resenas div .div__resena_home2 {
+      main div .div__resenasHome div .div__contenedor--resenasHome {
         display: block; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__home_resenas div .div__resena_home2 {
+      main div .div__resenasHome div .div__contenedor--resenasHome {
         display: block; } }
 
-main div .div__home_extras {
+main div .div__extrasHome {
   background-color: #CCDBDC;
   padding-bottom: 30px;
   padding-top: 20px; }
-  main div .div__home_extras div .div__contenedor_extras1 {
+  main div .div__extrasHome div .div__cont--extrasHome1 {
     height: 200px; }
-    main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras1 {
+    main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__img1--extras {
       grid-area: imgExtras1;
       width: 100%;
       height: 90%;
@@ -327,18 +327,18 @@ main div .div__home_extras {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 20px;
       transition: all 0.5s; }
-      main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras1:hover {
+      main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__img1--extras:hover {
         transform: scale(1.02); }
-      main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras1 a {
+      main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__img1--extras a {
         transition: all 0.5s; }
-        main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras1 a:hover {
+        main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__img1--extras a:hover {
           background-color: white;
           opacity: 0.8;
           width: 100%;
           padding: 5px 0;
           color: #424251;
           text-align: center; }
-    main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras2 {
+    main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__contImg2--extras {
       grid-area: imgExtras2;
       width: 100%;
       height: 90%;
@@ -353,23 +353,23 @@ main div .div__home_extras {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 20px;
       transition: all 0.5s; }
-      main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras2:hover {
+      main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__contImg2--extras:hover {
         transform: scale(1.02); }
-      main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras2 a {
+      main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__contImg2--extras a {
         transition: all 0.5s; }
-        main div .div__home_extras div .div__contenedor_extras1 .div__col_extras .div__img_extras2 a:hover {
+        main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHome .div__contImg2--extras a:hover {
           background-color: white;
           opacity: 0.8;
           width: 100%;
           padding: 5px 0;
           color: #424251;
           text-align: center; }
-    main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg {
+    main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG {
       display: none; }
       @media only screen and (min-width: 992px) {
-        main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg {
+        main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG {
           display: block; } }
-      main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg .div__img_extras5 {
+      main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG .div__contImg5--extras {
         grid-area: imgExtras5;
         width: 100%;
         height: 90%;
@@ -384,21 +384,20 @@ main div .div__home_extras {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         transition: all 0.5s; }
-        main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg .div__img_extras5:hover {
+        main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG .div__contImg5--extras:hover {
           transform: scale(1.02); }
-        main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg .div__img_extras5 a {
+        main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG .div__contImg5--extras a {
           transition: all 0.5s; }
-          main div .div__home_extras div .div__contenedor_extras1 .div__col_extras_lg .div__img_extras5 a:hover {
+          main div .div__extrasHome div .div__cont--extrasHome1 .div__col--extrasHomeLG .div__contImg5--extras a:hover {
             background-color: white;
             opacity: 0.8;
             width: 100%;
             padding: 5px 0;
             color: #424251;
             text-align: center; }
-  main div .div__home_extras div .div__contenedor_extras2 {
+  main div .div__extrasHome div .div__cont--extrasHome2 {
     height: 200px; }
-    main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 {
-      word-wrap: break-word;
+    main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg3--extras {
       grid-area: imgExtras3;
       width: 100%;
       height: 90%;
@@ -413,18 +412,18 @@ main div .div__home_extras {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 20px;
       transition: all 0.5s; }
-      main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3:hover {
+      main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg3--extras:hover {
         transform: scale(1.02); }
-      main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 a {
-        transition: all 0.5s;
-        word-wrap: break-word; }
-        main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras3 a:hover {
+      main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg3--extras a {
+        transition: all 0.5s; }
+        main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg3--extras a:hover {
           background-color: white;
           opacity: 0.8;
           width: 100%;
           padding: 5px 0;
-          color: #424251; }
-    main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras4 {
+          color: #424251;
+          text-align: center; }
+    main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg4--extras {
       grid-area: imgExtras4;
       width: 100%;
       height: 90%;
@@ -439,23 +438,23 @@ main div .div__home_extras {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 20px;
       transition: all 0.5s; }
-      main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras4:hover {
+      main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg4--extras:hover {
         transform: scale(1.02); }
-      main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras4 a {
+      main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg4--extras a {
         transition: all 0.5s; }
-        main div .div__home_extras div .div__contenedor_extras2 .div__col_extras .div__img_extras4 a:hover {
+        main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHome .div__contImg4--extras a:hover {
           background-color: white;
           opacity: 0.8;
           width: 100%;
           padding: 5px 0;
           color: #424251;
           text-align: center; }
-    main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg {
+    main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG {
       display: none; }
       @media only screen and (min-width: 992px) {
-        main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg {
+        main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG {
           display: block; } }
-      main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg .div__img_extras6 {
+      main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG .div__contImg6--extras {
         grid-area: imgExtras6;
         width: 100%;
         height: 90%;
@@ -470,11 +469,11 @@ main div .div__home_extras {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         transition: all 0.5s; }
-        main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg .div__img_extras6:hover {
+        main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG .div__contImg6--extras:hover {
           transform: scale(1.02); }
-        main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg .div__img_extras6 a {
+        main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG .div__contImg6--extras a {
           transition: all 0.5s; }
-          main div .div__home_extras div .div__contenedor_extras2 .div__col_extras_lg .div__img_extras6 a:hover {
+          main div .div__extrasHome div .div__cont--extrasHome2 .div__col--extrasHomeLG .div__contImg6--extras a:hover {
             background-color: white;
             opacity: 0.8;
             width: 100%;
@@ -482,7 +481,7 @@ main div .div__home_extras {
             color: #424251;
             text-align: center; }
   @media only screen and (min-width: 992px) {
-    main div .div__home_extras div .div__btnExHome {
+    main div .div__extrasHome div .div__btn--extrasHome {
       display: none; } }
 
 /* FIN MAIN HOME */
@@ -694,7 +693,7 @@ main .section__resenas {
   main .section__resenas div div .fontResena_24 {
     font-size: 24px;
     color: #787892; }
-  main .section__resenas div div div .div__img_resena1, main .section__resenas div .div__home_resenas div div .article__resena_home .div__img_resena2, main .section__resenas div div div .div__img_resena2 {
+  main .section__resenas div div div .div__img_resena1, main .section__resenas div div div .div__img_resena2 {
     width: 100px;
     height: 100px;
     margin-top: 20px;
@@ -709,7 +708,7 @@ main .section__resenas {
     main .section__resenas div div div .div__img_resena1:hover, main .section__resenas div div div .div__img_resena2:hover {
       width: 120px; }
     @media only screen and (min-width: 991.1px) {
-      main .section__resenas div div div .div__img_resena1, main .section__resenas div .div__home_resenas div div .article__resena_home .div__img_resena2, main .section__resenas div div div .div__img_resena2 {
+      main .section__resenas div div div .div__img_resena1, main .section__resenas div div div .div__img_resena2 {
         width: 200px;
         height: 200px; }
         main .section__resenas div div div .div__img_resena1:hover, main .section__resenas div div div .div__img_resena2:hover {
