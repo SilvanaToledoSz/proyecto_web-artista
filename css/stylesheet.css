@@ -38,7 +38,7 @@ ul li {
   justify-content: center;
   padding-top: 20px; }
 
-.p__epig {
+.p--epig {
   font-size: 15px;
   font-style: italic;
   text-align: center;
@@ -488,16 +488,16 @@ main div .div__extrasHome {
 /* ------------- */
 /* ------------------ */
 /* INICIO SECCIÓN BIO */
-main .section__bio {
+main .main__div--bio {
   background-color: #9AD1D4;
   height: 2700px; }
   @media only screen and (min-width: 576px) and (max-width: 991px) {
-    main .section__bio {
+    main .main__div--bio {
       height: 2200px; } }
   @media only screen and (min-width: 991.1px) {
-    main .section__bio {
+    main .main__div--bio {
       height: 2100px; } }
-  main .section__bio div div .div__contenedorBio {
+  main .main__div--bio div div .div__cont--bio {
     display: grid;
     justify-content: center;
     grid-template-columns: 80%;
@@ -505,33 +505,33 @@ main .section__bio {
     grid-template-areas: "bioTxt1" "bioImg1" "bioImg2" "bioTxt2" "bioImg3" "bioTxt3" "bioImg4" "bioTxt4" "bioImg5";
     row-gap: 1%; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
-      main .section__bio div div .div__contenedorBio {
+      main .main__div--bio div div .div__cont--bio {
         grid-template-rows: 200px 250px 250px 200px 230px 190px 230px 200px 200px; } }
     @media only screen and (min-width: 991.1px) {
-      main .section__bio div div .div__contenedorBio {
+      main .main__div--bio div div .div__cont--bio {
         grid-template-columns: 40% 40%;
         grid-template-rows: repeat(4, 400px) 300px;
         grid-template-areas: "bioTxt1 bioImg1" "bioTxt2 bioImg2" "bioImg3 bioTxt3" "bioImg4 bioTxt4" "bioImg5 bioImg5";
         column-gap: 1%; } }
-    main .section__bio div div .div__contenedorBio .div__bioTxt1 {
+    main .main__div--bio div div .div__cont--bio .div__contTxt1--bio {
       grid-area: bioTxt1; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
+      main .main__div--bio div div .div__cont--bio .div__contTxt1--bio p {
         font-size: 18px;
         line-height: 30px; }
-        main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
+        main .main__div--bio div div .div__cont--bio .div__contTxt1--bio p:not(.div__p--txtBio2) {
           height: 250px;
           overflow: auto; }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt1 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt1--bio p:not(.div__p--txtBio2) {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt1 p {
+          main .main__div--bio div div .div__cont--bio .div__contTxt1--bio p {
             font-size: 22px; } }
-    main .section__bio div div .div__contenedorBio .div__bioImg1 {
+    main .main__div--bio div div .div__cont--bio .div__contImg1--bio {
       grid-area: bioImg1; }
-      main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio {
+      main .main__div--bio div div .div__cont--bio .div__contImg1--bio .div__img--bio {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -539,16 +539,16 @@ main .section__bio {
         object-fit: cover;
         object-position: center;
         transition: 1s; }
-        main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio:hover {
+        main .main__div--bio div div .div__cont--bio .div__contImg1--bio .div__img--bio:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg1 .img__bio {
+          main .main__div--bio div div .div__cont--bio .div__contImg1--bio .div__img--bio {
             width: 100%;
             height: 80%;
             margin-bottom: 10px; } }
-    main .section__bio div div .div__contenedorBio .div__bioImg2 {
+    main .main__div--bio div div .div__cont--bio .div__contImg2--bio {
       grid-area: bioImg2; }
-      main .section__bio div div .div__contenedorBio .div__bioImg2 .img__bio {
+      main .main__div--bio div div .div__cont--bio .div__contImg2--bio .div__img--bio {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -556,41 +556,41 @@ main .section__bio {
         object-fit: cover;
         object-position: center;
         transition: 1s; }
-        main .section__bio div div .div__contenedorBio .div__bioImg2 .img__bio:hover {
+        main .main__div--bio div div .div__cont--bio .div__contImg2--bio .div__img--bio:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg2 .img__bio {
+          main .main__div--bio div div .div__cont--bio .div__contImg2--bio .div__img--bio {
             width: 100%;
             height: 80%;
             margin-bottom: 10px; } }
-    main .section__bio div div .div__contenedorBio .div__bioTxt2 {
+    main .main__div--bio div div .div__cont--bio .div__contTxt2--bio {
       grid-area: bioTxt2; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
+      main .main__div--bio div div .div__cont--bio .div__contTxt2--bio p {
         font-size: 18px;
         line-height: 30px; }
-        main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
+        main .main__div--bio div div .div__cont--bio .div__contTxt2--bio p:not(.div__p--txtBio2) {
           height: 250px;
           overflow: auto; }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt2 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt2--bio p:not(.div__p--txtBio2) {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt2 p {
+          main .main__div--bio div div .div__cont--bio .div__contTxt2--bio p {
             font-size: 22px; } }
-      main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
+      main .main__div--bio div div .div__cont--bio .div__contTxt2--bio .div__p--txtBio2 {
         height: 500px;
         overflow: auto; }
         @media only screen and (min-width: 576px) and (max-width: 991px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
+          main .main__div--bio div div .div__cont--bio .div__contTxt2--bio .div__p--txtBio2 {
             height: 350px; } }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt2 .p__txtbio2 {
+          main .main__div--bio div div .div__cont--bio .div__contTxt2--bio .div__p--txtBio2 {
             height: 400px; } }
-    main .section__bio div div .div__contenedorBio .div__bioImg3 {
+    main .main__div--bio div div .div__cont--bio .div__contImg3--bio {
       grid-area: bioImg3; }
-      main .section__bio div div .div__contenedorBio .div__bioImg3 .img__bio {
+      main .main__div--bio div div .div__cont--bio .div__contImg3--bio .div__img--bio {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -598,35 +598,35 @@ main .section__bio {
         object-fit: cover;
         object-position: center;
         transition: 1s; }
-        main .section__bio div div .div__contenedorBio .div__bioImg3 .img__bio:hover {
+        main .main__div--bio div div .div__cont--bio .div__contImg3--bio .div__img--bio:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg3 .img__bio {
+          main .main__div--bio div div .div__cont--bio .div__contImg3--bio .div__img--bio {
             width: 100%;
             height: 80%;
             margin-bottom: 10px; } }
-    main .section__bio div div .div__contenedorBio .div__bioTxt3 {
+    main .main__div--bio div div .div__cont--bio .div__contTxt3--bio {
       grid-area: bioTxt3; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
+      main .main__div--bio div div .div__cont--bio .div__contTxt3--bio p {
         font-size: 18px;
         line-height: 30px; }
-        main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+        main .main__div--bio div div .div__cont--bio .div__contTxt3--bio p:not(.div__p--txtBio2) {
           height: 250px;
           overflow: auto; }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt3--bio p:not(.div__p--txtBio2) {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt3 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt3--bio p:not(.div__p--txtBio2) {
               margin-left: 1%; } }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt3 p {
+          main .main__div--bio div div .div__cont--bio .div__contTxt3--bio p {
             font-size: 22px; } }
-    main .section__bio div div .div__contenedorBio .div__bioImg4 {
+    main .main__div--bio div div .div__cont--bio .div__contImg4--bio {
       grid-area: bioImg4; }
-      main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
+      main .main__div--bio div div .div__cont--bio .div__contImg4--bio .div__img--bio {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -634,35 +634,35 @@ main .section__bio {
         object-fit: cover;
         object-position: center;
         transition: 1s; }
-        main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio:hover {
+        main .main__div--bio div div .div__cont--bio .div__contImg4--bio .div__img--bio:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg4 .img__bio {
+          main .main__div--bio div div .div__cont--bio .div__contImg4--bio .div__img--bio {
             width: 100%;
             height: 80%;
             margin-bottom: 10px; } }
-    main .section__bio div div .div__contenedorBio .div__bioTxt4 {
+    main .main__div--bio div div .div__cont--bio .div__contTxt4--bio {
       grid-area: bioTxt4; }
-      main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
+      main .main__div--bio div div .div__cont--bio .div__contTxt4--bio p {
         font-size: 18px;
         line-height: 30px; }
-        main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+        main .main__div--bio div div .div__cont--bio .div__contTxt4--bio p:not(.div__p--txtBio2) {
           height: 250px;
           overflow: auto; }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt4--bio p:not(.div__p--txtBio2) {
               height: 400px;
               overflow: auto;
               margin-bottom: 10px; } }
           @media only screen and (min-width: 991.1px) {
-            main .section__bio div div .div__contenedorBio .div__bioTxt4 p:not(.p__txtbio2) {
+            main .main__div--bio div div .div__cont--bio .div__contTxt4--bio p:not(.div__p--txtBio2) {
               margin-left: 1%; } }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioTxt4 p {
+          main .main__div--bio div div .div__cont--bio .div__contTxt4--bio p {
             font-size: 22px; } }
-    main .section__bio div div .div__contenedorBio .div__bioImg5 {
+    main .main__div--bio div div .div__cont--bio .div__contImg5--bio {
       grid-area: bioImg5; }
-      main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {
+      main .main__div--bio div div .div__cont--bio .div__contImg5--bio .div__img--bioB {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: 100%;
@@ -672,10 +672,10 @@ main .section__bio {
         transition: 1s;
         display: flex;
         align-items: flex-start; }
-        main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b:hover {
+        main .main__div--bio div div .div__cont--bio .div__contImg5--bio .div__img--bioB:hover {
           transform: scale(1.05); }
         @media only screen and (min-width: 991.1px) {
-          main .section__bio div div .div__contenedorBio .div__bioImg5 .img__bio_b {
+          main .main__div--bio div div .div__cont--bio .div__contImg5--bio .div__img--bioB {
             height: 250px; } }
 
 /* FIN SECCIÓN BIO */
@@ -775,19 +775,19 @@ main .section__pre_venta {
 /* --------------------- */
 /* ----------------------- */
 /* INICIO SECCIÓN CONTACTO */
-main .section__contacto {
+main .main__div--contacto {
   background-color: #9AD1D4; }
-  main .section__contacto div .div__formImg {
+  main .main__div--contacto div .div__contImg {
     animation: slideInUp;
     animation-duration: 2s; }
-    main .section__contacto div .div__formImg .img__contacto {
+    main .main__div--contacto div .div__contImg .div__img--contacto {
       height: 200px;
       object-fit: cover;
       object-position: center; }
       @media only screen and (min-width: 991.1px) {
-        main .section__contacto div .div__formImg .img__contacto {
+        main .main__div--contacto div .div__contImg .div__img--contacto {
           height: 500px; } }
-  main .section__contacto div .div__formContacto {
+  main .main__div--contacto div .div__form--contacto {
     animation: slideInDown;
     animation-duration: 2s;
     background-color: #C1E8EC;

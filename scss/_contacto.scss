@@ -4,13 +4,13 @@ $vista:mobile;
 /* INICIO SECCIÓN CONTACTO */
 
 main {
-    .section__contacto {
+    .main__div--contacto {
         background-color: $color3;
         div {
-            .div__formImg {
+            .div__contImg {
                 animation: slideInUp;
                 animation-duration: 2s;
-                .img__contacto {
+                .div__img--contacto {
                     height: 200px;
                     object-fit: cover;
                     object-position: center;
@@ -22,7 +22,7 @@ main {
                     }
                 }
             }
-            .div__formContacto {
+            .div__form--contacto {
                 animation: slideInDown;
                 animation-duration: 2s;
                 background-color: #C1E8EC;
