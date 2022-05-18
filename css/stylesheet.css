@@ -62,7 +62,7 @@ header nav div div .ul__a--submenu:hover {
 /* ---------- */
 /* ------------- */
 /* INICIO FLECHA */
-.div__flechaInicio {
+.div__contenedor--flechaInicio {
   background-color: white;
   height: 50px;
   width: 50px;
@@ -73,7 +73,7 @@ header nav div div .ul__a--submenu:hover {
   bottom: 30px;
   right: 30px;
   opacity: 0.8; }
-  .div__flechaInicio .div__img--flechaInicio {
+  .div__contenedor--flechaInicio .div__img--flechaInicio {
     margin-left: 32%;
     margin-top: 28%; }
 
@@ -103,7 +103,7 @@ footer .footer__div {
 /* ---------- */
 /* ---------------- */
 /* INICIO MAIN HOME */
-main div .div__heroImage {
+main div .div__contenedor--heroImage {
   background-image: url(../multimedia/images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -111,28 +111,28 @@ main div .div__heroImage {
   height: 600px;
   display: flex;
   align-items: center; }
-  main div .div__heroImage .div__heroImage--fondo {
+  main div .div__contenedor--heroImage .div__heroImage--fondo {
     background-color: #003249;
     opacity: 0.9;
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px; }
     @media only screen and (min-width: 991.1px) {
-      main div .div__heroImage .div__heroImage--fondo {
+      main div .div__contenedor--heroImage .div__heroImage--fondo {
         padding-top: 10px; } }
 
-main div .div__adelantoHome {
+main div .div__contenedor--adelantoHome {
   background-color: #80ced7;
   height: 170px;
   padding-top: 20px; }
-  main div .div__adelantoHome div div .div__audio--home {
+  main div .div__contenedor--adelantoHome div div .div__audio--home {
     width: 100%; }
 
-main div .div__bioHome {
+main div .div__contenedor--bioHome {
   background-color: #9AD1D4;
   padding-top: 20px;
   padding-bottom: 30px; }
-  main div .div__bioHome div .div__grid--bioHome {
+  main div .div__contenedor--bioHome div .div__grid--bioHome {
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
@@ -142,38 +142,38 @@ main div .div__bioHome {
     grid-template-rows: 270px 300px;
     grid-template-areas: "imgBioH" "txtBioH"; }
     @media only screen and (min-width: 576px) and (max-width: 756px) {
-      main div .div__bioHome div .div__grid--bioHome {
+      main div .div__contenedor--bioHome div .div__grid--bioHome {
         grid-template-rows: 320px 220px; } }
     @media only screen and (min-width: 756.1px) and (max-width: 991px) {
-      main div .div__bioHome div .div__grid--bioHome {
+      main div .div__contenedor--bioHome div .div__grid--bioHome {
         grid-template-rows: 320px 220px; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__bioHome div .div__grid--bioHome {
+      main div .div__contenedor--bioHome div .div__grid--bioHome {
         grid-template-columns: 40% 40%;
         column-gap: 3%;
         justify-content: center;
         grid-template-rows: 300px;
         grid-template-areas: "txtBioH imgBioH"; } }
-    main div .div__bioHome div .div__grid--bioHome .div__contenedorImg--bioHome {
+    main div .div__contenedor--bioHome div .div__grid--bioHome .div__contenedorImg--bioHome {
       grid-area: imgBioH; }
-      main div .div__bioHome div .div__grid--bioHome .div__contenedorImg--bioHome .div__img--bioHome {
+      main div .div__contenedor--bioHome div .div__grid--bioHome .div__contenedorImg--bioHome .div__img--bioHome {
         width: 100%;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         margin: 10px 0;
         max-height: 300px;
         object-fit: cover; }
-    main div .div__bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
+    main div .div__contenedor--bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
       height: 300px;
       overflow: auto;
       margin-bottom: 10px;
       grid-area: txtBioH; }
       @media only screen and (min-width: 991.1px) {
-        main div .div__bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
+        main div .div__contenedor--bioHome div .div__grid--bioHome .div__contenedorTxt--bioHome {
           height: 300px;
           overflow: auto;
           margin: 10px 0; } }
 
-main div .div__discHome {
+main div .div__contenedor--discHome {
   background-color: #CCDBDC;
   height: 600px;
   padding-top: 20px; }
@@ -191,7 +191,7 @@ main div .div__discHome {
         transform: translateX(-25%); }
       50% {
         transform: translateX(-50%); } } }
-  main div .div__discHome div .div__article--carousel {
+  main div .div__contenedor--discHome div .div__article--carousel {
     margin: 2rem auto;
     padding: 2rem 0;
     text-align: center;
@@ -199,11 +199,11 @@ main div .div__discHome {
     overflow-x: hidden;
     border-radius: 20px; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
-      main div .div__discHome div .div__article--carousel {
+      main div .div__contenedor--discHome div .div__article--carousel {
         padding-top: 10px;
         max-width: 480px; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__discHome div .div__article--carousel {
+      main div .div__contenedor--discHome div .div__article--carousel {
         margin: 2rem auto;
         padding: 2rem 0;
         max-width: 850px;
@@ -211,9 +211,9 @@ main div .div__discHome {
         background-color: var(--carousel-bg-color);
         overflow-x: hidden;
         border-radius: 20px; } }
-    main div .div__discHome div .div__article--carousel input {
+    main div .div__contenedor--discHome div .div__article--carousel input {
       display: none; }
-    main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
+    main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel {
       padding-left: 0;
       width: 500%;
       display: flex;
@@ -222,16 +222,16 @@ main div .div__discHome {
       animation: carousel-slide 24s ease-in-out 3s;
       animation-iteration-count: infinite; }
       @media only screen and (min-width: 576px) and (max-width: 991px) {
-        main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
+        main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel {
           width: 410%; } }
       @media only screen and (min-width: 991.1px) {
-        main div .div__discHome div .div__article--carousel .ul__slides--carrousel {
+        main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel {
           width: 400%; } }
       @media only screen and (min-width: 576px) and (max-width: 991px) {
-        main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide {
+        main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide {
           padding-left: 20px;
           padding-right: 20px; } }
-      main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
+      main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
         width: 400px;
         height: 300px;
         object-fit: cover;
@@ -239,14 +239,14 @@ main div .div__discHome {
         border-radius: 20px;
         margin: 0 20px; }
         @media only screen and (min-width: 576px) and (max-width: 991px) {
-          main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
+          main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
             width: 390px; } }
         @media only screen and (min-width: 991.1px) {
-          main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
+          main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__img--carrouselSlider {
             width: 800px; } }
-      main div .div__discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__h3--carrouselSlider {
+      main div .div__contenedor--discHome div .div__article--carousel .ul__slides--carrousel .ul__li--slide .ul__h3--carrouselSlider {
         margin-top: 20px; }
-    main div .div__discHome div .div__article--carousel label {
+    main div .div__contenedor--discHome div .div__article--carousel label {
       border: medium solid var(--gray-dark-color);
       border-radius: 50%;
       cursor: pointer;
@@ -255,11 +255,11 @@ main div .div__discHome {
       width: .75rem;
       height: .75rem; }
 
-main div .div__resenasHome {
+main div .div__contenedor--resenasHome {
   background-color: #9AD1D4;
   padding-top: 20px;
   padding-bottom: 30px; }
-  main div .div__resenasHome div div .div__article--resenasHome {
+  main div .div__contenedor--resenasHome div div .div__article--resenasHome {
     margin: 20px 0;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -269,9 +269,9 @@ main div .div__resenasHome {
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 1s; }
-    main div .div__resenasHome div div .div__article--resenasHome:hover {
+    main div .div__contenedor--resenasHome div div .div__article--resenasHome:hover {
       transform: scale(1.05); }
-    main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena1, main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
+    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena1, main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
       width: 130px;
       height: 130px;
       margin-top: 20px;
@@ -282,28 +282,28 @@ main div .div__resenasHome {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-    main div .div__resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
+    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
       background-image: url(../multimedia/images/resena_img_2.jpg); }
-    main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
       font-size: 18px;
       transition: 0.2s; }
-      main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome:hover {
+      main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome:hover {
         font-weight: 400; }
       @media only screen and (min-width: 756px) and (max-width: 991px) {
-        main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+        main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
       @media only screen and (min-width: 991.1px) {
-        main div .div__resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+        main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
-  main div .div__resenasHome div .div__contenedor--resenasHome {
+  main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
     display: none; }
     @media only screen and (min-width: 756px) and (max-width: 991px) {
-      main div .div__resenasHome div .div__contenedor--resenasHome {
+      main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
         display: block; } }
     @media only screen and (min-width: 991.1px) {
-      main div .div__resenasHome div .div__contenedor--resenasHome {
+      main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
         display: block; } }
 
 main div .div__extrasHome {
@@ -760,7 +760,7 @@ main .main__div--preVenta {
     @media only screen and (min-width: 991.1px) {
       main .main__div--preVenta div div .div__contImg--prev {
         height: 300px; } }
-  main .main__div--preVenta div .div__prev_adelanto {
+  main .main__div--preVenta div .div__contenedor--prevAdelanto {
     background-color: #C1E8EC;
     display: flex;
     flex-direction: column;
@@ -768,7 +768,7 @@ main .main__div--preVenta {
     border-radius: 20px;
     width: 100%; }
     @media only screen and (min-width: 991.1px) {
-      main .main__div--preVenta div .div__prev_adelanto .div__audio--prev {
+      main .main__div--preVenta div .div__contenedor--prevAdelanto .div__audio--prev {
         width: 100%; } }
 
 /* FIN SECCIÓN PRE-VENTA */
@@ -777,15 +777,15 @@ main .main__div--preVenta {
 /* INICIO SECCIÓN CONTACTO */
 main .main__div--contacto {
   background-color: #9AD1D4; }
-  main .main__div--contacto div .div__contImg {
+  main .main__div--contacto div .div__contenedor--img {
     animation: slideInUp;
     animation-duration: 2s; }
-    main .main__div--contacto div .div__contImg .div__img--contacto {
+    main .main__div--contacto div .div__contenedor--img .div__img--contacto {
       height: 200px;
       object-fit: cover;
       object-position: center; }
       @media only screen and (min-width: 991.1px) {
-        main .main__div--contacto div .div__contImg .div__img--contacto {
+        main .main__div--contacto div .div__contenedor--img .div__img--contacto {
           height: 500px; } }
   main .main__div--contacto div .div__form--contacto {
     animation: slideInDown;
@@ -797,98 +797,98 @@ main .main__div--contacto {
 /* -------------------- */
 /* -------------------------- */
 /* INICIO SECCIÓN DISCOGRAFÍA */
-.main--discografia {
+.main__contenedor--discografia {
   background-color: #CCDBDC;
   height: 2400px; }
   @media only screen and (min-width: 576px) and (max-width: 991px) {
-    .main--discografia {
+    .main__contenedor--discografia {
       height: 2000px; } }
   @media only screen and (min-width: 991.1px) {
-    .main--discografia {
+    .main__contenedor--discografia {
       height: 1400px; } }
-  .main--discografia .main__div--contDisc {
+  .main__contenedor--discografia .main__div--contDisc {
     display: grid;
     justify-content: center;
     row-gap: 20px;
     grid-template-columns: 80%;
     grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 300px 300px;
     grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; }
-    .main--discografia .main__div--contDisc .div__p--Disc {
+    .main__contenedor--discografia .main__div--contDisc .div__p--Disc {
       color: #4A4A5B;
       font-size: 22px; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
-      .main--discografia .main__div--contDisc {
+      .main__contenedor--discografia .main__div--contDisc {
         grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 300px 190px;
         grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; } }
     @media only screen and (min-width: 991.1px) {
-      .main--discografia .main__div--contDisc {
+      .main__contenedor--discografia .main__div--contDisc {
         column-gap: 1%;
         grid-template-columns: 40% 40%;
         grid-template-rows: repeat(3, 400px);
         grid-template-areas: "pD1 iframeD1" "iframeD2 pD2" "pD3 iframeD3"; } }
-    .main--discografia .main__div--contDisc iframe {
+    .main__contenedor--discografia .main__div--contDisc iframe {
       width: 100%;
       height: 100%;
       border-radius: 20px; }
       @media only screen and (min-width: 991.1px) {
-        .main--discografia .main__div--contDisc iframe {
+        .main__contenedor--discografia .main__div--contDisc iframe {
           height: 90%; } }
-    .main--discografia .main__div--contDisc p {
+    .main__contenedor--discografia .main__div--contDisc p {
       height: 300px;
       overflow: auto; }
       @media only screen and (min-width: 576px) and (max-width: 991px) {
-        .main--discografia .main__div--contDisc p {
+        .main__contenedor--discografia .main__div--contDisc p {
           height: 200px; } }
       @media only screen and (min-width: 991.1px) {
-        .main--discografia .main__div--contDisc p {
+        .main__contenedor--discografia .main__div--contDisc p {
           height: 100%; } }
-    .main--discografia .main__div--contDisc .h2__disc1 {
+    .main__contenedor--discografia .main__div--contDisc .div__h2--disc1 {
       grid-area: h2D1; }
       @media only screen and (min-width: 991.1px) {
-        .main--discografia .main__div--contDisc .h2__disc1 {
+        .main__contenedor--discografia .main__div--contDisc .div__h2--disc1 {
           display: none; } }
-    .main--discografia .main__div--contDisc .div__iframe--disc1 {
+    .main__contenedor--discografia .main__div--contDisc .div__iframe--disc1 {
       grid-area: iframeD1;
       animation: backInLeft;
       animation-duration: 2s; }
-    .main--discografia .main__div--contDisc .div__contPDisc1 {
+    .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc1 {
       grid-area: pD1; }
-      .main--discografia .main__div--contDisc .div__contPDisc1 .div__h2--disc1LG {
+      .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc1 .div__h2--disc1LG {
         display: none; }
         @media only screen and (min-width: 991.1px) {
-          .main--discografia .main__div--contDisc .div__contPDisc1 .div__h2--disc1LG {
+          .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc1 .div__h2--disc1LG {
             display: block; } }
-    .main--discografia .main__div--contDisc .div__h2--disc2 {
+    .main__contenedor--discografia .main__div--contDisc .div__h2--disc2 {
       grid-area: h2D2; }
       @media only screen and (min-width: 991.1px) {
-        .main--discografia .main__div--contDisc .div__h2--disc2 {
+        .main__contenedor--discografia .main__div--contDisc .div__h2--disc2 {
           display: none; } }
-    .main--discografia .main__div--contDisc .div__iframe--disc2 {
+    .main__contenedor--discografia .main__div--contDisc .div__iframe--disc2 {
       grid-area: iframeD2;
       animation: backInLeft;
       animation-duration: 4s; }
-    .main--discografia .main__div--contDisc .div__contPDisc2 {
+    .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc2 {
       grid-area: pD2; }
-      .main--discografia .main__div--contDisc .div__contPDisc2 .div__h2--disc2LG {
+      .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc2 .div__h2--disc2LG {
         display: none; }
         @media only screen and (min-width: 991.1px) {
-          .main--discografia .main__div--contDisc .div__contPDisc2 .div__h2--disc2LG {
+          .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc2 .div__h2--disc2LG {
             display: block; } }
-    .main--discografia .main__div--contDisc .div__h2--disc3 {
+    .main__contenedor--discografia .main__div--contDisc .div__h2--disc3 {
       grid-area: h2D3; }
       @media only screen and (min-width: 991.1px) {
-        .main--discografia .main__div--contDisc .div__h2--disc3 {
+        .main__contenedor--discografia .main__div--contDisc .div__h2--disc3 {
           display: none; } }
-    .main--discografia .main__div--contDisc .div__iframe--disc3 {
+    .main__contenedor--discografia .main__div--contDisc .div__iframe--disc3 {
       grid-area: iframeD3;
       animation: backInLeft;
       animation-duration: 6s; }
-    .main--discografia .main__div--contDisc .div__contPDisc3 {
+    .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc3 {
       grid-area: pD3; }
-      .main--discografia .main__div--contDisc .div__contPDisc3 .div__h2--disc3LG {
+      .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc3 .div__h2--disc3LG {
         display: none; }
         @media only screen and (min-width: 991.1px) {
-          .main--discografia .main__div--contDisc .div__contPDisc3 .div__h2--disc3LG {
+          .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc3 .div__h2--disc3LG {
             display: block; } }
 
 /* ----------------------- */

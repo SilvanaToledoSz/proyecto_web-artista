@@ -3,7 +3,7 @@ $vista: mobile;
 /* -------------------------- */
 /* INICIO SECCIÓN DISCOGRAFÍA */
 
-.main--discografia {
+.main__contenedor--discografia {
     background-color: $color4;
     height: 2400px;
     @media only screen and (min-width: $minTablet) and (max-width: $maxTablet) {
@@ -102,7 +102,7 @@ $vista: mobile;
                 }
             }
         }
-        .h2__disc1 {
+        .div__h2--disc1 {
             grid-area: h2D1;
             @media only screen and (min-width: $minDesktop) {
                 $vista: desktop;
@@ -116,7 +116,7 @@ $vista: mobile;
             animation: backInLeft;
             animation-duration: 2s;
         }
-        .div__contPDisc1 {
+        .div__contenedor--PDisc1 {
             grid-area: pD1;
             .div__h2--disc1LG {
                 display: none;
@@ -142,7 +142,7 @@ $vista: mobile;
             animation: backInLeft;
             animation-duration: 4s;
         }
-        .div__contPDisc2 {
+        .div__contenedor--PDisc2 {
             grid-area: pD2;
             .div__h2--disc2LG {
                 display: none;
@@ -168,7 +168,7 @@ $vista: mobile;
             animation: backInLeft;
             animation-duration: 6s;
         }
-        .div__contPDisc3 {
+        .div__contenedor--PDisc3 {
             grid-area: pD3;
             .div__h2--disc3LG {
                 display: none;

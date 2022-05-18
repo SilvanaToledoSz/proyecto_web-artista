@@ -6,7 +6,7 @@ $vista: mobile;
 main {
     div {
         // Inicio sección home-hero image
-        .div__heroImage {
+        .div__contenedor--heroImage {
             background-image: url(../multimedia/images/hero-image.jpg);
             background-repeat: no-repeat;
             background-position: center;
@@ -31,7 +31,7 @@ main {
         // Fin sección home-hero image
 
         // Inicio sección home-adelanto
-        .div__adelantoHome {
+        .div__contenedor--adelantoHome {
             background-color:$color2;
             height: 170px;
             padding-top: 20px;
@@ -46,7 +46,7 @@ main {
         // Fin sección home-adelanto
 
         // Inicio sección home-bio        
-        .div__bioHome {
+        .div__contenedor--bioHome {
             background-color:$color3;
             padding-top: 20px;  
             padding-bottom: 30px;
@@ -114,7 +114,7 @@ main {
         // Fin sección home-bio
 
         // Inicio sección home-discografia
-        .div__discHome {
+        .div__contenedor--discHome {
             background-color:$color4;
             height: 600px;
             padding-top: 20px; 
@@ -242,7 +242,7 @@ main {
         // Fin sección home-discografia
 
         // Inicio sección home-resenas
-        .div__resenasHome {
+        .div__contenedor--resenasHome {
             background-color:$color3;    
             padding-top: 20px; 
             padding-bottom: 30px;
