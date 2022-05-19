@@ -1065,5 +1065,21 @@ main div .main__div--extras {
 
 /* FIN  SECCIÓN EXTRAS */
 /* ------------------- */
+/* ------------------ */
+/* INICIO SECCIÓN 404 */
+main .main__div--404 {
+  background-color: #9AD1D4;
+  height: 550px; }
+
+main div .div__img--404 {
+  margin: 10px 0;
+  width: 25%;
+  border-radius: 30px;
+  padding: 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 1s; }
+  main div .div__img--404:hover {
+    transform: scale(1.05); }
+
 /* Fin estilos */
 /* ----------- */
