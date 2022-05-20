@@ -1075,7 +1075,11 @@ main .main__div--404 {
       height: 600px; } }
   @media only screen and (min-width: 991.1px) {
     main .main__div--404 {
-      height: 650px; } }
+      height: 700px; } }
+
+main div p {
+  text-align: center;
+  margin: 10px 0; }
 
 main div .div__img--404 {
   margin: 10px 0;
