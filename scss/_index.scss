@@ -124,8 +124,8 @@ main {
                     0% {
                         transform: translateX(0%); 
                     }
-                70% {
-                        transform: translateX(-80%);
+                65% {
+                        transform: translateX(-65%);
                     }
                 }
                 @media only screen and (min-width: $minDesktop) {
