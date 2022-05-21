@@ -181,8 +181,8 @@ main div .div__contenedor--discHome {
 @keyframes carousel-slide {
   0% {
     transform: translateX(0%); }
-  65% {
-    transform: translateX(-65%); } }
+  55% {
+    transform: translateX(-55%); } }
   @media only screen and (min-width: 991.1px) {
     @keyframes carousel-slide {
       0% {
