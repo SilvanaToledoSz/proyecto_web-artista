@@ -189,8 +189,8 @@ main div .div__contenedor--discHome {
         transform: translateX(0%); }
       25% {
         transform: translateX(-25%); }
-      50% {
-        transform: translateX(-50%); } } }
+      70% {
+        transform: translateX(-70%); } } }
   main div .div__contenedor--discHome div .div__article--carousel {
     margin: 2rem auto;
     padding: 2rem 0;
