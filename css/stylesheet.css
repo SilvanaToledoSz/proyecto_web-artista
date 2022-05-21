@@ -875,7 +875,8 @@ main .main__div--contacto {
           .main__contenedor--discografia .main__div--contDisc .div__contenedor--PDisc2 .div__h2--disc2LG {
             display: block; } }
     .main__contenedor--discografia .main__div--contDisc .div__h2--disc3 {
-      grid-area: h2D3; }
+      grid-area: h2D3;
+      margin-bottom: 10px; }
       @media only screen and (min-width: 991.1px) {
         .main__contenedor--discografia .main__div--contDisc .div__h2--disc3 {
           display: none; } }
@@ -1077,7 +1078,7 @@ main .main__div--404 {
     main .main__div--404 {
       height: 700px; } }
 
-main div p {
+main div .div__p--404 {
   text-align: center;
   margin: 10px 0; }
 
