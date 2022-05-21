@@ -181,16 +181,16 @@ main div .div__contenedor--discHome {
 @keyframes carousel-slide {
   0% {
     transform: translateX(0%); }
-  50% {
-    transform: translateX(-50%); } }
+  80% {
+    transform: translateX(-80%); } }
   @media only screen and (min-width: 991.1px) {
     @keyframes carousel-slide {
       0% {
         transform: translateX(0%); }
       25% {
         transform: translateX(-25%); }
-      70% {
-        transform: translateX(-70%); } } }
+      50% {
+        transform: translateX(-50%); } } }
   main div .div__contenedor--discHome div .div__article--carousel {
     margin: 2rem auto;
     padding: 2rem 0;
