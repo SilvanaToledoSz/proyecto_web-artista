@@ -811,14 +811,14 @@ main .main__div--contacto {
     justify-content: center;
     row-gap: 20px;
     grid-template-columns: 80%;
-    grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 300px 300px;
+    grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 310px 300px;
     grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; }
     .main__contenedor--discografia .main__div--contDisc .div__p--Disc {
       color: #4A4A5B;
       font-size: 22px; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
       .main__contenedor--discografia .main__div--contDisc {
-        grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 310px 190px;
+        grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 300px 190px;
         grid-template-areas: "h2D1" "iframeD1" "pD1" "h2D2" "iframeD2" "pD2" "h2D3" "iframeD3" "pD3"; } }
     @media only screen and (min-width: 991.1px) {
       .main__contenedor--discografia .main__div--contDisc {

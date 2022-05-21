@@ -36,7 +36,7 @@ $vista: mobile;
         @include gridCentro;
         row-gap: 20px;
         grid-template-columns: 80%;
-        grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 300px 300px;
+        grid-template-rows: 60px 300px 300px 60px 300px 300px 60px 310px 300px;
         grid-template-areas: 
         "h2D1"
         "iframeD1"
@@ -50,7 +50,7 @@ $vista: mobile;
         @media only screen and (min-width: $minTablet) and (max-width: $maxTablet) {
             $vista:tablet;
             @if $vista == tablet {
-                grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 310px 190px;
+                grid-template-rows: 60px 300px 170px 60px 300px 170px 60px 300px 190px;
                 grid-template-areas: 
                 "h2D1"
                 "iframeD1"
