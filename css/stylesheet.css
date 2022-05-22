@@ -509,7 +509,7 @@ main .main__div--bio {
     row-gap: 1%; }
     @media only screen and (min-width: 576px) and (max-width: 991px) {
       main .main__div--bio div div .div__cont--bio {
-        grid-template-rows: 200px 250px 250px 200px 230px 190px 230px 200px 200px; } }
+        grid-template-rows: 200px 250px 250px 200px 230px 190px 220px 230px 200px; } }
     @media only screen and (min-width: 991.1px) {
       main .main__div--bio div div .div__cont--bio {
         grid-template-columns: 40% 40%;
