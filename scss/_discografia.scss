@@ -15,7 +15,7 @@ $vista: mobile;
     @media only screen and (min-width: $minDesktop) {
         $vista:desktop;
         @if $vista == desktop {
-            height: 1400px;
+            height: 1500px;
         }
     }
     .main__div--contDisc {

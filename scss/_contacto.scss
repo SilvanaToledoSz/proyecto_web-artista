@@ -17,7 +17,7 @@ main {
                     @media only screen and (min-width: $minDesktop) {
                         $vista:desktop;
                         @if $vista == desktop {
-                            height: 500px;
+                            height: 750px;
                         }
                     }
                 }

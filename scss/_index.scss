@@ -64,7 +64,7 @@ main {
                     @media only screen and (min-width: $minTablet) and (max-width: $medioTablet) {
                         $vista:tablet;
                         @if $vista == tablet {
-                            grid-template-rows: 320px 220px;
+                            grid-template-rows: 320px 270px;
                         }
                     }
                     @media only screen and (min-width: $medioTabletB) and (max-width: $maxTablet) {
@@ -126,6 +126,19 @@ main {
                     }
                 55% {
                         transform: translateX(-55%);
+                    }
+                }
+                @media only screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+                    $vista:tablet;
+                    @if $vista == tablet {
+                        @keyframes carousel-slide {
+                            0% {
+                                transform: translateX(0%); 
+                            }                            
+                            47% {
+                                transform: translateX(-47%);    
+                            } 
+                        }
                     }
                 }
                 @media only screen and (min-width: $minDesktop) {
@@ -248,70 +261,66 @@ main {
             padding-bottom: 30px;
             div {
                 div {
-                    .div__article--resenasHome {
-                        margin: 20px 0;
-                        padding-bottom: 10px;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        width: 100%;
-                        background-color: $color4;
-                        border-radius: 20px;
-                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-                        transition: 1s;
-                        &:hover {
-                            transform: scale(1.05);
-                        }    
-                        .article__div--imgResena1 {
-                            width: 130px;
-                            height: 130px;
-                            margin-top: 20px;
-                            margin-bottom: 20px;
-                            border-radius: 100%;
+                    div {
+                        .div__article--resenasHome {
+                            margin: 20px 0;
+                            padding-bottom: 10px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            width: 100%;
+                            background-color: $color4;
+                            border-radius: 20px;
                             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-                            background-image: url(../multimedia/images/resena_img_1.jpg);
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: cover;
-                        }   
-                        .article__div--imgResena2 {
-                            @extend .article__div--imgResena1;
-                            background-image: url(../multimedia/images/resena_img_2.jpg);                            
-                        }                        
-                        .article__p--ResenasHome {
-                            font-size: 18px;
-                            transition: 0.2s;
+                            transition: 1s;
                             &:hover {
-                                font-weight: 400;
-                            }
-                            @media only screen and (min-width: $medioTablet) and (max-width: $maxTablet) {
-                                $vista: tablet;
-                                @if $vista == tablet {
-                                    height: 200px;
-                                    overflow: auto;
+                                transform: scale(1.05);
+                            }    
+                            .article__div--imgResena1 {
+                                width: 130px;
+                                height: 130px;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                border-radius: 100%;
+                                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                                background-image: url(../multimedia/images/resena_img_1.jpg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                            }   
+                            .article__div--imgResena2 {
+                                @extend .article__div--imgResena1;
+                                background-image: url(../multimedia/images/resena_img_2.jpg);                            
+                            }                        
+                            .article__p--ResenasHome {
+                                font-size: 18px;
+                                transition: 0.2s;
+                                &:hover {
+                                    font-weight: 400;
                                 }
-                            }
-                            @media only screen and (min-width: $minDesktop) {
-                                $vista:desktop;
-                                @if $vista == desktop {
-                                    height: 200px;
-                                    overflow: auto;
+                                @media only screen and (min-width: $medioTablet) and (max-width: $maxTablet) {
+                                    $vista: tablet;
+                                    @if $vista == tablet {
+                                        height: 200px;
+                                        overflow: auto;
+                                    }
+                                }
+                                @media only screen and (min-width: $minDesktop) {
+                                    $vista:desktop;
+                                    @if $vista == desktop {
+                                        height: 200px;
+                                        overflow: auto;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                .div__contenedor--resenasHome {
-                    display: none;
-                    @media only screen and (min-width: $medioTablet) and (max-width: $maxTablet) {
-                        $vista: tablet;
-                        @if $vista == tablet {
-                            display: block;
-                        }
-                    }
-                    @media only screen and (min-width: $minDesktop) {
-                        $vista: desktop;
-                        @if $vista == desktop {
-                            display: block;
+                    .div__cont--r2mb {
+                        display: none;
+                        @media only screen and (min-width: $medioTablet) {
+                            $vista: tablet;
+                            @if $vista == tablet {
+                                display: block;
+                            }
                         }
                     }
                 }

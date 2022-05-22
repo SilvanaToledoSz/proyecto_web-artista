@@ -143,7 +143,7 @@ main div .div__contenedor--bioHome {
     grid-template-areas: "imgBioH" "txtBioH"; }
     @media only screen and (min-width: 576px) and (max-width: 756px) {
       main div .div__contenedor--bioHome div .div__grid--bioHome {
-        grid-template-rows: 320px 220px; } }
+        grid-template-rows: 320px 270px; } }
     @media only screen and (min-width: 756.1px) and (max-width: 991px) {
       main div .div__contenedor--bioHome div .div__grid--bioHome {
         grid-template-rows: 320px 220px; } }
@@ -183,6 +183,12 @@ main div .div__contenedor--discHome {
     transform: translateX(0%); }
   55% {
     transform: translateX(-55%); } }
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
+    @keyframes carousel-slide {
+      0% {
+        transform: translateX(0%); }
+      47% {
+        transform: translateX(-47%); } } }
   @media only screen and (min-width: 991.1px) {
     @keyframes carousel-slide {
       0% {
@@ -259,7 +265,7 @@ main div .div__contenedor--resenasHome {
   background-color: #9AD1D4;
   padding-top: 20px;
   padding-bottom: 30px; }
-  main div .div__contenedor--resenasHome div div .div__article--resenasHome {
+  main div .div__contenedor--resenasHome div div div .div__article--resenasHome {
     margin: 20px 0;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -269,9 +275,9 @@ main div .div__contenedor--resenasHome {
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 1s; }
-    main div .div__contenedor--resenasHome div div .div__article--resenasHome:hover {
+    main div .div__contenedor--resenasHome div div div .div__article--resenasHome:hover {
       transform: scale(1.05); }
-    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena1, main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
+    main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__div--imgResena1, main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__div--imgResena2 {
       width: 130px;
       height: 130px;
       margin-top: 20px;
@@ -282,28 +288,25 @@ main div .div__contenedor--resenasHome {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__div--imgResena2 {
+    main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__div--imgResena2 {
       background-image: url(../multimedia/images/resena_img_2.jpg); }
-    main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+    main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__p--ResenasHome {
       font-size: 18px;
       transition: 0.2s; }
-      main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome:hover {
+      main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__p--ResenasHome:hover {
         font-weight: 400; }
       @media only screen and (min-width: 756px) and (max-width: 991px) {
-        main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+        main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
       @media only screen and (min-width: 991.1px) {
-        main div .div__contenedor--resenasHome div div .div__article--resenasHome .article__p--ResenasHome {
+        main div .div__contenedor--resenasHome div div div .div__article--resenasHome .article__p--ResenasHome {
           height: 200px;
           overflow: auto; } }
-  main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
+  main div .div__contenedor--resenasHome div div .div__cont--r2mb {
     display: none; }
-    @media only screen and (min-width: 756px) and (max-width: 991px) {
-      main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
-        display: block; } }
-    @media only screen and (min-width: 991.1px) {
-      main div .div__contenedor--resenasHome div .div__contenedor--resenasHome {
+    @media only screen and (min-width: 756px) {
+      main div .div__contenedor--resenasHome div div .div__cont--r2mb {
         display: block; } }
 
 main div .div__extrasHome {
@@ -786,7 +789,7 @@ main .main__div--contacto {
       object-position: center; }
       @media only screen and (min-width: 991.1px) {
         main .main__div--contacto div .div__contenedor--img .div__img--contacto {
-          height: 500px; } }
+          height: 750px; } }
   main .main__div--contacto div .div__form--contacto {
     animation: slideInDown;
     animation-duration: 2s;
@@ -805,7 +808,7 @@ main .main__div--contacto {
       height: 2000px; } }
   @media only screen and (min-width: 991.1px) {
     .main__contenedor--discografia {
-      height: 1400px; } }
+      height: 1500px; } }
   .main__contenedor--discografia .main__div--contDisc {
     display: grid;
     justify-content: center;
